@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+@font-face { font-family: freg; src: url("fonts/proximanova-reg.eot"); src: url("fonts/proximanova-reg.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-reg.woff") format("woff"), url("fonts/proximanova-reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: fregc; src: url("fonts/proximanova-cond-reg.eot"); src: url("fonts/proximanova-cond-reg.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-cond-reg.woff") format("woff"), url("fonts/proximanova-cond-reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: fbold; src: url("fonts/proximanova-bold.eot"); src: url("fonts/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold.woff") format("woff"), url("fonts/proximanova-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: fblackc; src: url("fonts/proximanova-cond-black.eot"); src: url("fonts/proximanova-cond-black.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-cond-black.woff") format("woff"), url("fonts/proximanova-cond-black.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { background: #f4f4f4; font-family: "freg", arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 1.4; color: #262626; }
+
+a { text-decoration: none; }
+
+button { background: none; }
+
+.out { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+
+.header { position: absolute; top: 0; left: 0; right: 0; bottom: auto; height: 55px; background: #262626; }
+
+.sidebar { position: absolute; top: 55px; left: 0; bottom: 0; width: 299px; background: white; border-right: 1px solid #cccccc; }
+
+.container { position: absolute; top: 55px; left: 300px; right: 0; bottom: 0; }
+
+.logo { position: absolute; top: 0; left: 20px; height: 55px; font-family: "fblackc", arial, sans-serif; line-height: 55px; font-size: 38px; color: white; }
+.logo span { color: #cccccc; }
+
+.nav { position: absolute; top: 0; left: 300px; font-size: 0; }
+.nav li { display: inline-block; vertical-align: top; }
+.nav li.is-active a { color: #959595; }
+.nav a { display: table-cell; height: 55px; padding: 0 20px; vertical-align: middle; font-size: 15px; color: white; text-transform: uppercase; }
+.nav a sup { position: relative; top: -10px; padding: 0 5px; background: #1ea46d; border-radius: 6px; vertical-align: top; font-size: 11px; color: #262626; }
+
+.checkbox { position: relative; display: block; font-size: 0; *zoom: 1; }
+.checkbox:after { content: " "; display: table; clear: both; }
+.checkbox > i { position: relative; float: left; width: 21px; height: 21px; margin-right: 11px; border: 1px solid #bdbdbd; border-radius: 50%; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.checkbox > input { position: absolute; top: 5px; left: 5px; opacity: 0; z-index: 2; }
+.checkbox > input:checked + i { width: 23px; height: 23px; border: none; background-color: #e76d65; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15); }
+.checkbox > input:checked + i:before { content: ""; position: absolute; top: 7px; left: 6px; background: url('../img/icons-sba9689d214.png') 0 -97px no-repeat; width: 11px; height: 11px; }
+
+.checkbox__in { display: block; overflow: hidden; font-size: 13px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.stats { height: 49px; padding: 0 20px; }
+.stats li { display: table-cell; height: 49px; padding-left: 25px; vertical-align: middle; }
+.stats li:first-child { padding: 0; }
+.stats li.is-active a { color: #6e6e6e; }
+.stats li.is-active span { border-color: #6e6e6e; }
+.stats a { display: block; text-transform: uppercase; color: #262626; }
+.stats span { display: inline-block; border-bottom: 1px dotted transparent; line-height: 1; }
+.stats sup { position: relative; top: -10px; vertical-align: top; font-size: 12px; font-weight: bold; }
+
+.actions { border: 1px solid #cccccc; border-width: 1px 0; font-size: 0; }
+
+.search { position: relative; display: inline-block; width: 251px; vertical-align: top; }
+.search input { width: 100%; height: 40px; padding: 0 10px 0 40px; font-size: 13px; color: #6e6e6e; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.search i { position: absolute; top: 14px; left: 20px; background: url('../img/icons-sba9689d214.png') 0 -118px no-repeat; width: 14px; height: 12px; }
+
+.btn-filter { width: 48px; height: 40px; border-left: 1px solid #cccccc; vertical-align: top; font-size: 0; }
+.btn-filter i { display: inline-block; background: url('../img/icons-sba9689d214.png') 0 -30px no-repeat; width: 26px; height: 26px; }
+
+.select-all { border-bottom: 1px solid #cccccc; background: #e9e9e9; }
+.select-all .checkbox { padding: 6px 20px; }
+.select-all .checkbox__in { padding-top: 3px; }
+
+.users { position: absolute; top: 127px; left: 0; right: 0; bottom: 0; background: #dfdfdf; }
+
+.users__list { position: absolute; top: 10px; left: 10px; right: 1px; bottom: 78px; padding-right: 3px; overflow: auto; }
+.users__list::-webkit-scrollbar { width: 5px; }
+.users__list::-webkit-scrollbar-thumb { width: 5px; background: #525252; border-radius: 3px; }
+.users__list::-webkit-scrollbar-track-piece { background: none; }
+.users__list .checkbox { padding: 8px 11px; margin-top: 2px; background: white; }
+.users__list .checkbox > i { margin-top: 8px; }
+.users__list .checkbox:first-child { margin: 0; }
+
+.users__item { display: block; overflow: hidden; }
+.users__item strong, .users__item span { display: block; font-weight: normal; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; font-family: "fregc", arial, sans-serif; }
+.users__item strong { font-size: 16px; color: #0c8ac7; }
+.users__item span { font-size: 14px; }
+
+.users__pic { position: relative; float: left; width: 40px; height: 40px; margin-right: 11px; border-radius: 50%; background: #d5d5d5; overflow: hidden; }
+.users__pic img { position: relative; display: block; z-index: 2; }
+.users__pic i { position: absolute; top: 9px; left: 9px; background: url('../img/icons-sba9689d214.png') 0 -66px no-repeat; width: 22px; height: 21px; }
+
+.subscribe { position: absolute; left: 0; right: 0; bottom: 0; padding: 8px 10px; background: #cccccc; text-align: center; }
+
+.subscribe__title { margin-bottom: 8px; font-size: 10px; text-transform: uppercase; color: #8c8c8c; }
+
+.subscribe__list { font-size: 0; }
+.subscribe__list li { display: inline-block; margin: 0 1px; vertical-align: top; }
+.subscribe__list a { display: block; width: 86px; height: 30px; background: white; line-height: 30px; font-size: 13px; text-transform: uppercase; color: #e76e66; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.subscribe__list a:hover { background: #e76e66; color: white; }
+
+.l { width: 100%; display: inline-block; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }

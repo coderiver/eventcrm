@@ -1,0 +1,359 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
++font(freg, proximanova-reg)  
++font(fregc, proximanova-cond-reg)  
++font(fbold, proximanova-bold)  
++font(fblackc, proximanova-cond-black)  
+=freg
+	font-family: "freg", arial, sans-serif 
+=fbold
+	font-family: "freg", arial, sans-serif 
+=fregc
+	font-family: "fregc", arial, sans-serif 
+=fblackc
+	font-family: "fblackc", arial, sans-serif 
+//var
+$blue: #0c8ac7
+
+//general
+body
+	background: #F4F4F4 
+	+freg
+	font-size: 13px
+	font-weight: normal 
+	line-height: 1.4
+	color: #262626 	
+a
+	text-decoration: none 
+button
+	background: none 
+// common blocks
+.out
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: auto
+	height: 55px
+	background: #262626  
+	
+.sidebar
+	position: absolute
+	top: 55px
+	left: 0
+	bottom: 0
+	width: 299px 
+	background: #fff
+	border-right: 1px solid #ccc  
+	
+.container
+	position: absolute
+	top: 55px
+	left: 300px
+	right: 0
+	bottom: 0
+	
+.logo
+	position: absolute
+	top: 0
+	left: 20px
+	height: 55px
+	+fblackc
+	line-height: 55px
+	font-size: 38px
+	color: #FFF 
+	span
+		color: #ccc 
+		
+.nav
+	position: absolute
+	top: 0
+	left: 300px
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		&.is-active
+			a
+				color: #959595 		
+	a
+		display: table-cell
+		height: 55px
+		padding: 0 20px
+		vertical-align: middle
+		font-size: 15px
+		color: #fff
+		text-transform: uppercase
+		sup
+			position: relative
+			top: -10px
+			padding: 0 5px
+			background: #1ea46d
+			border-radius: 6px 
+			vertical-align: top
+			font-size: 11px
+			color: #262626 
+
+//checkbox
+.checkbox
+	position: relative
+	display: block
+	font-size: 0 
+	+clr
+	> i
+		position: relative
+		float: left
+		width: 21px 
+		height: 21px
+		margin-right: 11px
+		border: 1px solid #bdbdbd
+		border-radius: 50%
+		+nosel
+	> input
+		position: absolute
+		top: 5px
+		left: 5px
+		opacity: 0 
+		z-index: 2 
+		&:checked + i
+			width: 23px
+			height: 23px
+			border: none
+			background-color: #e76d65
+			box-shadow: inset 0 2px 0 rgba(0,0,0,.15)
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 6px
+				+s(checkbox)
+.checkbox__in
+	display: block
+	overflow: hidden
+	font-size: 13px
+	+nosel
+			
+.stats
+	height: 49px
+	padding: 0 20px
+	li
+		display: table-cell
+		height: 49px
+		padding-left: 25px
+		vertical-align: middle
+		&:first-child
+			padding: 0
+		&.is-active
+			a
+				color: #6E6E6E 
+			span
+				border-color: #6E6E6E
+	a
+		display: block
+		text-transform: uppercase
+		color: #262626 
+	span
+		display: inline-block
+		border-bottom: 1px dotted transparent
+		line-height: 1
+	sup
+		position: relative
+		top: -10px 
+		vertical-align: top
+		font-size: 12px
+		font-weight: bold
+		
+.actions
+	border: 1px solid #ccc
+	border-width: 1px 0
+	font-size: 0
+	
+.search
+	position: relative
+	display: inline-block
+	width: 251px 
+	vertical-align: top
+	input
+		width: 100%
+		height: 40px
+		padding: 0 10px 0 40px
+		font-size: 13px
+		color: #6e6e6e 
+		+box
+	i
+		position: absolute
+		top: 14px
+		left: 20px
+		+s(search-ico)
+
+.btn-filter
+	width: 48px
+	height: 40px 
+	border-left: 1px solid #ccc  
+	vertical-align: top
+	font-size: 0
+	i
+		display: inline-block
+		+s(btn-filter)
+
+.select-all	
+	border-bottom: 1px solid #ccc 
+	background: #e9e9e9
+	.checkbox
+		padding: 6px 20px
+	.checkbox__in
+		padding-top: 3px
+	
+.users
+	position: absolute
+	top: 127px
+	left: 0
+	right: 0
+	bottom: 0	
+	background: #dfdfdf
+.users__list
+	position: absolute
+	top: 10px
+	left: 10px
+	right: 1px
+	bottom: 78px
+	padding-right: 3px
+	overflow: auto
+	&::-webkit-scrollbar
+		width: 5px
+	&::-webkit-scrollbar-thumb
+		width: 5px
+		background: #525252
+		border-radius: 3px
+	&::-webkit-scrollbar-track-piece
+		background: none
+	.checkbox
+		padding: 8px 11px
+		margin-top: 2px
+		background: #FFF  
+		> i
+			margin-top: 8px
+		&:first-child
+			margin: 0
+.users__item	
+	display: block
+	overflow: hidden
+	strong, span
+		display: block
+		font-weight: normal
+		+text-overflow
+		+fregc
+	strong
+		font-size: 16px
+		color: $blue
+	span
+		font-size: 14px
+.users__pic	
+	position: relative
+	float: left
+	width: 40px
+	height: 40px
+	margin-right: 11px 
+	border-radius: 50%
+	background: #D5D5D5 
+	overflow: hidden
+	img
+		position: relative
+		display: block
+		z-index: 2
+	i
+		position: absolute
+		top: 9px
+		left: 9px
+		+s(users-ico)
+		
+.subscribe
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 8px 10px
+	background: #ccc 
+	text-align: center
+.subscribe__title
+	margin-bottom: 8px
+	font-size: 10px
+	text-transform: uppercase
+	color: #8c8c8c 
+.subscribe__list
+	font-size: 0
+	li
+		display: inline-block
+		margin: 0 1px
+		vertical-align: top
+	a
+		display: block
+		width: 86px
+		height: 30px
+		background: #fff 
+		line-height: 30px
+		font-size: 13px
+		text-transform: uppercase
+		color: #e76e66  
+		+tr(all .2s linear)
+		&:hover
+			background: #e76e66
+			color: #fff  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
