@@ -36,20 +36,34 @@
 //				display: none
 // ## fonts 
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-+font(freg, proximanova-reg)  
-+font(fregc, proximanova-cond-reg)  
-+font(fbold, proximanova-bold)  
-+font(fblackc, proximanova-cond-black)  
++font(novareg, proximanova-reg)  
++font(novaregc, proximanova-cond-reg)  
++font(novabold, proximanova-bold)  
++font(novablackc, proximanova-cond-black)  
 =freg
-	font-family: "freg", arial, sans-serif 
+	font-family: "novareg", arial, sans-serif 
 =fbold
-	font-family: "freg", arial, sans-serif 
+	font-family: "novabold", arial, sans-serif 
 =fregc
-	font-family: "fregc", arial, sans-serif 
+	font-family: "novaregc", arial, sans-serif 
 =fblackc
-	font-family: "fblackc", arial, sans-serif 
+	font-family: "novablackc", arial, sans-serif 
 //var
 $blue: #0c8ac7
+$red: #e76e66
+$green: #1ea46d
+
+//*
+*
+	&::-webkit-scrollbar
+		width: 5px
+		height: 5px
+	&::-webkit-scrollbar-thumb
+		width: 5px
+		background: #525252
+		border-radius: 3px
+	&::-webkit-scrollbar-track-piece
+		background: none
 
 //general
 body
@@ -79,6 +93,7 @@ button
 	bottom: auto
 	height: 55px
 	background: #262626  
+	z-index: 10 
 	
 .sidebar
 	position: absolute
@@ -95,6 +110,8 @@ button
 	left: 300px
 	right: 0
 	bottom: 0
+.container__in
+	padding: 20px
 	
 .logo
 	position: absolute
@@ -127,21 +144,195 @@ button
 		font-size: 15px
 		color: #fff
 		text-transform: uppercase
+		+tr(color .2s linear)
 		sup
 			position: relative
 			top: -10px
 			padding: 0 5px
-			background: #1ea46d
+			background: $green
 			border-radius: 6px 
 			vertical-align: top
+			font-family: Arial, sans-serif 
 			font-size: 11px
 			color: #262626 
+		&:hover
+			color: $red
+
+			
+.add
+	float: right	
+	padding: 9px 20px
+.add__in
+	position: relative	
+	&:hover
+		button
+			color: #F3B7B3 
+		ul
+			visibility: visible 
+			top: 36px
+			opacity: 1
+	button
+		position: relative
+		width: 160px 
+		height: 36px
+		background: $red
+		font-size: 16px
+		color: #FFF  
+		+tr(color .2s linear)
+		z-index: 2 
+	ul
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		padding: 5px
+		background: $red 
+		text-align: center
+		visibility: hidden 
+		opacity: 0 
+		+tr(all .2s linear)
+		z-index: 1  
+		&:before
+			content: ""
+			position: absolute
+			top: 0px
+			left: 50%
+			margin-left: -19px
+			width: 38px
+			height: 1px
+			background: #B75C56 
+	a
+		display: block
+		padding: 3px
+		font-size: 15px
+		color: #fff 
+		+tr(color .2s linear)
+		&:hover
+			color: #F3B7B3 
+
+.login
+	position: relative
+	float: right
+	&:hover
+		.login__head
+			background: #363636
+		.login__drop
+			top: 55px
+			opacity: 1
+			visibility: visible  
+.login__head
+	position: relative
+	height: 49px
+	padding: 6px 10px 0 15px
+	border: 1px solid #363636
+	border-width: 0 1px
+	background: #262626 
+	cursor: pointer
+	overflow: hidden
+	+tr(background .2s linear)
+	z-index: 2 
+	> img
+		float: left
+		margin-right: 10px
+		border-radius: 50%
+	> span
+		float: left
+		padding-top: 10px
+		+fregc
+		font-size: 15px
+		color: $red 
+		white-space: nowrap
+		line-height: 1
+		em
+			display: block
+			position: relative
+			padding-left: 10px
+			font-style: normal
+			font-size: 12px
+			color: #685A8B 
+			&:before
+				content: ""
+				position: absolute
+				top: 3px
+				left: 0
+				width: 6px
+				height: 6px
+				border-radius: 50%
+				background: #685a8b 
+	> i
+		float: left
+		margin: 15px 0 0 20px
+		+arr(8,6,#8e8e8e,b)
+.login__drop
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background: #363636
+	opacity: 0
+	visibility: hidden
+	+tr(all .2s linear)  
+	z-index: 1 
+.login__actions
+	padding: 5px 15px 15px
+	li
+		margin-top: 10px
+		&:first-child
+			margin: 0
+	a
+		position: relative
+		display: block
+		padding-left: 24px
+		color: #fff 
+		+tr(color .2s linear)
+		&:hover
+			color: $red 
+	i
+		position: absolute
+		top: 1px
+		left: 0
+.login__ico-setting
+	+s(login-setting)		
+.login__ico-edit
+	+s(login-edit)		
+.login__ico-out
+	+s(login-out)	
+.login__event
+	box-shadow: 0 3px 3px #2e2e2e inset
+	overflow: hidden
+.login__event-item
+	display: block
+	padding: 10px 15px
+	border-top: 1px solid #2e2e2e 
+	i
+		position: relative
+		display: block
+		margin-bottom: 3px
+		padding-left: 15px
+		font-style: normal
+		font-size: 11px
+		color: #a0a0a0
+		&:before
+			content: ""
+			position: absolute
+			top: 2px
+			left: 0
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: #685a8b 
+	span
+		display: block
+		color: #F1F1F1
+		line-height: 1.3 
+		 
 
 //checkbox
 .checkbox
 	position: relative
 	display: block
 	font-size: 0 
+	cursor: pointer
 	+clr
 	> i
 		position: relative
@@ -187,24 +378,41 @@ button
 		&:first-child
 			padding: 0
 		&.is-active
-			a
-				color: #6E6E6E 
+			span, sup
+				color: #262626
 			span
-				border-color: #6E6E6E
+				border-color: transparent
+			a
+				cursor: default
+				&:hover			
+					span
+						border-color: transparent
+						color: #262626 
+					sup
+						color: #262626  
 	a
 		display: block
-		text-transform: uppercase
-		color: #262626 
+		&:hover			
+			span
+				border-color: $red
+				color: $red
+			sup
+				color: $red 
 	span
 		display: inline-block
-		border-bottom: 1px dotted transparent
+		border-bottom: 1px dotted #6E6E6E
+		text-transform: uppercase
+		color: #6E6E6E 
 		line-height: 1
+		+tr(all .2s linear)
 	sup
 		position: relative
 		top: -10px 
 		vertical-align: top
 		font-size: 12px
 		font-weight: bold
+		color: #6E6E6E 
+		+tr(color .2s linear)
 		
 .actions
 	border: 1px solid #ccc
@@ -238,6 +446,9 @@ button
 	i
 		display: inline-block
 		+s(btn-filter)
+	&:hover
+		i
+			+s(btn-filter-h)
 
 .select-all	
 	border-bottom: 1px solid #ccc 
@@ -246,6 +457,13 @@ button
 		padding: 6px 20px
 	.checkbox__in
 		padding-top: 3px
+.select-count
+	height: 27px
+	padding-top: 13px
+	background: #dfdfdf
+	text-align: center
+	+fbold
+	color: $red 
 	
 .users
 	position: absolute
@@ -261,15 +479,7 @@ button
 	right: 1px
 	bottom: 78px
 	padding-right: 3px
-	overflow: auto
-	&::-webkit-scrollbar
-		width: 5px
-	&::-webkit-scrollbar-thumb
-		width: 5px
-		background: #525252
-		border-radius: 3px
-	&::-webkit-scrollbar-track-piece
-		background: none
+	overflow: auto	
 	.checkbox
 		padding: 8px 11px
 		margin-top: 2px
@@ -278,6 +488,17 @@ button
 			margin-top: 8px
 		&:first-child
 			margin: 0
+		&:after
+			content: ""
+			position: absolute
+			top: 2px
+			right: 3px
+			+arr(14,14,#dfdfdf,tr)
+			opacity: 0
+			+tr(opacity .2s linear) 
+		&:hover
+			&:after
+				opacity: 1 
 .users__item	
 	display: block
 	overflow: hidden
@@ -342,6 +563,315 @@ button
 		&:hover
 			background: #e76e66
 			color: #fff  
+
+.top
+	height: 50px
+	padding: 0 20px
+	background: #ccc  
+	.filter-list
+		margin-top: 16px
+.top__title
+	display: table-cell
+	height: 50px
+	vertical-align: middle
+	+fbold
+	font-size: 18px
+	sup
+		position: relative
+		top: -4px
+		font-size: 12px
+		vertical-align: top
+
+.filter-list
+	float: right
+	li
+		float: left
+		margin-left: 40px
+		&:first-child
+			margin: 0
+		&.is-active
+			a
+				border-bottom: none 
+				color: #000 
+	a
+		font-size: 12px
+		text-transform: uppercase
+		color: #616161
+		border-bottom: 1px dotted  
+		+tr(all .2s linear)
+		&:hover
+			color: $red 
+		
+//list
+.list__top
+	+clr
+.list__title
+	display: table
+	+fbold
+	font-size: 14px
+	text-transform: uppercase
+.list__wrap
+	position: absolute
+	top: 100px
+	left: 20px
+	right: 17px
+	bottom: 20px
+	padding-right: 3px
+	overflow: auto
+.list__item
+	padding: 15px 20px 15px 15px
+	margin-bottom: 7px
+	border: 1px solid #ccc
+	background: #FFF
+	+tr(all .2s linear)
+	+clr
+	&:hover
+		border-color: #aed3e4
+	&.is-made
+		.list__user
+			p
+				text-decoration: line-through 
+				color: #616161 
+	.activity
+		float: right
+		margin: 13px 0 0 20px
+.list__ico, .list__status
+	float: left
+	width: 30px
+	height: 44px
+	margin-right: 15px
+	line-height: 44px
+	text-align: center
+	font-size: 0 
+.list__status
+	i
+		position: relative
+		display: inline-block
+		width: 23px
+		height: 23px
+		border-radius: 50%
+		background-color: #e76d65
+		box-shadow: inset 0 2px 0 rgba(0,0,0,.15)
+		&:before
+			content: ""
+			position: absolute
+			top: 7px
+			left: 6px
+			+s(checkbox)
+.list__ico-money, .list__ico-man
+	display: inline-block
+	vertical-align: middle
+.list__ico-man
+	+s(list-man)
+.list__ico-money
+	+s(list-money)
+.list__date
+	float: left
+	width: 82px
+	padding-top: 2px
+	strong, span
+		display: block
+		+fregc
+		line-height: 1
+	strong
+		font-size: 26px
+	span
+		font-size: 13px
+		color: #6E6E6E 
+.list__date_mod, .list__date_green
+	width: 102px
+.list__date_green
+	strong
+		color: $green 
+.list__price
+	float: right
+	height: 44px
+	margin-left: 20px
+	+fregc
+	font-size: 26px
+	color: #E08648
+	line-height: 44px  
+	i
+		display: inline-block
+		+s(rub)
+.list__content
+	display: table-cell
+	height: 44px
+	font-size: 16px
+	vertical-align: middle
+	a, span
+		margin-right: 5px
+	a
+		color: $blue
+	span
+		color: #8f8f8f
+.list__more
+	padding: 3px 0 4px
+	text-align: center
+	button
+		position: relative
+		width: 250px
+		height: 40px
+		border: 1px solid #cdcdcd
+		background: #fff
+		font-size: 15px
+		color: $red 
+		+tr(color .2s linear)
+		&:after, &:before
+			content: ""
+			position: absolute
+			height: 1px
+			background: #FFF 
+			border: 1px solid #cdcdcd
+			border-width: 0 1px 1px
+		&:before
+			left: 3px
+			right: 3px
+			bottom: -3px
+		&:after
+			left: 7px
+			right: 7px
+			bottom: -5px	
+		&:hover
+			color: #8A8A8A 		
+	sup
+		position: relative
+		top: -5px
+		padding: 0 5px
+		background: #1ea46d
+		border-radius: 6px
+		vertical-align: top
+		font-family: Arial, sans-serif 
+		font-size: 11px
+		color: #fff
+
+	
+//activity
+.activity
+	font-size: 0
+	li
+		position: relative
+		display: inline-block
+		margin-left: 15px
+		vertical-align: top
+		+fregc
+		font-size: 13px
+		&:first-child
+			margin: 0
+	span, i
+		display: inline-block
+		vertical-align: top
+		line-height: 1
+	span
+		padding-top: 2px
+	i
+		margin-right: 4px
+.activity__ico-1
+	+s(activity-ico-1)
+.activity__ico-2
+	+s(activity-ico-2)
+.activity__ico-3
+	+s(activity-ico-3)
+.activity__ico-4
+	+s(activity-ico-4)
+
+
+//tooltip
+.tooltip
+	position: absolute
+	width: 150px
+	margin-left: -67px
+	text-align: center
+.tooltip__in
+	position: relative
+	padding: 0 10px
+	border-radius: 10px
+	background: #262626
+	+freg 
+	font-size: 12px
+	color: #FFF 
+	line-height: 1.4
+	&:before
+		content: ""
+		position: absolute
+		top: -3px 
+		left: 50%
+		margin-left: -3px
+		+arr(6,3,#262626,t)
+
+//date
+.date
+	margin-bottom: 10px
+	text-align: center
+	a
+		display: inline-block
+		+fbold
+		font-size: 18px
+		color: #8f8f8f 
+	span
+		display: inline-block
+		line-height: 1
+		border-bottom: 1px dotted 
+	sup
+		margin-left: 3px
+		vertical-align: top
+		font-size: 12px
+		
+
+
+.calendar
+	position: absolute
+	top: 200px
+	left: 50%
+	width: 300px
+	margin-left: -155px
+	background: #FFF 
+	border: 5px solid $red
+	box-shadow: 0 14px 24px rgba(0,0,0,.15)
+.calendar__years, .calendar__months
+	text-align: center
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+	a
+		+fbold
+		font-size: 18px
+.calendar__years
+	padding-top: 20px
+	margin-bottom: 25px
+	a
+		display: inline-block
+		color: #8F8F8F
+		border-bottom: 1px dotted 
+		line-height: 1
+		+tr(all .2s linear)
+		&:hover
+			color: $red 
+	li
+		width: 33%
+		&.is-active
+			a
+				border: none
+				color: #262626 
+.calendar__months
+	li
+		width: 25%
+		margin-bottom: 25px
+		line-height: 1
+		&.is-disabled
+			a
+				color: #cecece 
+	a
+		color: $blue
+		+tr(color .2s linear)
+		&:hover
+			color: $red 
+			
+
+
+
+
 
 
 
