@@ -5,7 +5,9 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -326,10 +328,10 @@
 								<span>понедельник</span>
 							</div>
 							<ul class="activity">
-								<li><i class="activity__ico-1"></i><span>856</span></li>
-								<li><i class="activity__ico-2"></i><span>56</span></li>
-								<li><i class="activity__ico-3"></i><span>6</span></li>
-								<li><i class="activity__ico-4"></i><span>56</span></li>
+								<li><i class="activity__ico-1 js-tooltip" data-tooltip="text"></i><span>856</span></li>
+								<li><i class="activity__ico-2 js-tooltip" data-tooltip="text text"></i><span>56</span></li>
+								<li><i class="activity__ico-3 js-tooltip" data-tooltip="text text text"></i><span>6</span></li>
+								<li><i class="activity__ico-4 js-tooltip" data-tooltip="text text text text"></i><span>56</span></li>
 							</ul>
 							<div class="list__content">
 								<a href="#">Введение в индоевропейское языкознание </a>
@@ -382,6 +384,11 @@
 							<div class="list__content">
 								<a href="#">Введение в индоевропейское языкознание </a>
 							</div>
+							<ul class="list__types">
+								<li class="is-hover">Приглашены</li>
+								<li>Подтвердили</li>
+								<li>Пришли</li>
+							</ul>
 						</div>
 						<div class="list__item">
 							<div class="list__date list__date_green">
@@ -413,6 +420,27 @@
 								<a href="#">Введение в индоевропейское языкознание </a>
 							</div>
 						</div>
+					</div>
+					<div class="calendar">
+						<ul class="calendar__years">
+							<li><a href="#">2012</a></li>
+							<li class="is-active"><a href="#">2013</a></li>
+							<li><a href="#">2014</a></li>
+						</ul>
+						<ul class="calendar__months">
+							<li><a href="#">Янв</a></li>
+							<li><a href="#">Фев</a></li>
+							<li><a href="#">Мрт</a></li>
+							<li><a href="#">Апр</a></li>
+							<li><a href="#">Май</a></li>
+							<li><a href="#">Июн</a></li>
+							<li><a href="#">Июл</a></li>
+							<li><a href="#">Авг</a></li>
+							<li><a href="#">Сент</a></li>
+							<li><a href="#">Окт</a></li>
+							<li><a href="#">Нбр</a></li>
+							<li class="is-disabled"><a href="#">Дек</a></li>
+						</ul>
 					</div>	
 				</div>
 			</div>
@@ -421,26 +449,40 @@
 	<!-- END container-->
 </div>
 <!-- END out-->
-<div class="calendar">
-	<ul class="calendar__years">
-		<li><a href="#">2012</a></li>
-		<li class="is-active"><a href="#">2013</a></li>
-		<li><a href="#">2014</a></li>
-	</ul>
-	<ul class="calendar__months">
-		<li><a href="#">Янв</a></li>
-		<li><a href="#">Фев</a></li>
-		<li><a href="#">Мрт</a></li>
-		<li><a href="#">Апр</a></li>
-		<li><a href="#">Май</a></li>
-		<li><a href="#">Июн</a></li>
-		<li><a href="#">Июл</a></li>
-		<li><a href="#">Авг</a></li>
-		<li><a href="#">Сент</a></li>
-		<li><a href="#">Окт</a></li>
-		<li><a href="#">Нбр</a></li>
-		<li class="is-disabled"><a href="#">Дек</a></li>
-	</ul>
+<!-- BEGIN dropbox-->
+<div class="dropbox" style="top: 400px; left: 400px;">
+	<div class="dropbox__in">
+		<div class="dropbox__pic">
+			<i></i>
+			<img src="http://lorempixel.com/40/40/" alt="">
+			<span></span>
+		</div>						
+		<strong>Анна Кашапова</strong>
+		<span>+7 (495) 727-28-28</span>
+	</div>	
+</div>
+<div class="dropbox is-many" style="top: 500px; left: 400px;">
+	<div class="dropbox__in">
+		<div class="dropbox__pic">
+			<i></i>
+			<img src="http://lorempixel.com/40/40/" alt="">
+			<span>29</span>
+		</div>						
+		<strong>Анна Кашапова</strong>
+		<span>+7 (495) 727-28-28</span>
+	</div>	
+</div>
+<!-- END dropbox-->
+<div class="tooltip js-tooltip-wrap">
+	<div class="tooltip__arr"></div>
+	<div class="tooltip__text"></div>
 </div>
 </body>
 </html>
+
+
+
+
+
+
+

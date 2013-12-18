@@ -247,6 +247,7 @@ button
 			display: block
 			position: relative
 			padding-left: 10px
+			+freg
 			font-style: normal
 			font-size: 12px
 			color: #685A8B 
@@ -619,6 +620,8 @@ button
 	padding-right: 3px
 	overflow: auto
 .list__item
+	position: relative
+	min-height: 44px
 	padding: 15px 20px 15px 15px
 	margin-bottom: 7px
 	border: 1px solid #ccc
@@ -744,6 +747,34 @@ button
 		font-family: Arial, sans-serif 
 		font-size: 11px
 		color: #fff
+.list__types
+	position: absolute
+	top: -1px
+	left: -1px
+	right: -1px
+	bottom: -1px
+	background: rgba(255,252,226,.9) 
+	border: 1px solid #d6d2ac
+	text-align: center
+	font-size: 0
+	li
+		display: inline-block
+		width: 33.5%
+		min-height: 74px
+		border-left: 1px solid #d6d2ac 
+		vertical-align: middle
+		+fbold
+		font-size: 22px
+		color: #8F8F8F 
+		line-height: 74px
+		+box
+		&:first-child
+			width: 33%
+			border: none
+		&.is-hover
+			background: #f9f5d9
+			box-shadow: 0 0 6px rgba(0,0,0,.4) inset 
+
 
 	
 //activity
@@ -778,11 +809,11 @@ button
 
 //tooltip
 .tooltip
+	display: none
 	position: absolute
-	width: 150px
-	margin-left: -67px
+	padding-top: 5px 
 	text-align: center
-.tooltip__in
+.tooltip__text
 	position: relative
 	padding: 0 10px
 	border-radius: 10px
@@ -791,13 +822,12 @@ button
 	font-size: 12px
 	color: #FFF 
 	line-height: 1.4
-	&:before
-		content: ""
-		position: absolute
-		top: -3px 
-		left: 50%
-		margin-left: -3px
-		+arr(6,3,#262626,t)
+	vertical-align: top
+	z-index: 1000 
+.tooltip__arr
+	position: absolute
+	top: 2px
+	+arr(6,3,#262626,t)
 
 //date
 .date
@@ -821,7 +851,7 @@ button
 
 .calendar
 	position: absolute
-	top: 200px
+	top: 0
 	left: 50%
 	width: 300px
 	margin-left: -155px
@@ -869,21 +899,81 @@ button
 			color: $red 
 			
 
+//dropbox
+.dropbox
+	position: absolute
+	width: 250px 
+	height: 52px
+	z-index: 777 
+	cursor: pointer
+	&.is-many
+		&:before, &:after
+			content: ""
+			position: absolute
+			width: 250px
+			height: 52px
+			background: #FFF 
+		&:before	
+			top: 3px
+			left: 2px
+			box-shadow: 0 0 2px rgba(0,0,0,.6)
+			z-index: 4 
+		&:after
+			top: 5px
+			left: 4px
+			box-shadow: 0 0 4px rgba(0,0,0,.6)
+			z-index: 2 
+.dropbox__in
+	position: relative
+	padding: 6px 10px
+	background: #FFF 
+	+box
+	box-shadow: 0 0 2px rgba(0,0,0,.6)
+	z-index: 10
+	> strong, > span
+		display: block
+		font-weight: normal
+		+text-overflow
+		+fregc
+	> strong
+		font-size: 16px
+		color: $blue
+	> span
+		font-size: 14px	
+.dropbox__pic
+	position: relative
+	float: left
+	margin-right: 10px
+	span
+		position: absolute
+		top: -1px
+		left: -7px
+		padding: 0 5px		
+		background: #1ea46d
+		border-radius: 10px
+		font-family: Arial, sans-serif
+		font-size: 11px
+		color: #fff
+		z-index: 3  
+	img
+		position: absolute
+		top: 0
+		left: 0
+		border-radius: 50%
+		z-index: 2
+	i
+		position: relative
+		display: block
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background: #D5D5D5
+		z-index: 1 
+		&:after
+			content: ""
+			position: absolute
+			top: 9px
+			left: 9px
+			+s(users-ico)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
