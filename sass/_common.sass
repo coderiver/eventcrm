@@ -481,34 +481,38 @@ button
 	bottom: 78px
 	padding-right: 3px
 	overflow: auto	
-	.checkbox
-		padding: 8px 11px
-		margin-top: 2px
-		background: #FFF  
-		> i
-			margin-top: 8px
-		&:first-child
-			margin: 0
+.users__item
+	position: relative
+	padding: 8px 11px 8px 45px
+	margin-top: 2px
+	background: #FFF  
+	+clr
+	> i
+		margin-top: 8px
+	&:first-child
+		margin: 0
+	&:after
+		content: ""
+		position: absolute
+		top: 2px
+		right: 3px
+		+arr(14,14,#dfdfdf,tr)
+		opacity: 0
+		+tr(opacity .2s linear) 
+	&:hover
 		&:after
-			content: ""
-			position: absolute
-			top: 2px
-			right: 3px
-			+arr(14,14,#dfdfdf,tr)
-			opacity: 0
-			+tr(opacity .2s linear) 
-		&:hover
-			&:after
-				opacity: 1 
-.users__item	
-	display: block
-	overflow: hidden
-	strong, span
+			opacity: 1 
+	.checkbox
+		position: absolute
+		top: 16px
+		left: 11px
+	span
 		display: block
 		font-weight: normal
 		+text-overflow
+	span, a
 		+fregc
-	strong
+	a
 		font-size: 16px
 		color: $blue
 	span
@@ -774,6 +778,8 @@ button
 		&.is-hover
 			background: #f9f5d9
 			box-shadow: 0 0 6px rgba(0,0,0,.4) inset 
+.list__elements
+	margin-bottom: 40px 
 
 
 	
@@ -835,23 +841,57 @@ button
 	text-align: center
 	a
 		display: inline-block
+		padding: 0 10px
 		+fbold
 		font-size: 18px
 		color: #8f8f8f 
+		vertical-align: middle
+		&:hover
+			color: $red 
 	span
 		display: inline-block
 		line-height: 1
 		border-bottom: 1px dotted 
+		+tr(color .2s linear)
 	sup
 		margin-left: 3px
 		vertical-align: top
 		font-size: 12px
-		
+		+tr(color .2s linear)
+.date__prev, .date__next
+	position: relative
+	width: 32px
+	height: 32px
+	border-radius: 50%
+	border: 1px solid transparent
+	font-size: 0
+	vertical-align: middle
+	overflow: visible
+	+tr(all .2s linear)
+	i
+		position: absolute
+		top: 9px 
+	&:hover
+		border: 1px solid #b6b6b6
+.date__prev
+	i
+		left: 10px
+		+s(arr-left)
+	&:hover
+		i
+			+s(arr-left-h)
+.date__next
+	i
+		right: 10px
+		+s(arr-right)
+	&:hover
+		i
+			+s(arr-right-h)
 
 
 .calendar
 	position: absolute
-	top: 0
+	top: 50px
 	left: 50%
 	width: 300px
 	margin-left: -155px
