@@ -77,6 +77,10 @@ a
 	text-decoration: none 
 button
 	background: none 
+.wrap
+	+clr
+.wrapper
+	overflow: hidden
 // common blocks
 .out
 	position: absolute
@@ -466,14 +470,14 @@ button
 	+fbold
 	color: $red 
 	
-.users
+.sidebar__in
 	position: absolute
 	top: 127px
 	left: 0
 	right: 0
 	bottom: 0	
 	background: #dfdfdf
-.users__list
+.sidebar__wrap
 	position: absolute
 	top: 10px
 	left: 10px
@@ -481,7 +485,7 @@ button
 	bottom: 78px
 	padding-right: 3px
 	overflow: auto	
-.users__item
+.user
 	position: relative
 	padding: 8px 11px 8px 45px
 	margin-top: 2px
@@ -517,7 +521,7 @@ button
 		color: $blue
 	span
 		font-size: 14px
-.users__pic	
+.user__pic	
 	position: relative
 	float: left
 	width: 40px
@@ -633,22 +637,20 @@ button
 			color: $red 
 		
 //list
-.list__top
-	+clr
 .list__title
 	display: table
 	+fbold
 	font-size: 14px
 	text-transform: uppercase
-.list
+.container__wrap
 	position: absolute
 	top: 50px
 	left: 20px
 	right: 17px
-	bottom: 20px
+	bottom: 20px  
 	padding: 50px 3px 0 0
-	overflow: auto
-.list__item
+	overflow: auto   
+.list
 	position: relative
 	min-height: 44px
 	padding: 15px 20px 15px 15px
@@ -659,6 +661,7 @@ button
 	+clr
 	&:hover
 		border-color: #aed3e4
+		box-shadow: 0 0 5px rgba(13,138,202,.3)
 	&.is-made
 		.list__user
 			p
@@ -740,32 +743,32 @@ button
 .list__more
 	padding: 3px 0 4px
 	text-align: center
-	button
-		position: relative
-		width: 250px
-		height: 40px
+.btn-more
+	position: relative
+	width: 250px
+	height: 40px
+	border: 1px solid #cdcdcd
+	background: #fff
+	font-size: 15px
+	color: $red 
+	+tr(color .2s linear)
+	&:after, &:before
+		content: ""
+		position: absolute
+		height: 1px
+		background: #FFF 
 		border: 1px solid #cdcdcd
-		background: #fff
-		font-size: 15px
-		color: $red 
-		+tr(color .2s linear)
-		&:after, &:before
-			content: ""
-			position: absolute
-			height: 1px
-			background: #FFF 
-			border: 1px solid #cdcdcd
-			border-width: 0 1px 1px
-		&:before
-			left: 3px
-			right: 3px
-			bottom: -3px
-		&:after
-			left: 7px
-			right: 7px
-			bottom: -5px	
-		&:hover
-			color: #8A8A8A 		
+		border-width: 0 1px 1px
+	&:before
+		left: 3px
+		right: 3px
+		bottom: -3px
+	&:after
+		left: 7px
+		right: 7px
+		bottom: -5px	
+	&:hover
+		color: #8A8A8A 		
 	sup
 		position: relative
 		top: -5px
@@ -803,7 +806,7 @@ button
 		&.is-hover
 			background: #f9f5d9
 			box-shadow: 0 0 6px rgba(0,0,0,.4) inset 
-.list__elements
+.list-wrap
 	margin-bottom: 40px 
 
 
