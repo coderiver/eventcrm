@@ -637,7 +637,7 @@ button
 			color: $red 
 		
 //list
-.list__title
+.item__title
 	display: table
 	+fbold
 	font-size: 14px
@@ -650,7 +650,7 @@ button
 	bottom: 20px  
 	padding: 50px 3px 0 0
 	overflow: auto   
-.list
+.item
 	position: relative
 	min-height: 44px
 	padding: 15px 20px 15px 15px
@@ -663,14 +663,14 @@ button
 		border-color: #aed3e4
 		box-shadow: 0 0 5px rgba(13,138,202,.3)
 	&.is-made
-		.list__user
+		.item__user
 			p
 				text-decoration: line-through 
 				color: #616161 
 	.activity
 		float: right
 		margin: 13px 0 0 20px
-.list__ico, .list__status
+.item__ico, .item__status
 	float: left
 	width: 30px
 	height: 44px
@@ -678,7 +678,7 @@ button
 	line-height: 44px
 	text-align: center
 	font-size: 0 
-.list__status
+.item__status
 	i
 		position: relative
 		display: inline-block
@@ -693,14 +693,14 @@ button
 			top: 7px
 			left: 6px
 			+s(checkbox)
-.list__ico-money, .list__ico-man
+.item__ico-money, .item__ico-man
 	display: inline-block
 	vertical-align: middle
-.list__ico-man
+.item__ico-man
 	+s(list-man)
-.list__ico-money
+.item__ico-money
 	+s(list-money)
-.list__date
+.item__date
 	float: left
 	width: 82px
 	padding-top: 2px
@@ -713,12 +713,12 @@ button
 	span
 		font-size: 13px
 		color: #6E6E6E 
-.list__date_mod, .list__date_green
+.item__date_mod, .item__date_green
 	width: 102px
-.list__date_green
+.item__date_green
 	strong
 		color: $green 
-.list__price
+.item__price
 	float: right
 	height: 44px
 	margin-left: 20px
@@ -729,7 +729,7 @@ button
 	i
 		display: inline-block
 		+s(rub)
-.list__content
+.item__content
 	display: table-cell
 	height: 44px
 	font-size: 16px
@@ -740,7 +740,7 @@ button
 		color: $blue
 	span
 		color: #8f8f8f
-.list__more
+.item__more
 	padding: 3px 0 4px
 	text-align: center
 .btn-more
@@ -779,7 +779,7 @@ button
 		font-family: Arial, sans-serif 
 		font-size: 11px
 		color: #fff
-.list__types
+.item__types
 	position: absolute
 	top: -1px
 	left: -1px
@@ -806,7 +806,7 @@ button
 		&.is-hover
 			background: #f9f5d9
 			box-shadow: 0 0 6px rgba(0,0,0,.4) inset 
-.list-wrap
+.items-group
 	margin-bottom: 40px 
 
 
