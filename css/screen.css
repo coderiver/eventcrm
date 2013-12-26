@@ -26,9 +26,11 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: novablackc; src: url("fonts/proximanova-cond-black.eot"); src: url("fonts/proximanova-cond-black.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-cond-black.woff") format("woff"), url("fonts/proximanova-cond-black.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-*::-webkit-scrollbar { width: 5px; height: 5px; }
-*::-webkit-scrollbar-thumb { width: 5px; background: #525252; border-radius: 3px; }
-*::-webkit-scrollbar-track-piece { background: none; }
+::-webkit-scrollbar { width: 5px; height: 5px; }
+
+::-webkit-scrollbar-thumb { width: 5px; background: #525252; border-radius: 3px; }
+
+::-webkit-scrollbar-track-piece { background: none; }
 
 body { background: #f4f4f4; font-family: "novareg", arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 1.4; color: #262626; }
 
@@ -44,7 +46,7 @@ button { background: none; }
 
 .container { position: absolute; top: 55px; left: 300px; right: 0; bottom: 0; }
 
-.container__in { padding: 20px; }
+.container__in { padding: 0 20px; }
 
 .logo { position: absolute; top: 0; left: 20px; height: 55px; font-family: "novablackc", arial, sans-serif; line-height: 55px; font-size: 38px; color: white; }
 .logo span { color: #cccccc; }
@@ -168,11 +170,16 @@ button { background: none; }
 .subscribe__list a { display: block; width: 86px; height: 30px; background: white; line-height: 30px; font-size: 13px; text-transform: uppercase; color: #e76e66; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .subscribe__list a:hover { background: #e76e66; color: white; }
 
-.top { height: 50px; padding: 0 20px; background: #cccccc; }
+.top { position: relative; height: 50px; padding: 0 20px; background: #cccccc; }
 .top .filter-list { margin-top: 16px; }
 
 .top__title { display: table-cell; height: 50px; vertical-align: middle; font-family: "novabold", arial, sans-serif; font-size: 18px; }
 .top__title sup { position: relative; top: -4px; font-size: 12px; vertical-align: top; }
+
+.top__line { position: absolute; left: 21px; right: 21px; top: 100%; height: 14px; background: white; border: 1px solid #cdcdcd; border-top: 0; box-shadow: inset 0 -1px 0 #fcfcfc; }
+.top__line:before, .top__line:after { content: ""; position: absolute; border: 1px solid #cdcdcd; border-top: 0; background: #fcfcfc; }
+.top__line:before { left: 3px; right: 3px; bottom: -3px; }
+.top__line:after { left: 6px; bottom: -5px; right: 6px; }
 
 .filter-list { float: right; }
 .filter-list li { float: left; margin-left: 40px; }
@@ -186,7 +193,7 @@ button { background: none; }
 
 .list__title { display: table; font-family: "novabold", arial, sans-serif; font-size: 14px; text-transform: uppercase; }
 
-.list__wrap { position: absolute; top: 100px; left: 20px; right: 17px; bottom: 20px; padding-right: 3px; overflow: auto; }
+.list { position: absolute; top: 50px; left: 20px; right: 17px; bottom: 20px; padding: 50px 3px 0 0; overflow: auto; }
 
 .list__item { position: relative; min-height: 44px; padding: 15px 20px 15px 15px; margin-bottom: 7px; border: 1px solid #cccccc; background: white; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; *zoom: 1; }
 .list__item:after { content: " "; display: table; clear: both; }
@@ -274,7 +281,9 @@ button { background: none; }
 .date__next i { right: 10px; background: url('../img/icons-s5c1800f9a9.png') 0 -457px no-repeat; width: 9px; height: 14px; }
 .date__next:hover i { background: url('../img/icons-s5c1800f9a9.png') 0 -504px no-repeat; width: 9px; height: 14px; }
 
-.calendar { position: absolute; top: 50px; left: 50%; width: 300px; margin-left: -155px; background: white; border: 5px solid #e76e66; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.15); }
+.date_current span { border-bottom: none; color: black; font-family: "novabold", arial, sans-serif; vertical-align: middle; font-size: 18px; }
+
+.calendar { position: absolute; top: 100px; left: 50%; width: 300px; margin-left: -155px; background: white; border: 5px solid #e76e66; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.15); }
 
 .calendar__years, .calendar__months { text-align: center; font-size: 0; }
 .calendar__years li, .calendar__months li { display: inline-block; vertical-align: top; }
@@ -292,9 +301,11 @@ button { background: none; }
 .calendar__months a:hover { color: #e76e66; }
 
 .dropbox { position: absolute; width: 250px; height: 52px; z-index: 777; cursor: pointer; }
-.dropbox.is-many:before, .dropbox.is-many:after { content: ""; position: absolute; width: 250px; height: 52px; background: white; }
+.dropbox.is-many:before, .dropbox.is-many:after { content: ""; position: absolute; width: 250px; height: 52px; background: white; -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -o-transition: all 0.15s linear; transition: all 0.15s linear; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 .dropbox.is-many:before { top: 3px; left: 2px; box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); z-index: 4; }
 .dropbox.is-many:after { top: 5px; left: 4px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.6); z-index: 2; }
+.dropbox:hover:before { -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -webkit-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
+.dropbox:hover:after { -moz-transform: rotate(6deg); -o-transform: rotate(6deg); -webkit-transform: rotate(6deg); -ms-transform: rotate(6deg); transform: rotate(6deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 
 .dropbox__in { position: relative; padding: 6px 10px; background: white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); z-index: 10; }
 .dropbox__in > strong, .dropbox__in > span { display: block; font-weight: normal; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; font-family: "novaregc", arial, sans-serif; }
