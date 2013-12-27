@@ -1,0 +1,51 @@
+.overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 10000
+    overflow: auto
+    background: rgba(0,0,0,.7) 
+    
+.popup
+    position: fixed
+    top: 105px
+    left: 50%
+    z-index: 20000
+    margin-left: -350px
+    padding: 25px 123px 63px
+    width: 700px
+    background: #f7f7f7 
+    +box
+    box-shadow: 0 10px 38px rgba(0,0,0,.25)
+    .form__title
+        margin-bottom: 44px
+    .btn-close
+        position: absolute
+        top: -11px
+        right: -11px
+    .textarea
+        height: 277px
+        resize: none
+    &.is-not-fixed
+        position: absolute
+.popup-open
+    .out,
+    .dropbox
+        -webkit-filter: blur(2px)
+.btn-close
+    position: relative
+    background: $red
+    width: 22px
+    height: 22px
+    border-radius: 50% 
+    &:active
+        margin-top: 1px
+    &:after
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        margin: -6px 0 0 -6px
+        +s(close)  

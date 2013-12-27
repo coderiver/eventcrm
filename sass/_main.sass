@@ -1,8 +1,8 @@
-// Normally mainpage styles
-
 .field
 	width: 340px
 	margin: 0 auto
+.field_liquid
+	width: 100%
 .field__title
 	margin-bottom: 10px
 	text-transform: uppercase
@@ -20,12 +20,20 @@
 			top: 50%
 			margin-top: -4px
 			+s(required)
-.input-wrap__left
-	float: left
-	width: 48.5%
-.input-wrap__right
-	float: right
-	width: 48.5%
+	&.is-valid-ok
+		&:after 
+			content: ""
+			position: absolute
+			right: 15px
+			top: 50%
+			margin-top: -6px
+			+s(valid-ok)
+.input-wrap_btn
+	.btn
+		float: right
+		width: 164px
+		&:first-child
+			float: left
 .input
 	border: 1px solid #b6b6b6
 	padding: 0 12px 
@@ -43,6 +51,9 @@
 	&:focus
 		border: 1px solid #aed3e4
 		box-shadow: 0 0 5px rgba(13, 138, 202, 0.3)
+.textarea
+	padding: 12px
+	resize: vertical
 .btn
 	display: inline-block
 	padding: 0 20px 
@@ -75,7 +86,7 @@ a.btn
 	line-height: 1
 	strong
 		display: block
-		margin-bottom: 3px
+		margin: 3px 0
 		font-size: 22px
 		+fbold
 		color: #000
@@ -83,6 +94,8 @@ a.btn
 	span
 		font-size: 12px
 		color: #828282 
+	+ .form__info
+		margin-top: -14px
 .form__title_big
 	strong
 		font-size: 26px
@@ -117,4 +130,6 @@ a.btn
 		display: block
 		border-radius: 50%
 		border: 4px solid #e8e8e8s
-	
+.form__info
+	margin-bottom: 14px
+	font-size: 14px
