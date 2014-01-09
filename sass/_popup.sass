@@ -49,3 +49,53 @@
         left: 50%
         margin: -6px 0 0 -6px
         +s(close)  
+
+.pay-balance   
+    +clr
+.pay-balance__item
+    float: left
+    margin: 0 1px 1px 0 
+    a
+        display: block
+        padding: 13px 0 
+        width: 150px
+        font-size: 16px
+        line-height: 1
+        color: #fff
+        background: #3cb080  
+        &.is-active
+            background: #2a855f 
+            box-shadow: inset 0 2px 3px rgba(0,0,0,.4)
+            color: #125c3d 
+.popup_balance
+    .form__title
+        margin-bottom: 6px
+        strong
+            margin-bottom: 40px
+.pay-balance-summ
+    margin: 15px 0 62px
+    +clr
+    .input
+        float: left
+        margin-right: 15px
+        width: 150px
+    .checkbox
+        float: left
+        margin-top: 8px
+        text-align: left
+        div
+            overflow: hidden
+        span
+            font-size: 15px
+            display: block
+        strong
+            font-size: 13px
+            color: #3cb080
+            +fbold
+            font-weight: normal 
+    .rubl-icon
+        +rubl-b
+        font-size: 11px
+.rubl-icon
+    +rubl
+    font-style: normal
