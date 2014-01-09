@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Popup reg soc</title>
+	<title>Popup Make an appointment</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.js"></script>
@@ -459,39 +459,29 @@
 <div class="popup js-popup js-active">
 	<div class="form">
 		<div class="form__title form__title_big">
-			<span>вход в систему</span>
-			<strong>Входите. Открыто.</strong>
+			<span>запись на консультацию к</span>
+			<strong>Василию Николаеву</strong>
+			<a href="#" class="form__title-link">Сменить</a>
 		</div>
 		<div class="user-enter-img">
 			<img src="http://lorempixel.com/100/100" alt="" width="100" height="100">
 		</div>
+		<div class="form__title form__title_small">
+			<strong>Александр Бахматицкий</strong>
+			<span>Клиент</span>		
+		</div>
 		<form action="">
 			<div class="field">
-				<div class="input-wrap is-valid-ok">
-					<input type="text" class="input" value="Андрей" placeholder="Ваше имя">
+				<div class="input-wrap input-wrap_three">
+					<div class="input-calendar">
+						<input type="text" class="input" value="2.05.2013" placeholder="Дата">
+					</div>
+					<input type="text" class="input" placeholder="Время">
+					<input type="text" class="input" placeholder="Цена">
 				</div>
-				<div class="input-wrap is-valid-ok">
-					<input type="text" class="input" value="Васильев" placeholder="Фамилия">
-				</div>
-				<div class="input-wrap">
-					<input type="text" class="input" placeholder="Введите название компании">
-				</div>
-				<div class="input-wrap">
-					<input type="tel" class="input" placeholder="Номер телефона">
-				</div>
-				<div class="input-wrap is-valid-error">
-					<input type="email" class="input" value="blah-blah" placeholder="Электронная почта для входа">
-				</div>
-				<div class="input-wrap input-wrap_radio">
-					<input type="password" class="input" placeholder="Пароль">
-					<label class="input-key">
-						<input type="checkbox" checked>
-						<span><i></i></span>
-						<strong>показать пароль</strong>
-					</label>
-				</div>
-				<div class="input-wrap input-wrap_send">
-					<input type="submit" class="btn btn_liquid btn_red" value="Начать работу в системе">
+				<div class="input-wrap input-wrap_btn">
+					<input type="reset" class="btn btn_gray btn_liquid" value="Отмена">
+					<input type="submit" class="btn btn_red btn_liquid" value="Сохранить">
 				</div>
 			</div>
 		</form>

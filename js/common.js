@@ -30,8 +30,11 @@ $(document).ready(function() {
 	}
 	tooltip();
 	var popup = $(".js-popup.js-active");
-	var popup_height = popup.outerHeight();
-	var popup_top = popup.offset().top;
+	
+	if (popup.length > 0) {
+		var popup_height = popup.outerHeight();
+		var popup_top = popup.offset().top;
+	}
 	function popupPosition() {
 		if ($(window).height() <= popup_height + popup_top) {
 			popup.addClass("is-not-fixed");
@@ -44,5 +47,43 @@ $(document).ready(function() {
 	$(window).resize(function(){
 		popupPosition();
 	})
+
+	$(document).click(function() {
+        $(".js-select-list").hide();
+        $(".js-select").removeClass("is-active");
+    });
+    function select() {
+        $(".js-select").each(function(){
+            var select_list = $(this).find(".js-select-list");
+            var text = select_list.find("li").first().text();
+            $(this).find(".js-select-text").text(text);
+            $(this).click(function(event){
+                if ($(this).hasClass("is-active")) {
+                    $(this).removeClass("is-active");
+                    select_list.slideUp("fast");
+                }
+                else {
+                    $(".js-select").removeClass("is-active");
+                    $(".js-select-list").hide();
+                    select_list.slideDown("fast");
+                    $(this).addClass("is-active");
+                }
+                event.stopPropagation();
+            });
+            select_list.find("li").click(function(event) {
+                var id = $(this).attr("data-id");
+                var text = $(this).text();
+                $(this).parent().parent().find(".js-select-text").text(text);
+                $(this).parent().parent().find(".js-select-input").val(id);
+                $(this).parent().hide();
+                $(this).parents(".js-select").removeClass("is-active");
+                event.stopPropagation();
+            });
+        });
+    }
+    select();
+    $('.js-select').click(function(event){
+        event.stopPropagation();
+    });
 
 });

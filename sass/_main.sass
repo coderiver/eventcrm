@@ -3,6 +3,16 @@
 	margin: 0 auto
 .field_liquid
 	width: 100%
+.field_group
+	margin-bottom: 55px
+	&:last-child
+		margin-bottom: 0
+.field__group-title 
+	display: block
+	margin: 15px 0 10px
+	font-size: 13px
+	color: #8a8a8a
+	text-align: center
 .field__title
 	margin-bottom: 10px
 	text-transform: uppercase
@@ -40,6 +50,34 @@
 		width: 164px
 		&:first-child
 			float: left
+	.input-key
+		float: right
+		margin-top: 2px
+.input-wrap_footer
+	margin-top: 38px
+.input-wrap_select
+	+clr
+	.select
+		float: left
+		margin-right: -1px
+		width: 41%
+	.input
+		float: left
+		width: 59%
+.input-wrap_three
+	.input,
+	.input-calendar
+		width: 112px
+		float: left
+		margin-left: 2px
+		&:first-child
+			margin-left: 0
+.input-wrap__text
+	float: right
+	margin-top: 15px
+
+
+
 .input
 	border: 1px solid #b6b6b6
 	padding: 0 12px 
@@ -60,6 +98,22 @@
 .textarea
 	padding: 12px
 	resize: vertical
+.input-calendar
+	position: relative
+	margin-left: 0
+	.input
+		padding: 0 5px 0 35px
+		width: 100%
+		background: transparent
+		+fbold 
+	&:before
+		content: ""
+		position: absolute
+		left: 11px
+		top: 11px
+		+s(cal) 
+		z-index: -1
+
 .btn
 	display: inline-block
 	padding: 0 20px 
@@ -86,6 +140,7 @@ a.btn
 		background: #FC786F 
 .btn_gray
 	background: #cbcbcb
+	color: #000 
 	&:hover
 		background: #d7d7d7 	
 		
@@ -104,9 +159,20 @@ a.btn
 		color: #828282 
 	+ .form__info
 		margin-top: -14px
+	
+.form__title-link
+	display: inline-block
+	border-bottom: 1px dotted
+	font-size: 13px
+	line-height: 1 
+
 .form__title_big
 	strong
 		font-size: 26px
+.form__title_small
+	strong
+		font-size: 16px
+
 .form
 	text-align: center
 	font-size: 18px
@@ -150,7 +216,7 @@ a.btn
 	span
 		position: relative
 		display: block
-		margin: 0 auto 
+		margin: 0 auto 2px
 		width: 50px
 		height: 20px
 		+box
@@ -196,4 +262,147 @@ a.btn
 			top: 50%
 			margin: -3px 0 0 -4px 
 			+s(arr1) 
- 
+
+//checkbox
+.checkbox
+	position: relative
+	display: block
+	font-size: 0 
+	cursor: pointer
+	+clr
+	> i
+		position: relative
+		float: left
+		width: 21px 
+		height: 21px
+		margin-right: 11px
+		border: 1px solid #bdbdbd
+		border-radius: 50%
+		+nosel
+	> input
+		position: absolute
+		top: 5px
+		left: 5px
+		opacity: 0 
+		z-index: 2 
+		&:checked + i
+			width: 23px
+			height: 23px
+			border: none
+			background-color: #e76d65
+			box-shadow: inset 0 2px 0 rgba(0,0,0,.15)
+			&:before
+				content: ""
+				position: absolute
+				top: 7px
+				left: 6px
+				+s(checkbox)
+.checkbox__in
+	display: block
+	overflow: hidden
+	font-size: 13px
+	+nosel
+	
+.soc-enter
+	overflow: hidden
+	a
+		float: left
+		margin: 0 40px 18px 0 
+	.wrapper
+		margin-bottom: -18px
+	.block-or
+		position: absolute
+		right: 0
+		top: 50%
+		margin-top: -20px
+		
+.soc-enter__fb
+	+s(soc-fb)
+.soc-enter__odn
+	+s(soc-odn)
+.soc-enter__vk
+	+s(soc-vk)
+.soc-enter__g
+	+s(soc-g) 
+.soc-enter__tw
+	+s(soc-tw)
+.soc-enter__mail
+	+s(soc-mail)
+
+.block-or
+	position: relative
+	width: 40px
+	height: 40px
+	line-height: 41px
+	text-align: center
+	border: 1px solid
+	+border-radius(50%)
+	font-size: 10px
+	color: #c6c6c6 
+	+box
+	&:after,
+	&:before
+		content: "" 
+		position: absolute
+		left: 50%
+		width: 1px
+		height: 500px
+		background: #c6c6c6 
+	&:before
+		top: -500px
+	&:after  
+		bottom: -500px
+		
+.select
+	position: relative
+	cursor: pointer
+	font-size: 12px
+	+gpu
+	&.is-active
+		.select__text
+			&:after
+				+rotate(-180)
+.select_white
+	background: #fff 
+.select__text
+	position: relative
+	display: block
+	padding: 0 25px 0 11px 
+	height: 41px
+	font-size: 13px
+	+fbold
+	+box
+	line-height: 41px
+	border: 1px solid #b6b6b6
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	&:after
+		content: ""
+		position: absolute
+		right: 15px
+		top: 50%
+		margin-top: -4px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 8px 4px 0 4px
+		border-color: #000 transparent transparent transparent
+		+transition(all .2s linear)
+.select__list
+	position: absolute
+	display: none
+	left: 0
+	right: 0
+	top: 100%
+	z-index: 100
+	border: 1px solid #b6b6b6
+	border-top: 0 
+	background: #fff
+	li
+		padding: 11px 
+		cursor: pointer
+		line-height: 1
+		&:hover
+			background: $blue
+			color: #fff 
