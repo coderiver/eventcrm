@@ -99,3 +99,37 @@
 .rubl-icon
     +rubl
     font-style: normal
+
+.user-enter-img
+    position: relative
+    margin-bottom: 32px
+    img
+        position: relative
+        z-index: 2
+        margin: 0 auto 
+        display: block
+        border: 4px solid #fff
+        +border-radius(50%)
+        background: #fff 
+    &:after
+        content: ""
+        position: absolute
+        top: 47px
+        left: 50%
+        margin-left: -54px
+        width: 200px 
+        height: 108px
+        +border-radius(40px)
+        +gh(rgba(0,0,0,.04), rgba(0,0,0,0) 100%)
+        +rotate(45)
+
+.input-wrap_radio
+    +clr
+    .input
+        float: left
+        width: 220px
+    .input-key
+        float: right
+        margin-top: 2px
+.input-wrap_send
+    margin-top: 13px

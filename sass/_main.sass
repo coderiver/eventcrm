@@ -20,14 +20,20 @@
 			top: 50%
 			margin-top: -4px
 			+s(required)
-	&.is-valid-ok
-		&:after 
+	&.is-valid-ok,
+	&.is-valid-error
+		&:after
 			content: ""
 			position: absolute
 			right: 15px
 			top: 50%
 			margin-top: -6px
+	&.is-valid-ok
+		&:after 
 			+s(valid-ok)
+	&.is-valid-error
+		&:after 
+			+s(valid-error)
 .input-wrap_btn
 	.btn
 		float: right
@@ -135,3 +141,59 @@ a.btn
 .form__info
 	margin-bottom: 14px
 	font-size: 14px
+	
+.input-key
+	display: block
+	position: relative
+	cursor: pointer
+	text-align: center
+	span
+		position: relative
+		display: block
+		margin: 0 auto 
+		width: 50px
+		height: 20px
+		+box
+		border: 1px solid #a0a0a0
+		+border-radius(10px)
+		background: transparent 
+	input
+		position: absolute
+		left: 50%
+		margin-left: -25px
+		top: 0
+		z-index: 2
+		width: 50px
+		height: 20px
+		opacity: 0
+		cursor: pointer
+		&:checked
+			+ span
+				i
+					left: 3px
+					background: #3cb080 
+	strong
+		color: #a4a4a4
+		font-size: 13px
+		font-weight: normal
+		+fbold
+		+unselectable
+						
+	i
+		position: absolute
+		left: 31px
+		top: 50%
+		margin-top: -7px
+		width: 14px
+		height: 14px
+		+border-radius(50%)
+		background: $red
+		+transition(all .1s linear)
+		&:before	
+			content: ""
+			position: absolute
+			left: 50%
+			top: 50%
+			margin: -3px 0 0 -4px 
+			+s(arr1) 
+ 
