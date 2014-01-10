@@ -259,7 +259,7 @@
 	</div>
 	<!-- END sidebar-->
 	<!-- BEGIN  container-->
-	<div class="container">
+	<div class="container container_feed">
 		<div class="top">
 			<ul class="filter-list">
 				<li class="is-active"><a href="#">Новое</a></li>
@@ -339,66 +339,99 @@
 				<div class="item__more">
 					<button class="btn-more">Показать больше<sup>25</sup></button>
 				</div>
-			</div>
-			<div class="items-group">
-				<div class="items-group__wrap">
-					<div class="items-nav wrap">					
-						<ul class="filter-list">
-							<li class="is-active"><a href="#">Все</a></li>
-							<li><a href="#">В ожидании</a></li>
-							<li><a href="#">выполнены</a></li>
-							<li><a href="#">Просрочены</a></li>       
-						</ul>
-						<div class="filter-title">задачи</div>
-					</div>
-					<div class="item">
-						<label class="checkbox">
-							<input type="checkbox"><i></i>
-						</label>
-						<div class="item__date">
-							<strong>2.05</strong>
-							<span>понедельник</span>
+				<div class="items-group">
+					<div class="items-group__wrap">
+						<div class="items-nav wrap">					
+							<ul class="filter-list">
+								<li class="is-active"><a href="#">Все</a></li>
+								<li><a href="#">В ожидании</a></li>
+								<li><a href="#">выполнены</a></li>
+								<li><a href="#">Просрочены</a></li>       
+							</ul>
+							<div class="filter-title">задачи</div>
 						</div>
-						<div class="item__content">
-							<span>Задача для</span><a href="#">Наташи Наумовой</a>
-							<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
+						<div class="item item_task">
+							<label class="checkbox">
+								<input type="checkbox"><i></i>
+							</label>
+							<div class="item__date">
+								<strong>2.05</strong>
+								<span>понедельник</span>
+							</div>
+							<div class="item__content">
+								<span>Задача для</span><a href="#">Наташи Наумовой</a>
+								<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
+							</div>
+							<button class="btn-edit"></button>
+							<button class="btn-del"></button>
 						</div>
-					</div>
-					<div class="items-nav wrap">					
-						<div class="filter-title">Актуальные события</div>
-					</div>
-					<div class="item">
-						<div class="item__date list__date_green">
-							<strong>19</strong>
-							<span>понедельник</span>
+						<div class="item item_task">
+							<label class="checkbox">
+								<input type="checkbox"><i></i>
+							</label>
+							<div class="item__date">
+								<strong>2.05</strong>
+								<span>понедельник</span>
+							</div>
+							<div class="item__content">
+								<span>Задача для</span><a href="#">Наташи Наумовой</a>
+								<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
+							</div>
+							<button class="btn-edit"></button>
+							<button class="btn-del"></button>
 						</div>
-						<ul class="activity">
-							<li><i class="activity__ico-1"></i><span>856</span></li>
-							<li><i class="activity__ico-2"></i><span>56</span></li>
-							<li><i class="activity__ico-3"></i><span>6</span></li>
-							<li><i class="activity__ico-4"></i><span>56</span></li>
-						</ul>
-						<div class="item__content">
-							<a href="#">Введение в индоевропейское языкознание </a>
+						<div class="item-edit">
+							<div class="item-edit__top">
+								<span>Задача для</span> <a href="#">Наташи Наумовой</a>
+							</div>
+							<textarea class="input textarea">Новый большой внедорожник в настоящее время существует в виде полноразмерной глиняной модели.</textarea>
+							<div class="item-edit__action">
+								<div class="input-calendar">
+									<input type="text" class="input" value="2.05.2013">
+								</div>
+								<div class="item-edit__btn">
+									<input type="reset" class="btn btn_gray btn_liquid" value="Отмена">
+									<input type="submit" class="btn btn_red btn_liquid" value="Продолжить">
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="items-nav wrap">					
-						<ul class="filter-list">
-							<li class="is-active"><a href="#">Все</a></li>
-							<li><a href="#">игорь кошельников</a></li>
-							<li><a href="#">игорь петров</a></li>
-							<li><a href="#">игорь петров</a></li>     
-						</ul>
-						<div class="filter-title">Консультации</div>
-					</div>
-					<div class="item">
-						<div class="item__date list__date_mod">
-							<strong>19:00</strong>
-							<span>2 ноября</span>
+						<div class="items-nav wrap">					
+							<div class="filter-title">Актуальные события</div>
 						</div>
-						<div class="item__content">
-							<a href="#">Евгений Горелый</a>
-							<span>Цвет и композиция</span>
+						<div class="item">
+							<div class="item__date list__date_green">
+								<strong>19</strong>
+								<span>понедельник</span>
+							</div>
+							<ul class="activity">
+								<li><i class="activity__ico-1"></i><span>856</span></li>
+								<li><i class="activity__ico-2"></i><span>56</span></li>
+								<li><i class="activity__ico-3"></i><span>6</span></li>
+								<li><i class="activity__ico-4"></i><span>56</span></li>
+							</ul>
+							<div class="item__content">
+								<a href="#">Введение в индоевропейское языкознание </a>
+							</div>
+						</div>
+						<div class="items-nav wrap">					
+							<ul class="filter-list">
+								<li class="is-active"><a href="#">Все</a></li>
+								<li><a href="#">игорь кошельников</a></li>
+								<li><a href="#">игорь петров</a></li>
+								<li><a href="#">игорь петров</a></li>     
+							</ul>
+							<div class="filter-title">Консультации</div>
+						</div>
+						<div class="item">
+							<div class="item__date list__date_mod">
+								<strong>19:00</strong>
+								<span>2 ноября</span>
+							</div>
+							<div class="item__content">
+								<a href="#">Евгений Горелый</a>
+								<span class="with-icon">>></span>
+								<a href="#">Андрей Опарышев</a>
+							</div>
 						</div>
 					</div>
 				</div>

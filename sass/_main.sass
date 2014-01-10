@@ -112,7 +112,7 @@
 		left: 11px
 		top: 11px
 		+s(cal) 
-		z-index: -1
+		z-index: 1
 
 .btn
 	display: inline-block
@@ -459,3 +459,19 @@ a.btn
 		border: 1px solid #c5c5c5
 		+border-radius(50%)
 		//+transition(all .2s linear)
+		
+.btn-edit
+	+s(edit)
+.btn-del
+	+s(del)
+
+.with-icon
+	display: inline-block
+	vertical-align: middle
+	width: 44px
+	height: 16px
+	text-align: center
+	color: #fff
+	line-height: 16px
+	background: #1ea46d  
+	font-size: 12px
