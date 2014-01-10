@@ -8,7 +8,7 @@ $(document).ready(function() {
 		btn.hover(function(){
 			var text = $(this).attr('data-tooltip');
 			el.find('.tooltip__text').html(text);
-			el.fadeIn(200);
+			el.toggle();
 			var el_width = el.width();
 			var pos_top = $(this).offset().top;
 			var pos_left = $(this).offset().left;
@@ -24,8 +24,6 @@ $(document).ready(function() {
 				el.css({'left': pos_left + width/2 - el_width/2});
 				arr.css({'left': el_width/2 - 3});	
 			}		
-		},function(){
-			el.fadeOut(200);
 		});
 	}
 	tooltip();
