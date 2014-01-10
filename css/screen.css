@@ -359,7 +359,7 @@ a.btn { line-height: 41px; }
 .items-nav { margin: 35px 0 7px; }
 .items-nav:first-child { margin-top: 0; }
 
-.items-group { position: relative; margin-top: 48px; padding-top: 35px; background: #ececec; }
+.items-group { position: relative; margin-top: 48px; padding-top: 35px; background: #cccccc; }
 
 .item { position: relative; min-height: 44px; padding: 15px 20px 15px 15px; margin-bottom: 7px; border: 1px solid #cccccc; background: white; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; *zoom: 1; }
 .item:after { content: " "; display: table; clear: both; }
