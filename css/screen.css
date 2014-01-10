@@ -352,7 +352,9 @@ a.btn { line-height: 41px; }
 
 .filter-title { display: table; font-family: "novabold", Arial, sans-serif; font-size: 14px; text-transform: uppercase; }
 
-.container__wrap { position: absolute; top: 50px; left: 20px; right: 10px; bottom: 20px; padding: 50px 10px 0 0; overflow-y: auto; overflow-x: visible; }
+.container__in { position: absolute; top: 50px; left: 0; right: 0; bottom: 20px; padding: 50px 0px 0; overflow-y: auto; overflow-x: visible; }
+
+.container__wrap { padding: 0 20px 0; }
 .container__wrap > .items-nav { margin-top: -40px; }
 .container__wrap > .items-nav:first-child { margin-top: -40px; }
 
