@@ -47,11 +47,54 @@
     margin-left: -390px
     padding: 25px 163px 63px
     width: 780px
+.popup_full
+    margin-left: -310px
+    padding: 0
+    width: 620px
+    background: #fff 
+    .search
+        width: 100%
+        i
+            left: auto
+            right: 23px
+        input
+            padding: 0 40px 0 20px
+            height: 49px
+            font-size: 16px
+            +placeholder
+                color: #6e6e6e 
+    .item
+        padding: 5px 20px 5px 15px 
+    .item__content
+        span
+            +fregc
+            color: #6e6e6e 
 .popup_add-client
     .field_group
         margin-bottom: 40px
         &:last-child
             margin-bottom: 0
+.popup__header
+    height: 72px
+    text-align: center
+    line-height: 72px
+    background: #f7f7f7 
+.popup__title
+    display: inline-block
+    line-height: 1
+    vertical-align: middle
+    +fbold
+    font-size: 22px
+.popup__footer
+    padding: 21px 0 
+    border-top: 1px solid #e4e4e4 
+    text-align: center
+    background: #f7f7f7 
+    .btn
+        margin-left: 3px
+        width: 162px
+        &:first-child
+            margin-left: 0
 .popup-open
     .out,
     .dropbox
