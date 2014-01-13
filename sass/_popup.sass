@@ -193,10 +193,28 @@
         left: 50%
         margin-left: -54px
         width: 200px 
-        height: 108px
+        height: 100%
         +border-radius(40px)
         +gh(rgba(0,0,0,.04), rgba(0,0,0,0) 100%)
-        +rotate(45)
+        +rotate(45) 
+    a
+        position: absolute
+        top: 59px
+        left: 50%
+        margin-left: -33px
+        z-index: 3
+        width: 65px
+        color: #fff
+        font-size: 13px
+        text-align: center 
+        +transition(all .2s linear)
+        opacity: 0
+    .icon-camera 
+        display: block
+        margin: 0 auto 12px
+        +s(camera)
+        
+
 
 .input-wrap_radio
     +clr

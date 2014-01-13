@@ -126,6 +126,8 @@
 	&:active
 		position: relative
 		top: 1px
+	&:hover
+		opacity: .9
 a.btn
 	line-height: 41px
 .btn_liquid
@@ -133,16 +135,15 @@ a.btn
 	width: 100%
 	text-align: center
 .btn_red
-	background: #e76e66
-	color: #fff
-	&:hover
-		background: #FC786F 
+	background: $red
+	color: #fff86F 
 .btn_gray
-	background: #cbcbcb
-	color: #000 
-	&:hover
-		background: #d7d7d7 	
-		
+	background: $gray
+	color: #000 	
+.btn_green
+	background: $green
+	color: #fff 		
+
 .form__title
 	text-align: center
 	line-height: 1
@@ -475,3 +476,73 @@ a.btn
 	line-height: 16px
 	background: #1ea46d  
 	font-size: 12px
+	
+.radio-key
+	position: relative
+	display: block
+	text-align: center
+	cursor: pointer
+	span
+		position: relative
+		color: $blue 
+		font-size: 15px
+		border-bottom: 1px dotted
+		+tr(color .1s linear)
+		z-index: 4 
+		+fbold
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			width: 47px
+			height: 18px
+			border: 1px solid #9e9e9e
+			background: #ccc
+			border-radius: 10px
+		&:after
+			content: ""
+			position: absolute
+			top: 4px
+			width: 12px
+			height: 12px
+			border-radius: 50%
+			background: $green 
+			+tr(all .05s linear)
+			z-index: 2 
+	input
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0 
+		&:checked + span
+			color: $green
+			border-color: transparent
+	label
+		display: inline-block
+		vertical-align: top
+		+tr(color .1s linear)
+		cursor: pointer
+.radio-key__var-1
+	padding-right: 30px
+	& > span
+		&:before
+			right: -56px
+		&:after
+			right: -51px
+	& > input
+		&:checked + span
+			z-index: 2
+			&:after
+				right: -26px
+.radio-key__var-2
+	padding-left: 30px
+	& > span
+		&:before
+			left: -56px
+		&:after
+			left: -51px
+	& > input
+		&:checked + span
+			z-index: 2
+			&:after
+				left: -25px
