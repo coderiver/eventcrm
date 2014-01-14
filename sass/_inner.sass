@@ -1057,3 +1057,100 @@
 		opacity: .9
 	&:active
 		top: 1px
+
+.integr-title
+	padding: 22px 10px 10px 
+	font-size: 15px
+	+fbold
+.integr
+	position: relative
+	display: table
+	padding: 30px 10px 
+	width: 100%
+	margin-bottom: -1px
+	+box
+	border-bottom: 1px solid #e8e8e8
+	border-top: 1px solid #e8e8e8
+	&.is-inactive
+		.icon
+			+gray
+			opacity: .6
+	&.is-extend
+		padding-bottom: 84px
+.integr__cell
+	display: table-cell
+	padding-right: 10px
+	vertical-align: middle
+	font-size: 14px
+	color: #aaa 
+	&:nth-child(1)
+		width: 70px
+	&:nth-child(3)
+		padding-right: 0
+		text-align: right
+	.btn
+		display: inline-block
+		width: 200px
+		span
+			display: inline-block
+			line-height: 1
+			span
+				font-size: 12px 
+				opacity: .8  
+.integr__title
+	font-size: 15px
+	+fbold  
+	color: #000 
+.integr__extend
+	position: absolute
+	left: 10px
+	bottom: 0
+	right: 10px
+	height: 64px
+	.btn
+		float: right
+		margin-left: 34px
+		width: 200px
+.integr__inputs
+	overflow: hidden
+	.input
+		float: right
+		width: 49%
+		&:first-child
+			float: left
+.icon
+	display: inline-block
+.icon_gp  
+	+s(icon-gp)  
+.icon_gc
+	+s(icon-gc)  
+.icon_vk
+	+s(icon-vk)  
+.icon_fb
+	+s(icon-fb) 
+.icon_tw
+	+s(icon-tw) 
+.icon_od
+	+s(icon-od) 
+.icon_tp
+	+s(icon-tp) 
+.icon_mr
+	+s(icon-mr) 
+
+.btn-extend
+	position: relative
+	width: 24px
+	height: 24px
+	border-radius: 50%
+	border: 3px solid #a6a6a6
+	&:after
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -4px 0 0 -4px 
+		+arr(8,6,#a6a6a6,t)
+	&.is-active
+		&:after
+			+rotate(180)
+			margin-top: -2px

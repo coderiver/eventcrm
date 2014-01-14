@@ -84,4 +84,14 @@ $(document).ready(function() {
         event.stopPropagation();
     });
 
+    function accordion() {
+        $(".js-accordion-list").hide();
+        $(".js-accordion-title").click(function(){
+            $(this).toggleClass("is-active");
+            $(this).parents(".js-accordion").find(".js-accordion-list").slideToggle("fast");
+            $(this).parents(".js-accordion").toggleClass("is-extend");
+        });
+    }
+    accordion();
+
 });

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Download client 2</title>
+	<title>Integration</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.js"></script>
@@ -131,25 +131,129 @@
 			<ul class="menu">
 				<li><a href="#">Кабинет</a></li>               
 				<li><a href="#">Доход</a></li>               
-				<li><a href="#">Интеграция</a></li>               
-				<li><a href="#" class="is-active">Загрузить клиентов</a></li>      
+				<li><a href="#" class="is-active">Интеграция</a></li>               
+				<li><a href="#">Загрузить клиентов</a></li>      
 				<li><a href="#">Настройки</a></li>
 			</ul>			
 		</div>
 		<div class="container__in">
 			<div class="container__wrap">
-				<div class="download">
-					<div class="download__action">
-						<button class="btn btn_liquid btn_red">Выбрать файл</button>
-						<p>Поддерживаются форматы csv, xls и xlsx Максимальный объем — 5 Мб.</p>
-						<p><a href="#">Пример файла для обработки</a></p>
+				<div class="integr-title">
+					Подключить для входа 
+				</div>
+				<div class="integr is-inactive">
+					<div class="integr__cell">
+						<i class="icon icon_gp"></i>
 					</div>
-					<div class="download__field">
-						<i></i>
-						<div>Чтобы начать обработку, выберите файл <br> или перетащите его в эту область.</div>
+					<div class="integr__cell">
+						<div class="integr__title">Google</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_red">Подключить</button>
+					</div>
+				</div>		
+				<div class="integr">
+					<div class="integr__cell">
+						<i class="icon icon_vk"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">VK</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_blue">Отключить</button>
+					</div>
+				</div>	
+				<div class="integr">
+					<div class="integr__cell">
+						<i class="icon icon_fb"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">Facebook</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_blue">Отключить</button>
 					</div>
 				</div>
-				
+				<div class="integr is-inactive">
+					<div class="integr__cell">
+						<i class="icon icon_od"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">Одноклассники</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_red">Подключить</button>
+					</div>
+				</div>		
+				<div class="integr">
+					<div class="integr__cell">
+						<i class="icon icon_tw"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">Twitter</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_blue">Отключить</button>
+					</div>
+				</div>
+				<div class="integr">
+					<div class="integr__cell">
+						<i class="icon icon_mr"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">Mail.ru</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_blue">Отключить</button>
+					</div>
+				</div>
+				<div class="integr-title">
+					Подключить сервисы
+				</div>
+				<div class="integr is-inactive js-accordion">
+					<div class="integr__cell">
+						<i class="icon icon_tp"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">TimePad</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+						<p><a href="#" class="wtf"><i></i>Как подключить TimePad</a></p>
+					</div>
+					<div class="integr__cell">
+						<button class="btn-extend js-accordion-title"></button>
+					</div>
+					<div class="integr__extend js-accordion-list">
+						<button class="btn btn_liquid btn_red">Подключить</button>
+						<div class="integr__inputs">
+							<input type="text" class="input" placeholder="API">
+							<input type="text" class="input" placeholder="ID">
+						</div>
+					</div>
+				</div>
+				<div class="integr">
+					<div class="integr__cell">
+						<i class="icon icon_gc"></i>
+					</div>
+					<div class="integr__cell">
+						<div class="integr__title">Google контакты</div>
+						Интеграция с почтовыми сообщениями, задачами и календарем
+						<p><a href="#" class="wtf"><i></i>Как синхронизировать контакты с телефоном</a></p>
+					</div>
+					<div class="integr__cell">
+						<button class="btn btn_liquid btn_blue">
+							<span>
+								Отключить
+								<span>mikhaillutkovsky@gmail.com</span>
+							<span>
+						</button>
+					</div>
+				</div>
 			</div>
 
 		</div>
