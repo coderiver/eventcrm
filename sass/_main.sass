@@ -89,7 +89,7 @@
 	font-size: 14px
 	+transition(all .2s linear)
 	+placeholder
-		color: #7d7d7d    
+		color: #7d7d7d		
 	&:hover
 		border: 1px solid #aed3e4
 	&:focus
@@ -121,7 +121,7 @@
 	+box
 	text-decoration: none
 	font-size: 16px
-	+freg  
+	+freg	
 	+transition(all .2s linear)
 	&:active
 		position: relative
@@ -350,11 +350,12 @@ a.btn
 		background: #c6c6c6 
 	&:before
 		top: -500px
-	&:after  
+	&:after	
 		bottom: -500px
 		
 .select
 	position: relative
+	z-index: 2
 	cursor: pointer
 	font-size: 12px
 	+gpu
@@ -455,7 +456,7 @@ a.btn
 					background: #fff 
 					+border-radius(50%)
 					+box-shadow(0 2px 0 rgba(0,0,0,.12))
-  
+	
 	i
 		border: 1px solid #c5c5c5
 		+border-radius(50%)
@@ -474,7 +475,7 @@ a.btn
 	text-align: center
 	color: #fff
 	line-height: 16px
-	background: #1ea46d  
+	background: #1ea46d	
 	font-size: 12px
 	
 .radio-key
@@ -546,3 +547,109 @@ a.btn
 			z-index: 2
 			&:after
 				left: -25px
+				
+
+.menu
+	+clr
+	li
+		float: left
+		width: 20%
+	a
+		position: relative
+		display: inline-block
+		height: 50px
+		line-height: 50px
+		color: $blue
+		font-size: 18px
+		+fbold 
+		&.is-active
+			color: #000
+			&:after 
+				content: ""
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				height: 4px
+				background: #685a8b	
+				
+.progress
+	position: relative
+	height: 42px
+	line-height: 42px
+	font-size: 16px
+	&:after
+		content: attr(data-value) "%"
+		position: absolute
+		right: 20px
+		top: 0
+		bottom: 0
+	&:before
+		content: attr(data-title)
+		position: absolute
+		left: 20px
+		top: 0
+		bottom: 0
+		z-index: 2
+.progress__title
+	position: absolute
+	left: 20  
+	top: 0
+	bottom: 0	
+	z-index: 2		
+// .progress__counter
+// 	position: absolute
+// 	right: 20px
+// 	top: 0
+// 	bottom: 0	
+// 	z-index: 2		
+.progress__main[value]
+	border: none
+	width: 100%
+	height: 100%
+	background: #f1f1f1
+	box-shadow: inset 0 0 4px rgba(0,0,0,.1)
+.progress__main[value]::-webkit-progress-bar
+	background: #f1f1f1
+	box-shadow: inset 0 0 4px rgba(0,0,0,.1)
+
+.progress__main[value]::-webkit-progress-value
+	position: relative
+
+.progress__main
+	&::-webkit-progress-value
+		+gh($red, #8979b3)
+
+.item-row-clients
+	padding-top: 12px
+	.item-row__cell
+		width: 30%
+		&:nth-child(1)
+			width: 40%
+.item-row
+	display: table 
+	padding: 12px 20px
+	margin-bottom: -1px
+	border: 1px solid #ccc
+	width: 100%
+	background: #fff
+	font-size: 16px
+	+tr(all .2s linear)
+	+box
+	.select
+		max-width: 155px
+	&:hover
+		position: relative
+		z-index: 2
+		border-color: #aed3e4
+		box-shadow: 0 0 5px rgba(13, 138, 202, 0.3)
+.item-row__cell
+	display: table-cell
+	vertical-align: middle
+	
+.item-row_head
+	background: none 
+	border: none
+	&:hover
+		border: none
+		box-shadow: none

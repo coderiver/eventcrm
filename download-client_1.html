@@ -129,169 +129,81 @@
 	<!-- BEGIN  container-->
 	<div class="container">
 		<div class="top">
-			<ul class="filter-list">
-				<li class="is-active"><a href="#">Новое</a></li>
-				<li><a href="#">Задачи</a></li>
-				<li><a href="#">События</a></li>
-				<li><a href="#">Консультации</a></li>                                 
-			</ul>
-			<div class="top__title">Лента обновлений</div>			
+			<ul class="menu">
+				<li><a href="#">Кабинет</a></li>               
+				<li><a href="#">Доход</a></li>               
+				<li><a href="#">Интеграция</a></li>               
+				<li><a href="#" class="is-active">Загрузить клиентов</a></li>      
+				<li><a href="#">Настройки</a></li>
+			</ul>			
 		</div>
 		<div class="container__in">
 			<div class="container__wrap">
-				<div class="items-nav wrap">					
-					<ul class="filter-list">
-						<li class="is-active"><a href="#">Все</a></li>
-						<li><a href="#">Оплатили</a></li>
-						<li><a href="#">Подтвердили</a></li>
-						<li><a href="#">пришли</a></li>                           
-					</ul>
-					<div class="filter-title">Новое</div>
-				</div>
-				<div class="item">
-					<div class="item__ico">
-						<i class="item__ico-money"></i>
-					</div>						
-					<div class="item__date">
-						<strong>22:30</strong>
-						<span>2 ноября</span>
-					</div>
-					<div class="item__price">3 000<i class="rubl-icon">Р</i></div>
-					<div class="item__content">
-						<a href="#">Андрей Кутергин</a><span>оплатил</span>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
+				<div class="download-progress">
+					<i class="icon-list-clock"></i>
+					<div class="progress" data-title="Обрабатываем Клиенты.xlsx" data-value="86">
+						<progress class="progress__main" max="100" value="80" class="html5"></progress>
 					</div>
 				</div>
-				<div class="item">
-					<div class="item__ico">
-						<i class="item__ico-man"></i>
-					</div>						
-					<div class="item__date">
-						<strong>22:30</strong>
-						<span>2 ноября</span>
+				<div class="item-row-clients">
+					<div class="item-row item-row_head">
+						<div class="item-row__cell">
+							<div class="select js-select">
+							    <span class="select__text js-select-text">ФИО</span>
+							    <input type="hidden" class="js-select-input" value="0">
+							    <ul class="select__list js-select-list">
+							        <li data-id="0">ФИО</li>
+							        <li data-id="1">var1</li>
+							        <li data-id="2">var2</li>
+							        <li data-id="3">var3</li>
+							    </ul>
+							</div>
+						</div>
+						<div class="item-row__cell">
+							<div class="select js-select">
+							    <span class="select__text js-select-text">Телефон</span>
+							    <input type="hidden" class="js-select-input" value="0">
+							    <ul class="select__list js-select-list">
+							        <li data-id="0">Телефон</li>
+							        <li data-id="1">var1</li>
+							        <li data-id="2">var2</li>
+							        <li data-id="3">var3</li>
+							    </ul>
+							</div>
+						</div>
+						<div class="item-row__cell">
+							<div class="select js-select">
+							    <span class="select__text js-select-text">Почта</span>
+							    <input type="hidden" class="js-select-input" value="0">
+							    <ul class="select__list js-select-list">
+							        <li data-id="0">Почта</li>
+							        <li data-id="1">var1</li>
+							        <li data-id="2">var2</li>
+							        <li data-id="3">var3</li>
+							    </ul>
+							</div>
+						</div>
 					</div>
-					<div class="item__price">3 000<i class="rubl-icon">Р</i></div>
-					<div class="item__content">
-						<a href="#">Андрей Кутергин</a><span>оплатил</span>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
+					<div class="item-row">
+						<div class="item-row__cell">Иванов Сергей Владимирович</div>
+						<div class="item-row__cell">8 916 823 3454</div>
+						<div class="item-row__cell">anov20018@mail.ru</div>
 					</div>
-				</div>
-				<div class="item">
-					<div class="item__ico">
-						<i class="item__ico-money"></i>
-					</div>						
-					<div class="item__date">
-						<strong>22:30</strong>
-						<span>2 ноября</span>
+					<div class="item-row">
+						<div class="item-row__cell">Иванов Сергей Владимирович</div>
+						<div class="item-row__cell">8 916 823 3454</div>
+						<div class="item-row__cell">anov20018@mail.ru</div>
 					</div>
-					<div class="item__price">3 000<i class="rubl-icon">Р</i></div>
-					<div class="item__content">
-						<a href="#">Андрей Кутергин</a><span>оплатил</span>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
+					<div class="item-row">
+						<div class="item-row__cell">Иванов Сергей Владимирович</div>
+						<div class="item-row__cell">8 916 823 3454</div>
+						<div class="item-row__cell">anov20018@mail.ru</div>
 					</div>
-				</div>
-				<div class="item">
-					<div class="item__ico">
-						<i class="item__ico-man"></i>
-					</div>						
-					<div class="item__date">
-						<strong>22:30</strong>
-						<span>2 ноября</span>
+					<div class="item-row">
+						<div class="item-row__cell">Иванов Сергей Владимирович</div>
+						<div class="item-row__cell">8 916 823 3454</div>
+						<div class="item-row__cell">anov20018@mail.ru</div>
 					</div>
-					<div class="item__price">3 000<i class="rubl-icon">Р</i></div>
-					<div class="item__content">
-						<a href="#">Андрей Кутергин</a><span>оплатил</span>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="item__ico">
-						<i class="item__ico-money"></i>
-					</div>						
-					<div class="item__date">
-						<strong>22:30</strong>
-						<span>2 ноября</span>
-					</div>
-					<div class="item__price">3 000<i class="rubl-icon">Р</i></div>
-					<div class="item__content">
-						<a href="#">Андрей Кутергин</a><span>оплатил</span>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="item__ico">
-						<i class="item__ico-man"></i>
-					</div>						
-					<div class="item__date">
-						<strong>22:30</strong>
-						<span>2 ноября</span>
-					</div>
-					<div class="item__price">3 000<i class="rubl-icon">Р</i></div>
-					<div class="item__content">
-						<a href="#">Андрей Кутергин</a><span>оплатил</span>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
-					</div>
-				</div>
-				<div class="items-nav wrap">					
-					<div class="filter-title">Задачи</div>
-				</div>
-				<div class="item">
-					<div class="item__status">
-						<i></i>
-					</div>
-					<div class="item__date">
-						<strong>2.05</strong>
-						<span>понедельник</span>
-					</div>
-					<div class="item__content">
-						<span>Задача для</span><a href="#">Наташи Наумовой</a>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
-					</div>
-				</div>
-				<div class="item is-made">
-					<div class="item__status"><i></i></div>
-					<div class="item__date">
-						<strong>2.05</strong>
-						<span>понедельник</span>
-					</div>
-					<div class="item__content">
-						<span>Задача для</span><a href="#">Наташи Наумовой</a>
-						<p>Руководитель интернет-магазина: сайт, склад, логистика, маркетинг </p>
-					</div>
-				</div>
-				<div class="items-nav wrap">					
-					<div class="filter-title">Актуальные события</div>
-				</div>
-				<div class="item">
-					<div class="item__date list__date_green">
-						<strong>19</strong>
-						<span>понедельник</span>
-					</div>
-					<ul class="activity">
-						<li><i class="activity__ico-1"></i><span>856</span></li>
-						<li><i class="activity__ico-2"></i><span>56</span></li>
-						<li><i class="activity__ico-3"></i><span>6</span></li>
-						<li><i class="activity__ico-4"></i><span>56</span></li>
-					</ul>
-					<div class="item__content">
-						<a href="#">Введение в индоевропейское языкознание </a>
-					</div>
-				</div>
-				<div class="items-nav wrap">					
-					<div class="filter-title">Консультации</div>
-				</div>
-				<div class="item">
-					<div class="item__date list__date_mod">
-						<strong>19:00</strong>
-						<span>2 ноября</span>
-					</div>
-					<div class="item__content">
-						<a href="#">Евгений Горелый</a>
-						<span>Цвет и композиция</span>
-					</div>
-				</div>
-				<div class="item__more">
-					<button class="btn-more">Показать больше<sup>25</sup></button>
 				</div>
 			</div>
 
