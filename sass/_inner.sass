@@ -730,9 +730,12 @@
 	width: 300px
 	margin-left: -155px
 	background: #FFF 
+	line-height: 1
 	border: 5px solid $red
 	box-shadow: 0 14px 24px rgba(0,0,0,.15)
-.calendar__years, .calendar__months
+.calendar__years, 
+.calendar__months,
+.calendar__days
 	text-align: center
 	font-size: 0
 	li
@@ -748,7 +751,6 @@
 		display: inline-block
 		color: #8F8F8F
 		border-bottom: 1px dotted 
-		line-height: 1
 		+tr(all .2s linear)
 		&:hover
 			color: $red 
@@ -762,7 +764,6 @@
 	li
 		width: 25%
 		margin-bottom: 25px
-		line-height: 1
 		&.is-disabled
 			a
 				color: #cecece 
@@ -771,8 +772,70 @@
 		+tr(color .2s linear)
 		&:hover
 			color: $red 
-			
 
+.calendar_static
+	position: static
+	margin-left: 0
+.calendar_extend
+	width: 610px
+	+clr
+	box-shadow: none
+	.calendar__years,
+	.calendar__months
+		float: left
+		height: 225px
+		background: #f1f1f1 
+		li
+			&:last-child
+				margin-bottom: 0
+	.calendar__months
+		border-left: 1px solid #e6e6e6 
+		li
+			width: 33.3%
+		.calendar__title
+			width: 100%
+	.calendar__years
+		width: 75px
+		margin: 0
+		padding: 0
+		li
+			float: none
+			width: 100%
+			margin-bottom: 25px 
+		a
+			color: $blue
+			border-bottom: 0 
+		.calendar__title
+			width: 100%
+	.calendar__months
+		width: 200px
+	.calendar__title
+		height: 27px
+		line-height: 27px
+		color: #adadad
+		font-size: 13px
+		text-align: center
+		width: 100%
+		float: none
+		+fbold
+		border-bottom: 1px solid #e6e6e6 
+	.calendar__days
+		float: left
+		width: 334px
+		+clr
+		li
+			float: left
+			margin-bottom: 25px
+			width: 12.5%
+		a
+			color: $blue
+			+tr(color .2s linear)
+			&:hover
+				color: $red
+		.calendar__title
+			float: none
+			width: 100%
+				
 //dropbox
 .dropbox
 	position: absolute
@@ -1154,3 +1217,142 @@
 		&:after
 			+rotate(180)
 			margin-top: -2px
+			
+
+.steps-wrap
+	overflow: hidden
+	padding-top: 27px
+	text-align: center
+.step
+	position: relative
+	display: inline-block
+	margin-left: 60px
+	+fbold
+	font-size: 15px  
+	color: $blue 
+	&:first-child
+		margin-left: 0  
+	&:last-child
+		.step__img
+			&:after
+				display: none
+	&.is-active
+		color: #929292 
+		i
+			border-color: #929292
+			&:before
+				background: #929292
+	&.is-done
+		color: $green 
+		.step__img
+			&:after
+				background: $green 
+		i
+			border: none
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				+s(done)
+			&:before
+				display: none
+.step__img
+	position: relative
+	z-index: 2
+	display: block
+	margin: 0 auto 
+	width: 60px
+	height: 32px
+	background: #f4f4f4 
+	&:after
+		content: ""
+		position: absolute
+		top: 15px
+		right: -180px
+		width: 180px
+		height: 2px
+		background: $blue
+	i
+		position: relative
+		display: inline-block
+		width: 32px
+		height: 32px
+		border: 3px solid $blue
+		border-radius: 50%
+		+box
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -5px 0 0 -5px
+			width: 10px
+			height: 10px
+			background: $blue   
+			border-radius: 50%
+			
+.title-counter
+	margin-bottom: 12px
+	+fbold
+	font-size: 15px
+	span
+		display: inline-block
+		margin-right: 9px
+		width: 22px
+		height: 22px
+		background: #000  
+		border-radius: 50%
+		color: #fff 
+		text-align: center
+		line-height: 23px
+
+.add-event-wrap
+	padding: 30px 10px
+	border-bottom: 1px solid #e8e8e8 
+	.calendar_extend,
+	.input-wrap_time
+		display: inline-block
+		margin-right: 17px
+		vertical-align: top
+		.input
+			padding-left: 42px
+.add-event
+	position: relative
+	padding: 17px 
+	margin-bottom: -1px
+	min-height: 47px
+	border: 1px solid #ccc
+	+box
+	font-size: 15px
+	.btn
+		width: 260px
+		height: 45px
+		float: right
+	.input-wrap
+		position: absolute
+		right: 260px
+		left: 0
+		top: 0
+	.input
+		border: 0
+		height: 45px
+	a
+		color: $blue 
+.add-event_new
+	padding: 0
+.add-event_place
+	.input-wrap
+		right: 0
+		
+.input-wrap_time
+	width: 120px
+	color: #aaa
+	font-size: 14px 
+	.input
+		margin-bottom: 3px
+	i
+		position: absolute
+		top: 10px
+		left: 10px
+		+s(time)

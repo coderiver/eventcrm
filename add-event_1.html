@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add event 1</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN  header-->
+	<header class="header">
+		<a class="logo" href="#">Event<span>CRM</span></a>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Лента</a></li>
+				<li><a href="#">События<sup>25</sup></a></li>
+				<li class="is-active"><a href="#">Товары</a></li>
+				<li><a href="#">Кабинет</a></li>                           
+			</ul>
+		</nav>
+		<div class="add">
+			<div class="add__in">
+				<button>Добавить</button>
+				<ul>
+					<li><a href="#">Событие</a></li>
+					<li><a href="#">Клиента</a></li>
+					<li><a href="#">Товар</a></li>
+					<li><a href="#">Задачу</a></li>
+				</ul>
+			</div>			
+		</div>
+		<div class="login">
+			<div class="login__head">
+				<img src="http://lorempixel.com/40/40/" alt="">
+				<span>Павел Переятенец<em>срочная задача</em></span>
+				<i></i>
+			</div>
+			<div class="login__drop">
+				<ul class="login__actions">
+					<li><a href="#"><i class="login__ico-setting"></i>Настройки</a></li>
+					<li><a href="#"><i class="login__ico-edit"></i>Редактировать профайл</a></li>
+					<li><a href="#"><i class="login__ico-out"></i>Выйти из системы</a></li>
+				</ul>
+				<div class="login__event">
+					<a class="login__event-item" href="#">
+						<i>23.12.2013 в 18:30</i>
+						<span>Позвонить Андрею Попову +7(656) 554-33-22 и сообщить о событии</span>
+					</a>
+					<a class="login__event-item" href="#">
+						<i>23.12.2013 в 18:30</i>
+						<span>Позвонить Андрею Попову</span>
+					</a>
+				</div>				
+			</div>
+		</div>
+	</header>
+	<!-- END header-->
+	<!-- BEGIN  sidebar-->
+	<div class="sidebar sidebar_info">
+		<div class="sidebar__in">
+			<div class="sidebar__wrap">
+				<div class="user-enter-img">
+					<img src="http://lorempixel.com/180/180" alt="" width="180" height="180">
+					<a href="#">
+						<i class="icon-camera"></i>
+						Загрузить фото
+					</a>
+				</div>
+				<div class="user-item">
+					<div class="user-item__name">Александр Бахмацкий</div>
+					<div>Житомирский учебный  центр ЖНУГХ</div>
+					<a href="#" class="user-item__link">Подписать договор</a>
+					<div class="user-info__balance">
+						баланс
+						<span>3000<i class="rubl-icon">Р</i></span>
+						<a href="#" class="btn btn_liquid btn_green">Пополнить баланс</a>
+					</div>
+					<a href="#" class="wtf"><i></i>Зачем пополнять баланс?</a>
+				</div>
+				<div class="user-tariff">
+					<div class="user-tariff__name">Тариф «Организаторам»  </div>
+					<a href="" class="user-tariff__link">Сменить тариф</a>
+					<div class="wrap">
+						<span class="user-tariff__info">
+							<span>Осталось дней</span>
+							<i class="icon-tariff-day"></i>22
+						</span>
+						<span class="user-tariff__info">
+							<span>СМС</span>
+							<i class="icon-tariff-sms"></i>370
+						</span>
+					</div>
+					<a href="#" class="wtf"><i></i>Как добавить еще СМС</a>
+				</div>
+				<div class="user-balance">
+					<span>На вашем счету</span>
+					<div>45 300, 50<i class="rubl-icon">Р</i></div>
+					<a href="#">Вывести</a>
+				</div>
+				<div class="consult">
+					<div class="consult__title">Личный консультант</div>
+					<div class="user-enter-img">
+						<img src="http://lorempixel.com/36/36" alt="" width="36" height="36">
+					</div>
+					<div class="consult__main">
+						<span>Анастасия Смирнова</span>
+						<div>+7 (495) 723-98-99</div>
+						<div>info@eventcrm.ru</div>
+						<a href="#">Задать вопрос</a>
+					</div>
+				</div>
+				<ul class="faq">
+					<li><a href="#" class="wtf"><i></i>Как пользваться системой</a></li>
+					<li><a href="#" class="wtf"><i></i>Как вставить форму записи на сайт</a></li>
+					<li><a href="#" class="wtf"><i></i>Как сделать e-mail рассылку</a></li>
+					<li><a href="#" class="wtf"><i></i>Как добавить коллег к системе</a></li>
+					<li><a href="#" class="wtf"><i></i>Можно ли пользоваться бесплатно?</a></li>
+					<li><a href="#" class="wtf"><i></i>Как получать участников с ТаймПад?</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END sidebar-->
+	<!-- BEGIN  container-->
+	<div class="container container_mod">
+		<div class="top">
+			<div class="top__title">Добавить событие</div>	
+		</div>
+		<div class="container__in">
+			<div class="container__wrap">
+				<div class="steps-wrap">
+					<div class="step is-active">
+						<span class="step__img"><i></i></span>
+						<span class="step__text">Основные данные</span>
+					</div>
+					<div class="step">
+						<span class="step__img"><i></i></span>
+						<span class="step__text">Дополнительные данные</span>
+					</div>
+					<div class="step">
+						<span class="step__img"><i></i></span>
+						<span class="step__text">Вставка на сайт</span>
+					</div>
+				</div>
+				<div class="add-event-wrap">
+					<div class="title-counter">
+						<span>1</span>Введите название будущего события
+					</div>
+					<div class="add-event add-event_new">
+						<button class="btn btn_red btn_liquyid">Создать новое событие</button>
+						<div class="input-wrap">
+							<input type="text" class="input">
+						</div>
+					</div>
+					<div class="add-event">
+						<a href="#">Дизайн интерьера </a>
+					</div>
+					<div class="add-event">
+						<a href="#">Дизайн интерьера в разных стилях. От арт-деко до минимализма </a>
+					</div>
+				</div>
+				<div class="add-event-wrap">
+					<div class="title-counter">
+						<span>2</span>Выберите дату и время
+					</div>
+					<div class="calendar calendar_static calendar_extend">
+						<ul class="calendar__years">
+							<li class="calendar__title">год</li>
+							<li><a href="#">2016</a></li>
+							<li><a href="#">2015</a></li>
+							<li class="is-active"><a href="#">2014</a></li>
+							<li><a href="#">2013</a></li>
+						</ul>
+						<ul class="calendar__months">
+							<li class="calendar__title">месяц</li>
+							<li><a href="#">Янв</a></li>
+							<li><a href="#">Фев</a></li>
+							<li><a href="#">Мрт</a></li>
+							<li><a href="#">Апр</a></li>
+							<li><a href="#">Май</a></li>
+							<li><a href="#">Июн</a></li>
+							<li><a href="#">Июл</a></li>
+							<li><a href="#">Авг</a></li>
+							<li><a href="#">Сент</a></li>
+							<li><a href="#">Окт</a></li>
+							<li><a href="#">Нбр</a></li>
+							<li class="is-disabled"><a href="#">Дек</a></li>
+						</ul>
+						<ul class="calendar__days">
+							<li class="calendar__title">день</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">11</a></li>
+							<li><a href="#">12</a></li>
+							<li><a href="#">13</a></li>
+							<li><a href="#">14</a></li>
+							<li><a href="#">15</a></li>
+							<li><a href="#">16</a></li>
+							<li><a href="#">17</a></li>
+							<li><a href="#">18</a></li>
+							<li><a href="#">19</a></li>
+							<li><a href="#">20</a></li>
+							<li><a href="#">21</a></li>
+							<li><a href="#">22</a></li>
+							<li><a href="#">23</a></li>
+							<li><a href="#">24</a></li>
+							<li><a href="#">25</a></li>
+							<li><a href="#">26</a></li>
+							<li><a href="#">27</a></li>
+							<li><a href="#">28</a></li>
+						</ul>
+					</div>
+					<div class="input-wrap input-wrap_time">
+						<i></i>
+						<input type="text" class="input">
+						<span>Укажите время</span>
+					</div>
+				</div>
+				<div class="add-event-wrap">
+					<div class="title-counter">
+						<span>3</span>Выберите место проведения
+					</div>
+					<div class="add-event add-event_place">
+						<div class="input-wrap">
+							<input type="text" class="input" value="Украина, Киев, ЭкономЦентр Владислава Навальницкого">
+						</div>
+					</div>
+				</div>
+				
+			</div>                             
+
+		</div>
+	</div>
+	<!-- END container-->
+</div>
+<!-- END out-->
+</body>
+</html>
