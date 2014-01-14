@@ -217,6 +217,10 @@
 		margin-bottom: -1px
 		&:hover
 			z-index: 2
+.container_mod
+	.container__in
+		padding-top: 0
+
 .top
 	position: relative
 	height: 50px
@@ -1009,7 +1013,6 @@
 		margin-bottom: 9px
 		
 .download-progress
-	margin-top: -50px
 	padding: 50px 20px
 	background: #fff  
 	.progress
@@ -1018,6 +1021,39 @@
 	.icon-list-clock
 		float: left
 		margin-right: 11px
-	
+
 .icon-list-clock
 	+s(clock)
+
+.file
+	i
+		display: inline-block
+		position: relative
+		top: -20px
+		+s(file)
+.file__main
+	display: inline-block
+	margin-left: 16px
+	color: #aaa
+	font-size: 14px 
+.file__title
+	font-size: 26px
+	color: #262626
+	vertical-align: top
+.btn-remove
+	position: relative
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	background: $gray 
+	&:before
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -4px 0 0 -4px 
+		+s(del2)  
+	&:hover
+		opacity: .9
+	&:active
+		top: 1px

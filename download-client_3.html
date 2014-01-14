@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Download client 1</title>
+	<title>Download client 3</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.js"></script>
@@ -139,18 +139,10 @@
 		</div>
 		<div class="container__in">
 			<div class="container__wrap">
-				<div class="download">
-					<div class="download__action">
-						<button class="btn btn_liquid btn_red">Выбрать файл</button>
-						<p>Поддерживаются форматы csv, xls и xlsx Максимальный объем — 5 Мб.</p>
-						<p><a href="#">Пример файла для обработки</a></p>
-					</div>
-					<div class="file">
-						<i></i>
-						<div class="file__main">
-							<div class="file__title">Клиенты.xlsx <button class="btn-remove"></button></div>
-							<span>103 ячеек, Размер: 450 кб.</span>
-						</div>
+				<div class="download-progress">
+					<i class="icon-list-clock"></i>
+					<div class="progress" data-title="Обрабатываем Клиенты.xlsx" data-value="86">
+						<progress class="progress__main" max="100" value="80" class="html5"></progress>
 					</div>
 				</div>
 				<div class="item-row-clients">
@@ -214,17 +206,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="confirm">
-			<div class="confirm__btn">
-				<button class="btn btn_liquid btn_red">Все верно, обработать файл</button>
-			</div>
-			<div class="confirm__text">
-				Убедитесь, что система корректно определила тип данныx <br>
-				для каждого столбца. В случае несоответствия, выберите <br>
-				подходящий вариант из списка. 
 
-			</div>
 		</div>
 	</div>
 	<!-- END container-->
