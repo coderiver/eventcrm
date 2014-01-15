@@ -1571,3 +1571,27 @@
 	+fbold
 .your-info__name
 	font-size: 18px
+	
+.billing
+	position: relative
+	z-index: 100
+	display: table
+	width: 100%
+	+box
+	padding: 9px 20px 
+	font-size: 18px
+	background: #fff
+	box-shadow: 0 5px 10px rgba(0,0,0,.1) 
+	+ .container__in
+		padding-top: 75px
+.billing__item
+	display: table-cell
+	width: 50%
+	vertical-align: middle
+	&:last-child
+		text-align: right
+	span
+		color: $green 
+	.btn
+		margin-left: 10px
+		vertical-align: middle

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Settings</title>
+	<title>Billing</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.js"></script>
@@ -126,55 +126,66 @@
 	</div>
 	<!-- END sidebar-->
 	<!-- BEGIN  container-->
-	<div class="container container_mod">
+	<div class="container">
 		<div class="top">
 			<ul class="menu">
 				<li><a href="#">Кабинет</a></li>               
-				<li><a href="#">Доход</a></li>               
+				<li><a href="#" class="is-active">Доход</a></li>               
 				<li><a href="#">Интеграция</a></li>               
 				<li><a href="#">Загрузить клиентов</a></li>      
-				<li><a href="#" class="is-active">Настройки</a></li>
+				<li><a href="#">Настройки</a></li>
 			</ul>			
 		</div>
+		<div class="billing">
+			<div class="billing__item">
+				С 1.12.2013 заработано: <span>9 300<i class="rubl-icon">Р</i></span>
+			</div>
+			<div class="billing__item">
+				Текущий баланс: <span>13 900<i class="rubl-icon">Р</i></span>
+				<button class="btn btn_green">Вывести</button>
+			</div>
+		</div>
 		<div class="container__in">
-			<div class="container__wrap">
-				<fieldset class="fieldset">
-					<div class="fieldset__main">
-						<div class="fieldset__title">Ваши данные</div>
-						<div class="input-wrap">
-							<input class="input" type="text" placeholder="Имя">
-						</div>
-						<div class="input-wrap">
-							<input class="input" type="text" placeholder="Фамилия">
-						</div>
-						<div class="input-wrap">
-							<input class="input" type="tel" placeholder="Телефон">
-						</div>
-						<div class="input-wrap">
-							<input class="input" type="email" placeholder="Email">
-						</div>
-					</div>
-					<div class="fieldset__info">
-						<div class="your-info">
-							<div class="your-info__title">Организация</div>
-							<div class="your-info__name">Житомирский комбинат</div>
-							<a href="#">Заключить договор</a>
-							<button class="btn btn_red">Реквизиты компании</button>
-						</div>
-					</div>
-				</fieldset>
-				<fieldset class="fieldset">
-					<div class="fieldset__title">Сменить пароль</div>
-					<div class="input-wrap">
-						<input class="input" type="password" placeholder="Старый пароль">
-					</div>
-					<div class="input-wrap">
-						<input class="input" type="password" placeholder="Новый пароль">
-					</div>
-				</fieldset>
-				<fieldset class="fieldset fieldset_btn">
-					<button class="btn btn_red">Сохранить</button>
-				</fieldset>
+				<div class="container__wrap">
+				<div class="item-row item-row_billing item-row_head">
+					<div class="item-row__cell"><a href="#">по дням</a> /  <a href="#">по месяца</a></div>
+					<div class="item-row__cell"><a href="#">оплата товаров</a></div>                    
+					<div class="item-row__cell"><a href="#">получено от участников</a></div>
+					<div class="item-row__cell"><a href="#">электронные оплаты</a></div>     
+					<div class="item-row__cell"><a href="#">Всего</a></div>
+				</div>
+				<div class="item-row item-row_billing">
+					<div class="item-row__cell">17 декабря</div>
+					<div class="item-row__cell">80<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3200<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell is-inactive">0<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3280<i class="rubl-icon">Р</i></div>
+				</div>
+				<div class="item-row item-row_billing">
+					<div class="item-row__cell">17 декабря</div>
+					<div class="item-row__cell">80<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3200<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell is-inactive">0<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3280<i class="rubl-icon">Р</i></div>
+				</div>
+				<div class="item-row item-row_billing">
+					<div class="item-row__cell">17 декабря</div>
+					<div class="item-row__cell">80<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3200<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell is-inactive">0<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3280<i class="rubl-icon">Р</i></div>
+				</div>
+				<div class="item-row item-row_billing item-row_out">
+					<div class="item-row__cell">15 декабря в 21:30</div>
+					<div class="item-row__cell">выведено 7 300<i class="rubl-icon">Р</i></div>
+				</div>
+				<div class="item-row item-row_billing">
+					<div class="item-row__cell">17 декабря</div>
+					<div class="item-row__cell">80<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3200<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">100<i class="rubl-icon">Р</i></div>
+					<div class="item-row__cell">3280<i class="rubl-icon">Р</i></div>
+				</div>
 			</div>
 
 		</div>

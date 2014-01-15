@@ -49,7 +49,7 @@ button { background: none; }
 
 .out { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
-.header { position: absolute; top: 0; left: 0; right: 0; bottom: auto; height: 55px; background: #262626; z-index: 10; }
+.header { position: absolute; top: 0; left: 0; right: 0; bottom: auto; height: 55px; background: #262626; z-index: 200; }
 
 .header_simple { position: static; text-align: center; }
 .header_simple .logo { position: static; display: inline-block; }
@@ -100,7 +100,7 @@ button { background: none; }
 .login__head > span em:before { content: ""; position: absolute; top: 3px; left: 0; width: 6px; height: 6px; border-radius: 50%; background: #685a8b; }
 .login__head > i { float: left; margin: 15px 0 0 20px; width: 0px; height: 0px; border-style: solid; border-width: 6px 4px 0 4px; border-color: #8e8e8e transparent transparent transparent; }
 
-.login__drop { position: absolute; top: 0; left: 0; right: 0; background: #363636; opacity: 0; visibility: hidden; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 1; }
+.login__drop { position: absolute; top: 0; left: 0; right: 0; background: #363636; opacity: 0; visibility: hidden; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 200; }
 
 .login__actions { padding: 5px 15px 15px; }
 .login__actions li { margin-top: 10px; }
@@ -322,7 +322,8 @@ a.btn { line-height: 41px; }
 .menu { *zoom: 1; }
 .menu:after { content: " "; display: table; clear: both; }
 .menu li { float: left; width: 20%; }
-.menu a { position: relative; display: inline-block; height: 50px; line-height: 50px; color: #0c8ac7; font-size: 18px; font-family: "novabold", Arial, sans-serif; }
+.menu a { position: relative; display: inline-block; height: 50px; line-height: 50px; color: #0c8ac7; font-size: 18px; font-family: "novabold", Arial, sans-serif; -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; transition: color 0.2s linear; }
+.menu a:hover { color: #e76e66; }
 .menu a.is-active { color: black; }
 .menu a.is-active:after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: #685a8b; }
 
@@ -353,9 +354,16 @@ a.btn { line-height: 41px; }
 .item-row:hover { position: relative; z-index: 2; border-color: #aed3e4; box-shadow: 0 0 5px rgba(13, 138, 202, 0.3); }
 
 .item-row__cell { display: table-cell; vertical-align: middle; }
+.item-row__cell.is-inactive { color: #cdcdcd; }
 
 .item-row_head { background: none; border: none; }
 .item-row_head:hover { border: none; box-shadow: none; }
+
+.item-row_billing .item-row__cell { width: 20%; }
+.item-row_billing.item-row_head a { display: inline-block; line-height: 1; font-size: 12px; text-transform: uppercase; color: #959595; border-bottom: 1px dotted; }
+
+.item-row_out .item-row__cell { width: 50%; color: #1ea46d; }
+.item-row_out .item-row__cell:last-child { text-align: right; }
 
 .download { padding: 17px 20px 22px; background: white; *zoom: 1; }
 .download:after { content: " "; display: table; clear: both; }
@@ -957,6 +965,14 @@ a.btn { line-height: 41px; }
 .your-info__title { margin-bottom: 10px; font-size: 15px; font-family: "novabold", Arial, sans-serif; }
 
 .your-info__name { font-size: 18px; }
+
+.billing { position: relative; z-index: 100; display: table; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9px 20px; font-size: 18px; background: white; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+.billing + .container__in { padding-top: 75px; }
+
+.billing__item { display: table-cell; width: 50%; vertical-align: middle; }
+.billing__item:last-child { text-align: right; }
+.billing__item span { color: #1ea46d; }
+.billing__item .btn { margin-left: 10px; vertical-align: middle; }
 
 .overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 10000; overflow: auto; background: rgba(0, 0, 0, 0.7); }
 

@@ -596,6 +596,9 @@ a.btn
 		color: $blue
 		font-size: 18px
 		+fbold 
+		+tr(color .2s linear)
+		&:hover
+			color: $red 
 		&.is-active
 			color: #000
 			&:after 
@@ -688,13 +691,32 @@ a.btn
 .item-row__cell
 	display: table-cell
 	vertical-align: middle
-	
+	&.is-inactive
+		color: $gray
 .item-row_head
 	background: none 
 	border: none
 	&:hover
 		border: none
 		box-shadow: none
+		
+.item-row_billing
+	.item-row__cell
+		width: 20%
+	&.item-row_head
+		a
+			display: inline-block
+			line-height: 1
+			font-size: 12px
+			text-transform: uppercase
+			color: #959595 
+			border-bottom: 1px dotted 
+.item-row_out
+	.item-row__cell
+		width: 50%
+		color: $green 
+		&:last-child
+			text-align: right
 
 .download
 	padding: 17px 20px 22px 
