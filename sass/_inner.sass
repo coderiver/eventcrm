@@ -1394,7 +1394,8 @@
 			margin: -4px 0 0 -4px
 		
 .add-event-btn
-	margin-top: 36px
+	padding: 0 10px 
+	margin: 36px 0 33px
 	+clr
 	.btn
 		width: 200px
@@ -1404,7 +1405,13 @@
 	.btn_blue
 		float: right
 		margin-left: 1px
-		
+.add-event-btn_left
+	.btn
+		margin-right: 4px
+	.btn_red,
+	.btn-blue
+		float: left
+
 .add-code
 	margin-bottom: 20px
 	+clr
@@ -1434,3 +1441,88 @@
 		margin-right: 5px
 		vertical-align: middle
 		+s(copy)
+
+.add-prod
+	position: relative
+	+clr
+.add-prod__main
+	position: absolute
+	right: 150px 
+	left: 0
+	top: 0
+	.textarea
+		min-height: 92px
+.add-prod__img  
+	float: right
+
+.download-photo
+	display: block
+	width: 140px
+	height: 140px
+	line-height: 140px
+	background: #d5d5d5 
+	color: #fff
+	text-align: center
+	span
+		display: inline-block  
+		width: 50%
+		vertical-align: middle
+		line-height: 1
+		
+.input-wrap_price
+	margin-top: -4px
+	padding: 0 0 5px
+	.input
+		display: inline-block
+		vertical-align: middle
+		width: 140px 
+		margin-right: 11px
+	
+.download-prod
+	.btn
+		width: 180px
+		height: 36px
+		vertical-align: middle
+	.progress
+		display: inline-block
+		width: 285px
+		vertical-align: middle
+	.btn-cancel
+		display: inline-block
+		margin-left: -5px
+		vertical-align: middle
+.file-name
+	display: inline-block
+	padding: 0 10px 
+	height: 36px
+	line-height: 36px
+	font-size: 15px
+	background: #e4e4e4 
+	vertical-align: middle
+	a
+		color: $blue 
+		vertical-align: middle
+	i
+		display: inline-block
+		margin-left: 25px
+		vertical-align: middle
+		+s(del3)
+		cursor: pointer
+.error
+	display: inline-block
+	padding: 0 15px 0 12px
+	height: 36px
+	line-height: 36px
+	font-size: 15px
+	background: #eacfcf
+	vertical-align: middle
+	i
+		display: inline-block
+		vertical-align: middle
+.error__icon
+	+s(error)
+	margin: -2px 6px 0 0
+.error__close
+	margin-left: 46px
+	+s(del4)
+

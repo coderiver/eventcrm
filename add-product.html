@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Add event 3</title>
+	<title>Add product</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.js"></script>
@@ -260,7 +260,7 @@
 	<!-- BEGIN  container-->
 	<div class="container container_mod">
 		<div class="top">
-			<div class="top__title">Добавить событие</div>	
+			<div class="top__title">Добавить товар</div>	
 		</div>
 		<div class="container__in">
 			<div class="container__wrap">
@@ -279,6 +279,58 @@
 					</div>
 				</div>
 				<div class="add-event-wrap">
+					<div class="title-counter">
+						<span>1</span>Основны данные
+					</div>
+					<div class="add-prod">
+						<div class="add-prod__main">
+							<div class="input-wrap">
+								<input type="text" class="input" placeholder="Название товара">
+							</div>
+							<div class="input-wrap">
+								<textarea class="input textarea" placeholder="Описание товара"></textarea>
+							</div>
+						</div>
+						<div class="add-prod__img">
+							<a href="#" class="download-photo">
+								<span>
+									<i class="icon-camera"></i>
+									Загрузить фото
+								</span>
+							</a>
+						</div>
+					</div>  
+					<div class="input-wrap input-wrap_price">
+						<input type="text" class="input" placeholder="Стоимость">
+						<label class="checkbox checkbox_inline">
+							<input type="checkbox"><i></i>
+							<span>Товар бесплатный для скачивания</span>
+						</label>
+					</div>
+					<div class="download-prod">
+						<div class="input-wrap">
+							<button class="btn btn_blue">Загрузить товар</button>
+							<span class="file-name"><a href="#">some_file.pdf</a><i></i></span>
+							<span class="error"><i class="error__icon"></i>Ошибка загрузки файла<i class="error__close"></i></span>
+						</div>
+						<div class="input-wrap">
+							<button class="btn btn_blue">Загрузить демо</button>
+							<div class="progress progress_middle" data-title="Загрузка mybook_25.05..." data-value="78">
+								<progress class="progress__main" max="100" value="78"></progress>
+							</div>
+							<button class="btn-cancel"></button>
+						</div>
+					</div>
+				</div>
+				<div class="add-event-btn add-event-btn_left">
+					<button class="btn btn_liquid btn_gray">Отмена</button>
+					<button class="btn btn_liquid btn_red">Добавить товар</button>
+				</div>
+				<div class="add-event-wrap">
+					<div class="title-counter">
+						<span>2</span>Вставка на сайт
+						<a href="#" class="copy-link"><i></i>Скопировать код</a>
+					</div>
 					<div class="add-code">
 						<button class="btn btn_liquid btn_red is-active">Вставить форму на сайт</button>
 						<button class="btn btn_liquid btn_red">Вставить кнопку оплаты на сайт</button>
@@ -292,7 +344,7 @@
 						</xmp>
 					</div>
 					<p>Скопируйте код лендинга и вставте его в нужное место</p>
-					<label class="checkbox checkbox_inline">
+					<label class="checkbox">
 						<input type="checkbox"><i></i>
 						<span>Включить поле  «телефон» в форму</span>
 					</label>

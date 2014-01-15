@@ -20,7 +20,9 @@
 	+freg
 .input-wrap
 	position: relative
-	margin-bottom: 6px
+	margin: 0 0 6px
+	font-size: 14px
+	text-align: left
 	+clr
 	&.is-required
 		&:after 
@@ -87,11 +89,11 @@
 	background: #fff 
 	+freg
 	font-size: 14px
-	+transition(border,box-shadow .2s linear)
+	+transition(border-color,box-shadow .2s linear)
 	+placeholder
 		color: #7d7d7d		
 	&:hover
-		border: 1px solid #aed3e4
+		border-color: #aed3e4
 	&:focus
 		border: 1px solid #aed3e4
 		box-shadow: 0 0 5px rgba(13, 138, 202, 0.3)
@@ -331,7 +333,9 @@ a.btn
 	overflow: hidden
 	font-size: 13px
 	+nosel
-	
+.checkbox_inline
+	display: inline-block
+
 .soc-enter
 	overflow: hidden
 	a
@@ -649,7 +653,15 @@ a.btn
 .progress__main
 	&::-webkit-progress-value
 		+gh($red, #8979b3)
-
+		
+.progress_middle
+	font-size: 15px
+	height: 36px		
+	line-height: 36px 
+	.progress__main[value]
+		background: #e2e2e2
+	.progress__main[value]::-webkit-progress-bar
+		background: #e2e2e2
 .item-row-clients
 	padding-top: 12px
 	.item-row__cell
@@ -759,4 +771,22 @@ a.btn
 		opacity: .9
 	&:active
 		top: 1px
-		
+
+.btn-cancel
+	position: relative
+	height: 36px
+	width: 36px
+	text-align: center
+	background: #959595
+	+tr(opacity .2s linear) 
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -6px 0 0 -6px  
+		+s(close)
+	&:hover
+		opacity: .9
+	&:active
+		top: 1px
