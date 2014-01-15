@@ -225,16 +225,19 @@
 	position: relative
 	height: 50px
 	padding: 0 20px
-	background: #ccc  
+	background: #ccc 
+	+clr 
 	.filter-list
 		margin-top: 16px
 	.radio-key
 		float: right
 		margin-top: 14px
+	.btn-cancel
+		float: right
+		margin-top: 7px
 .top__title
-	display: table-cell
-	height: 50px
-	vertical-align: middle
+	float: left
+	margin-top: 13px
 	+fbold
 	font-size: 18px
 	sup
@@ -1460,7 +1463,7 @@
 	width: 140px
 	height: 140px
 	line-height: 140px
-	background: #d5d5d5 
+	background: #d5d5d5
 	color: #fff
 	text-align: center
 	span
@@ -1526,3 +1529,45 @@
 	margin-left: 46px
 	+s(del4)
 
+.fieldset
+	padding: 25px 10px 23px
+	border-top: 1px solid #e8e8e8
+	+clr
+	&:first-child
+		border-top: 0
+	.input-wrap
+		width: 420px
+.fieldset__main
+	float: left
+	
+.fieldset__info
+	float: right
+.fieldset__title
+	margin-bottom: 12px
+	font-size: 15px
+	+fbold
+.fieldset_btn
+	padding: 28px 10px
+	+clr 
+	.btn
+		float: left
+		width: 200px
+.your-info
+	padding: 20px 20px 26px
+	width: 240px
+	+box
+	background: #dfdfdf
+	a
+		display: inline-block
+		line-height: 1
+		color: $red
+		border-bottom: 1px dotted 
+	.btn
+		margin-top: 63px
+		width: 100%
+.your-info__title
+	margin-bottom: 10px
+	font-size: 15px
+	+fbold
+.your-info__name
+	font-size: 18px
