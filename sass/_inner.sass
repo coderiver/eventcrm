@@ -337,6 +337,9 @@
 	margin: 35px 0 7px
 	&:first-child
 		margin-top: 0
+	.btn-add-templ
+		float: right
+		margin: -4px 0 0 32px
 .filter-title
 	display: table
 	+fbold
@@ -357,7 +360,8 @@
 		margin-top: -40px
 		&:first-child
 			margin-top: -40px
-	> .items-nav_small
+	> .items-nav_small,
+	> .items-nav_mod
 		margin-top: 35px
 		&:first-child
 			margin-top: 35px
@@ -425,6 +429,7 @@
 .item__title
 	position: relative
 	font-size: 16px
+	vertical-align: middle
 	.btn-edit
 		right: -26px
 		top: 3px
@@ -443,6 +448,8 @@
 	.filter-list_fixed-width
 		margin-right: 0   
 		font-size: 16px
+	.badge
+
 .item__ico, .item__status
 	float: left
 	width: 30px
@@ -538,6 +545,10 @@
 	color: #8f8f8f 
 	a
 		color: $blue 	
+	p
+		margin-bottom: 15px
+		font-size: 15px
+		color: #262626  
 .item-edit__action
 	+clr
 	.input-calendar
@@ -1716,15 +1727,19 @@
 		bottom: 0
 		width: 57px
 		height: 100%
-		z-index: 5
-		background: $red   
-		&:after
-			content: ""
-			position: absolute
-			top: 50%
-			left: 50%
-			margin: -8px 0 0 -10px 
-			+s(arr3)
+.btn-confirm
+	position: relative
+	width: 39px
+	height: 39px
+	z-index: 5
+	background: $red   
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -8px 0 0 -10px 
+		+s(arr3)
 		
 .input_popup
 	position: absolute
@@ -1757,3 +1772,100 @@
 		font-size: 13px 
 		display: table-cell 
 		vertical-align: middle
+		
+.stat-list-wrap
+	position: relative
+	z-index: 5
+	padding: 25px 0 
+	background: #fff 
+	+clr
+	box-shadow: 0 0 10px rgba(0,0,0,.3)
+.stat-list
+	float: left
+	border-right: 2px solid #f1f1f1 
+	width: 33.3%
+	+box
+	&:first-child
+		li
+			padding-left: 20px
+	li
+		margin-bottom: 5px
+		padding: 0 43px 
+		color: #b0b0b0 
+		font-size: 15px
+		+clr
+		&:first-child
+			color: #000 
+			font-size: 13px
+			text-transform: uppercase
+			
+	span
+		float: right
+		+fbold
+		color: #000 
+.container_cabinet
+	.container__in
+		padding-top: 133px
+.items-nav_mod
+	margin-top: 35px
+	
+.item-edit_extend
+	.btn
+		width: 160px
+		margin-left: 3px
+	.input-wrap_check
+		.input
+			display: inline-block
+			margin-right: 10px
+			width: 50%
+			vertical-align: middle
+		.checkbox
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			top: -4px
+			margin-left: 31px
+			span
+				display: block
+				font-size: 12px
+				color: #8f8f8f
+	.textarea
+		height: 108px
+.item-edit__info
+	margin-top: 10px
+	font-size: 15px
+	color: #8f8f8f
+	a
+		color: $blue 
+	.copy-link
+		margin-left: 40px
+		
+.item-row_five-cell
+	.item-row__cell
+		width: 20%
+.item-row_head
+	font-size: 12px
+	text-transform: uppercase
+	color: #b3b3b3 
+	
+
+
+.round-img
+	position: relative
+	display: inline-block
+	width: 42px
+	height: 42px
+	background: #d5d5d5 
+	vertical-align: middle
+	border-radius: 50%
+	img
+		position: relative
+		z-index: 2
+		display: block
+		border-radius: 50%
+	i
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -6px 0 0 -8px
+		+s(camera-small)

@@ -688,17 +688,38 @@ a.btn
 		z-index: 2
 		border-color: #aed3e4
 		box-shadow: 0 0 5px rgba(13, 138, 202, 0.3)
+	.round-img
+		margin-right: 17px
+	a
+		color: $blue 
 .item-row__cell
 	display: table-cell
 	vertical-align: middle
 	&.is-inactive
 		color: $gray
+	.input
+		width: 95%
+		
 .item-row_head
 	background: none 
 	border: none
 	&:hover
 		border: none
 		box-shadow: none
+.item-row_head-mod
+	background: #e9e9e9
+	box-shadow: inset 0 0 7px rgba(0,0,0,.3) 
+	.item-row__cell
+		position: relative
+	.input_tel
+		width: 65%
+	.item-row__btn
+		float: right
+	.btn-cancel
+		height: 39px
+.item-row_three-col
+	.item-row__cell
+		width: 33%
 		
 .item-row_billing
 	.item-row__cell
@@ -838,3 +859,17 @@ a.btn
 	&:active
 		top: 1px
 	
+.badge
+	display: inline-block
+	margin-right: 6px
+	padding: 2px
+	vertical-align: middle
+	min-width: 40px
+	color: #fff 
+	line-height: 1
+	text-align: center
+	font-size: 12px
+.badge_green
+	background: $green 
+.badge_violet
+	background: #685a8b 
