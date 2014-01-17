@@ -1,0 +1,213 @@
+
+.window
+	margin: 0 auto 
+	width: 700px
+	background: #505050
+	+clr
+	color: #ccc 
+.window__col-left
+	float: left
+	padding-bottom: 20px
+	width: 380px
+	background: #424242 
+.window__col-right
+	float: left
+	width: 320px
+.window__top
+	margin-bottom: 9px
+	padding: 10px 15px 10px 12px 
+	+clr
+	background: #333 
+.window__title	
+	font-size: 18px
+	+fbold
+.window__close
+	position: relative
+	float: right
+	height: 24px
+	line-height: 24px
+	color: #fff
+	font-size: 14px 
+	background: #868686 
+	padding: 0 8px 0 6px 
+	+tr(opacity .2s linear)
+	&:hover  
+		opacity: .9
+	&:active
+		top: 1px
+	i
+		display: inline-block
+		margin-left: 8px
+		vertical-align: middle
+		+s(del2)
+.window__main
+	padding: 0 20px
+	.input
+		height: 36px
+	.textarea
+		height: 327px
+		resize: none
+	.input_box
+		height: 47px
+	.input-wrap_info
+		margin: -6px 0 14px
+		font-size: 13px
+		div
+			float: left
+			&:last-child
+				float: right
+		span
+			color: $blue
+		i
+			font-style: normal
+			color: #fff
+	.input-wrap
+		.btn
+			float: left
+			width: 48%
+			&:last-child
+				float: right
+		.btn_liquid 
+			width: 100%
+.window__stat
+	text-align: justify 
+	line-height: 1
+	&:after
+		content: ""
+		width: 100%
+		height: 0
+		display: inline-block
+	div
+		display: inline-block
+		vertical-align: middle
+		color: #7b7b7b 
+		text-align: center
+		&:last-child
+			span
+				color: #7b7b7b  
+	span
+		display: block
+		font-size: 36px
+		color: #fff 
+		
+.window__recharge
+	font-size: 15px
+	color: $green 
+	.btn
+		margin-top: 3px
+.window__body	
+	margin: 16px 0
+	padding: 20px 0  
+	border-top: 1px solid #373737
+	border-bottom: 1px solid #373737
+	
+				
+.window__templ-title
+	margin-bottom: 7px
+	font-size: 16px
+	color: #fff
+	+fbold 
+	+clr
+	.btn-add-templ
+		float: right
+.window__templ
+	line-height: 1
+	font-size: 14px
+	li
+		position: relative
+		margin-bottom: 11px
+		&:hover
+			.btn-edit, 
+			.btn-del
+				opacity: .6
+	a
+		color: $blue
+		display: inline-block
+		border-bottom: 1px dotted
+		+tr(color .2s linear)
+		&:hover
+			color: $red 
+		&.is-active
+			border-bottom-color: transparent
+			color: #a6a6a6  
+	.btn-edit, 
+	.btn-del
+		position: absolute
+		top: 0
+		opacity: 0
+		+tr(opacity .2s linear)
+	.btn-del
+		right: 0
+	.btn-edit
+		right: 21px
+
+		
+.btn-add-templ
+	position: relative
+	width: 26px
+	height: 26px
+	background: #d27f7a 
+	border-top: 1px solid #b36c68 
+	&:hover
+		opacity: .9
+	&:active
+		top: 1px
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -7px 0 0 -7px
+		+s(add2) 
+
+
+.window_width
+	width: 760px
+.tab-group
+	position: relative
+	margin-bottom: 23px
+	background: #fff 
+	.btn-close
+		position: absolute
+		top: -11px
+		right: -11px
+	.input_box
+		color: #262626
+		span
+			+freg
+			font-size: 14px 
+$tab: tab-event, tab-status, tab-consult, tab-prod, tab-date, tab-group
+.tab
+	margin-bottom: 13px
+	background: #e3e3e3 
+	+clr
+	li
+		float: left
+		width: 17%
+		text-align: center
+		&:first-child  
+			width: 15%
+	a
+		display: block
+		padding-top: 10px
+		height: 50px
+		color: $blue
+		line-height: 1
+		vertical-align: middle
+		&:hover
+			background: #fff
+			color: $green 
+			@each $i in $tab
+				.icon-#{$i}   
+					+s(#{$i}-h)  
+		&.is-active
+			background: #fff
+			box-shadow: 0 -3px 0 $green
+	i
+		display: block
+		margin: 0 auto 7px 
+@each $i in $tab
+	.icon-#{$i}   
+		+s(#{$i})  
+.tab-cont
+	padding: 0 12px 13px 

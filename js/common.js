@@ -94,4 +94,16 @@ $(document).ready(function() {
     }
     accordion();
 
+    $(".js-user-btn").click(function(){
+    	if ($(this).hasClass("js-active")) {
+    		$(this).removeClass("js-active");
+    		$(".user_client").removeClass("is-active");
+    	}
+    	else {
+    		$(".user_client").removeClass("is-active");
+    		$(this).addClass("js-active");
+    		$(this).parent().addClass("is-active");
+    	}
+    });
+
 });

@@ -818,3 +818,23 @@ a.btn
 	&:before
 		margin: -7px 0 0 -7px  
 		+s(close-big)
+
+.btn-set  
+	position: relative
+	height: 36px
+	width: 36px
+	text-align: center
+	background: #e76e66 
+	+tr(opacity .2s linear) 
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -9px 0 0 -9px  
+		+s(set)
+	&:hover
+		opacity: .9
+	&:active
+		top: 1px
+	

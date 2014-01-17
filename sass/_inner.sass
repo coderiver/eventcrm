@@ -245,6 +245,12 @@
 		top: -4px
 		font-size: 12px
 		vertical-align: top
+	a
+		color: $blue 
+		i
+			display: inline-block
+			margin-right: 10px
+			+s(arr2)
 .top__line
 	position: absolute
 	left: 21px
@@ -654,7 +660,7 @@
 	text-align: center
 .tooltip__text
 	position: relative
-	padding: 0 10px
+	padding: 1px 10px
 	border-radius: 10px
 	background: #262626
 	+freg 
@@ -953,7 +959,7 @@
 	vertical-align: middle
 	font-size: 36px
 	color: #262626 
-@for $i from 1 through 5
+@for $i from 1 through 9
 	.stat__icon#{$i}       
 		@include s(stat#{$i})
 
@@ -1020,7 +1026,7 @@
 
 .icon-tariff-day
 	+s(tariff-day)
-.icon-tariff-sms
+.icon-tariff-window
 	+s(tariff-sms)
 
 .user-balance
@@ -1596,162 +1602,158 @@
 		margin-left: 10px
 		vertical-align: middle
 		
-
-.sms
-	margin: 50px auto 
-	width: 700px
-	background: #505050
+.event-top
+	padding: 10px 20px
+	border-bottom: 1px solid #dedede  
 	+clr
-	color: #ccc 
-.sms__col-left
+.event-top__title
 	float: left
-	padding-bottom: 20px
-	width: 380px
-	background: #424242 
-.sms__col-right
-	float: left
-	width: 320px
-.sms__top
-	margin-bottom: 9px
-	padding: 10px 15px 10px 12px 
-	+clr
-	background: #333 
-.sms__title	
-	font-size: 18px
-	+fbold
-.sms__close
-	position: relative
-	float: right
-	height: 24px
-	line-height: 24px
-	color: #fff
-	font-size: 14px 
-	background: #868686 
-	padding: 0 8px 0 6px 
-	+tr(opacity .2s linear)
-	&:hover
-		opacity: .9
-	&:active
-		top: 1px
-	i
-		display: inline-block
-		margin-left: 8px
-		vertical-align: middle
-		+s(del2)
-.sms__main
-	padding: 0 20px
-	.input
-		height: 36px
-	.textarea
-		height: 327px
-		resize: none
-	.input-wrap_info
-		margin: -6px 0 14px
-		font-size: 13px
-		div
-			float: left
-			&:last-child
-				float: right
-		span
-			color: $blue
-		i
-			font-style: normal
-			color: #fff
-	.input-wrap
-		.btn
-			float: left
-			width: 48%
-			&:last-child
-				float: right
-		.btn_liquid
-			width: 100%
-.sms__stat
-	text-align: justify 
-	line-height: 1
-	&:after
-		content: ""
-		width: 100%
-		height: 0
-		display: inline-block
-	div
-		display: inline-block
-		vertical-align: middle
-		color: #7b7b7b 
-		text-align: center
-		&:last-child
-			span
-				color: #7b7b7b  
-	span
+	strong
 		display: block
-		font-size: 36px
-		color: #fff 
+		font-size: 16px
+		font-weight: normal
+		+fbold
+	span
+		color: #6e6e6e 
+.event-top__btn
+	float: right
+	.btn-set
+		margin-right: -2px
 		
-.sms__recharge
-	font-size: 15px
-	color: $green 
-	.btn
-		margin-top: 3px
-.sms__body	
-	margin: 16px 0
-	padding: 20px 0  
-	border-top: 1px solid #373737
-	border-bottom: 1px solid #373737
+.search_client
+	.input
+		border: 1px solid #cdcdcd
+.stat-wrap_mod
+	border-bottom: 0
 	
-				
-.sms__templ-title
-	margin-bottom: 7px
-	font-size: 16px
-	color: #fff
-	+fbold 
-	+clr
-	.btn-add-templ
-		float: right
-.sms__templ
-	line-height: 1
-	font-size: 14px
-	li
-		position: relative
-		margin-bottom: 11px
-		&:hover
-			.btn-edit, 
-			.btn-del
-				opacity: .6
-	a
-		color: $blue
-		display: inline-block
-		border-bottom: 1px dotted
-		+tr(color .2s linear)
-		&:hover
-			color: $red 
-		&.is-active
-			border-bottom-color: transparent
-			color: #a6a6a6  
-	.btn-edit, 
-	.btn-del
-		position: absolute
-		top: 0
-		opacity: 0
-		+tr(opacity .2s linear)
-	.btn-del
-		right: 0
-	.btn-edit
-		right: 21px
-
-		
-.btn-add-templ
+.user-col
+	float: left
+	margin-right: -1px
+	width: 33.3%
+	+box
+	border: 1px solid #ccc
+	border-top: 0
+.user-col__title
+	padding: 5px 7px 
+	font-size: 14px    
+	background: #eaeaea
+	color: #6e6e6e  
+.user-col__main
+	padding: 6px  
+.user__comment
 	position: relative
-	width: 26px
-	height: 26px
-	background: #d27f7a 
-	border-top: 1px solid #b36c68 
-	&:hover
-		opacity: .9
-	&:active
-		top: 1px
-	&:after
+	margin-top: 11px
+	padding: 5px 10px 
+	color: #6e6e6e
+	background: #f1f1f1 
+	&:before
 		content: ""
 		position: absolute
-		top: 50%
-		left: 50%
-		margin: -7px 0 0 -7px
-		+s(add2) 
+		top: -6px
+		left: 15px
+		+arr(10,6,#f1f1f1,t) 
+
+.user_client 
+	margin-top: 7px
+	border: 1px solid #cfcfcf
+	padding: 8px 11px 8px 8px 
+	&.is-active
+		z-index: 10
+		.btn-dot
+			+s(dot-h)
+		.user__menu
+			display: block
+
+	&:first-child
+		margin-top: 0
+	&:after
+		display: none
+	.btn-dot
+		position: absolute
+		top: 5px
+		right: 8px
+		+s(dot)
+		z-index: 3
+		&:hover
+			+s(dot-h)
+
+	+tr(all .2s linear)
+	&:hover
+		position: relative
+		z-index: 10
+		border-color: #add2e4
+		box-shadow: 0 0 3px #add2e4
+	span
+		color: #828282 
+	.user__info
+		position: relative
+	.user__summa
+		position: absolute
+		right: -2px
+		top: 22px
+		color: $green
+		&.is-inactive
+			color: $gray 
+	.user__menu
+		position: absolute
+		display: none
+		top: 0
+		right: 0
+		left: 0
+		z-index: 2
+		padding: 15px 10px 5px
+		background: #1d1d1d
+		text-align: center
+		li
+			margin-bottom: 5px
+		a
+			+tr(color .2s linear)
+			&:hover
+				color: #fff 
+	.btn-confirm
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 57px
+		height: 100%
+		z-index: 5
+		background: $red   
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -8px 0 0 -10px 
+			+s(arr3)
+		
+.input_popup
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 4
+	background: rgba(255,255,255,.9) 
+	font-size: 32px
+	height: 100%
+	border: 0
+
+.user_empty	
+	overflow: hidden
+	background: none 
+	border: 1px dotted #b2b2b2
+	&:hover
+		box-shadow: none
+		border: 1px dotted #b2b2b2
+	.user__pic
+		display: table-cell 
+		float: none
+		vertical-align: middle
+		background: none
+		border: 1px solid #cdcdcd
+	.user__info
+		padding-left: 9px
+		color: #b2b2b2
+		font-size: 13px 
+		display: table-cell 
+		vertical-align: middle

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Filter client</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="window window_width">
+		<div class="window__top">
+			<span class="window__title">Фильтр клиентов</span>
+			<button class="window__close">скрыть<i></i></button>
+		</div>
+		<div class="window__main">
+			<div class="radio-key radio-key_left">
+				<label class="radio-key__var-1">
+					<input type="radio" name="name" checked="">
+					<span>Любые условия</span>
+				</label>
+				<label class="radio-key__var-2">
+					<input type="radio" name="name">
+					<span>Все условия</span>
+				</label>
+			</div>
+			<div class="tab-group">
+				<ul class="tab">
+					<li>
+						<a href="#" class="is-active" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-event"></i>
+							События</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-status"></i>
+							Статус
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-consult"></i>
+							Консультации
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-prod"></i>
+							Товары
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-date"></i>
+							Дата
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-group"></i>
+							Группа событий
+						</a>
+					</li>
+				</ul>
+				<div class="tab-cont">
+					<div class="input-wrap">
+						<div class="input input_box" contenteditable="">
+							<span>Пришел <i></i></span>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<div class="input input_box" contenteditable="">
+							<span>Пятничные проверки <i></i></span>
+						</div>
+					</div>
+				</div>
+				<button class="btn-close"></button>
+			</div>
+			<div class="tab-group">
+				<ul class="tab">
+					<li>
+						<a href="#" class="is-active" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-event"></i>
+							События</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-status"></i>
+							Статус
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-consult"></i>
+							Консультации
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-prod"></i>
+							Товары
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-date"></i>
+							Дата
+						</a>
+					</li>
+					<li>
+						<a href="#" class="js-tooltip" data-tooltip="Фильтровать по статусу">
+							<i class="icon-tab-group"></i>
+							Группа событий
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END out-->
+<div class="tooltip js-tooltip-wrap">
+	<div class="tooltip__arr"></div>
+	<div class="tooltip__text"></div>
+</div>
+</body>
+</html>
