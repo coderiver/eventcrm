@@ -417,12 +417,31 @@
 		right: 47px
 	.btn-del
 		right: 19px
+	&.is-last
+		.item__content
+			text-decoration: line-through
 
 .item_task
 	.item__content
+		float: left
 		font-size: 15px
 		span, a
 			font-size: 13px
+
+.item_empty
+	background: none			
+	color: #b0b0b0 
+	.btn-del-item
+		float: left
+		margin-right: 11px
+	.item__date
+		span
+			color: #b0b0b0 
+	.item__content
+		a,
+		span
+			color: #b0b0b0 
+		
 .item__top
 	+clr
 	
@@ -490,6 +509,7 @@
 		line-height: 1
 	strong
 		font-size: 26px
+		font-weight: normal
 	span
 		font-size: 13px
 		color: #6E6E6E 
@@ -970,7 +990,7 @@
 	vertical-align: middle
 	font-size: 36px
 	color: #262626 
-@for $i from 1 through 9
+@for $i from 1 through 14
 	.stat__icon#{$i}       
 		@include s(stat#{$i})
 
@@ -1651,7 +1671,7 @@
 	color: #6e6e6e  
 .user-col__main
 	padding: 6px  
-.user__comment
+.comment
 	position: relative
 	margin-top: 11px
 	padding: 5px 10px 
@@ -1869,3 +1889,117 @@
 		left: 50%
 		margin: -6px 0 0 -8px
 		+s(camera-small)
+
+.user-box
+	padding-top: 18px
+	+clr
+	.user-enter-img
+		float: left
+		margin-right: 21px
+		margin-bottom: 20px
+	.comment
+		overflow: hidden
+		padding: 8px 19px 
+		background: #e5e5e5 
+		&:before
+			+arr(10,6,#e5e5e5,t) 
+	.select
+		float: right
+		margin-left: 26px
+		width: 215px
+	.select__text
+		height: 36px
+		line-height: 36px 
+		border-color: $red
+	.select__list
+		border-color: $red
+.user-box__info
+	float: left
+	line-height: 1
+	span
+		color: #828282
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+	strong
+		display: block
+		margin: 10px 0 5px
+		font-size: 15px
+		font-weight: normal
+		+fbold
+	.icon-fb,
+	.icon-vk
+		display: inline-block
+		margin-left: 5px
+		vertical-align: middle
+	.icon-vk
+		+s(icon-vk-small)
+	.icon-fb
+		+s(icon-fb-small)
+.user-box__name
+	margin-bottom: 3px
+	font-size: 24px
+	+fbold
+
+.send-sms-link
+	display: inline-block
+	position: relative
+	padding-left: 29px
+	font-size: 13px
+	span
+		color: $red 
+		display: inline-block
+		border-bottom: 1px dotted 
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 0
+		+s(sms) 
+
+.user-box__meta
+	float: right
+	text-align: right
+	a,span
+		display: inline-block
+		vertical-align: middle
+@for $i from 1 through 5
+	.user-icon#{$i}
+		margin-left: 9px    
+		+gray   
+		@include s(user-icon#{$i})  
+		+tr(all .2s linear)
+		&:hover
+			+gray-zero
+.user-box__btns
+	margin-bottom: 10px  
+
+.general-info
+	margin: 20px 0 
+	li
+		width: 50%
+		font-size: 15px
+		a,span
+			display: inline-block
+			vertical-align: middle
+		span
+			padding-right: 5px
+			width: 210px
+		a
+			color: $blue 
+
+.item-row_four-cell
+	.item-row__cell
+		width: 25%
+		&:last-child
+			text-align: right
+	strong
+		font-weight: normal
+		+fbold
+	.item__price
+		font-size: 16px
+		color: $green 
+		height: auto
+		line-height: 1
+.item-row_transp
+	background: transparent

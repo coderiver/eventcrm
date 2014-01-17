@@ -46,6 +46,10 @@
 	&.is-valid-error
 		&:after 
 			+s(valid-error)
+	
+.input-wrap_styled
+	padding: 15px
+	background: #e9e9e9 
 .input-wrap_btn
 	.btn
 		float: right
@@ -388,10 +392,10 @@ a.btn
 		
 .select
 	position: relative
-	z-index: 2
+	z-index: 4
 	cursor: pointer
 	font-size: 12px
-	+gpu
+	//+gpu
 	&.is-active
 		.select__text
 			&:after
@@ -422,7 +426,7 @@ a.btn
 		border-style: solid
 		border-width: 8px 4px 0 4px
 		border-color: #000 transparent transparent transparent
-		+transition(all .2s linear)
+		//+transition(all .2s linear)
 .select__list
 	position: absolute
 	display: none
@@ -873,3 +877,18 @@ a.btn
 	background: $green 
 .badge_violet
 	background: #685a8b 
+	
+.btn-del-item
+	position: relative
+	margin-right: 11px
+	width: 24px
+	height: 24px
+	border-radius: 50%
+	border: 1px solid #b0b0b0
+	&:after
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -4px 0 0 -4px
+		+s(del3) 
