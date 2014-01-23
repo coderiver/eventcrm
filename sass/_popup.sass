@@ -4,10 +4,14 @@
     right: 0
     bottom: 0
     left: 0
-    z-index: 10000
+    z-index: -2
     overflow: auto
-    background: rgba(0,0,0,.7) 
-    
+    opacity: 0
+    background: #000
+    +tr(opacity .2s linear)
+    &.is-active
+        z-index: 10000  
+        opacity: .7
 .popup
     position: fixed
     top: 105px
@@ -34,20 +38,12 @@
         resize: vertical
     &.is-not-fixed
         position: absolute
-    // &:after
-    //     content: ""
-    //     position: absolute
-    //     left: 50%
-    //     top: 0 
-    //     margin-left: -350px
-        
-    //     +rotate(45)
-    //     +gh(rgba(0,0,0,.05),rgba(0,0,0,0))
+    
 .popup_width
     margin-left: -390px
     padding: 25px 163px 63px
-    width: 780px
-.popup_full
+    width: 780px  
+.popup_full  
     margin-left: -310px
     padding: 0
     width: 620px

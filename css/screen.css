@@ -1174,7 +1174,8 @@ a.btn { line-height: 41px; }
 
 .item-row_transp { background: transparent; }
 
-.overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 10000; overflow: auto; background: rgba(0, 0, 0, 0.7); }
+.overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -2; overflow: auto; opacity: 0; background: black; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; transition: opacity 0.2s linear; }
+.overlay.is-active { z-index: 10000; opacity: 0.7; }
 
 .popup { position: fixed; top: 105px; left: 50%; z-index: 20000; margin-left: -350px; padding: 25px 123px 63px; width: 700px; background: #f7f7f7; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; box-shadow: 0 10px 38px rgba(0, 0, 0, 0.25); }
 .popup .form__title { margin-bottom: 44px; }
@@ -1293,8 +1294,9 @@ a.btn { line-height: 41px; }
 .tariff__footer { padding: 18px 20px; height: 81px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .tariff__footer .btn { padding: 0 27px; font-size: 18px; font-family: "novabold", Arial, sans-serif; }
 
-.window { margin: 0 auto; width: 700px; background: #505050; *zoom: 1; color: #cccccc; }
+.window { position: absolute; top: -2000px; margin-left: -2350px; z-index: 20000; width: 700px; background: #505050; *zoom: 1; color: #cccccc; opacity: 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .window:after { content: " "; display: table; clear: both; }
+.window.is-active { top: 0; left: 50%; margin-left: -350px; opacity: 1; }
 
 .window__col-left { float: left; padding-bottom: 20px; width: 380px; background: #424242; }
 
@@ -1329,10 +1331,10 @@ a.btn { line-height: 41px; }
 .window__stat div:last-child span { color: #7b7b7b; }
 .window__stat span { display: block; font-size: 36px; color: white; }
 
-.window__recharge { font-size: 15px; color: #1ea46d; }
+.window__recharge { margin-bottom: 16px; font-size: 15px; color: #1ea46d; }
 .window__recharge .btn { margin-top: 3px; }
 
-.window__body { margin: 16px 0; padding: 20px 0; border-top: 1px solid #373737; border-bottom: 1px solid #373737; }
+.window__body { margin: 0 0 16px; padding: 20px 0; border-top: 1px solid #373737; border-bottom: 1px solid #373737; }
 
 .window__templ-title { margin-bottom: 7px; font-size: 16px; color: white; font-family: "novabold", Arial, sans-serif; *zoom: 1; }
 .window__templ-title:after { content: " "; display: table; clear: both; }

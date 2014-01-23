@@ -1,10 +1,20 @@
-
 .window
-	margin: 0 auto 
+	position: absolute
+	top: -2000px
+	margin-left: -2350px
+	z-index: 20000
 	width: 700px
 	background: #505050
 	+clr
 	color: #ccc 
+	opacity: 0
+	+tr(all .2s linear)
+	&.is-active
+		top: 0
+		left: 50%
+		margin-left: -350px
+		opacity: 1
+	
 .window__col-left
 	float: left
 	padding-bottom: 20px
@@ -91,12 +101,13 @@
 		color: #fff 
 		
 .window__recharge
+	margin-bottom: 16px
 	font-size: 15px
 	color: $green 
 	.btn
 		margin-top: 3px
 .window__body	
-	margin: 16px 0
+	margin: 0 0 16px
 	padding: 20px 0  
 	border-top: 1px solid #373737
 	border-bottom: 1px solid #373737

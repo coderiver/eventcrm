@@ -106,4 +106,32 @@ $(document).ready(function() {
     	}
     });
 
+    var overlay = $(".js-overlay");
+    $(".js-popup-link").click(function(){  
+        if ($(this).attr("href")) {
+            var link = $(this).attr("href");
+        }
+        else {
+            var link = $(this).attr("data-href");
+        }
+        
+        $("."+link).addClass("is-active");
+        overlay.addClass("is-active");
+        return false;  
+    });
+    overlay.click(function(){
+        $(this).removeClass("is-active");
+        $(".js-window").removeClass("is-active");
+    });
+    $(".js-close").click(function(){
+        $(this).parents(".js-window").removeClass("is-active");
+        overlay.removeClass("is-active");
+    });
+    $(".js-hidden").hide();
+    $(".js-hidden-item-btn").click(function(){
+        $(".js-hidden").slideToggle("fast");
+    });
+    $(".js-hide-template").click(function(){
+        $(".js-hidden").slideToggle("fast");
+    });
 });
