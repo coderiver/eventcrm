@@ -1,27 +1,33 @@
-.window
+.window-wrap
 	position: absolute
-	top: -2000px
-	margin-left: -2350px
+	top: 55px
+	bottom: 0
+	left: -1000px
+	padding-right: 7px
 	z-index: 20000
-	width: 700px
+	overflow-y: auto
+	-ms-overflow-x: hidden
+	overflow-x: hidden
+	+tr(all .3s linear)
+	background: #424242 
+	&.is-active
+		left: 300px
+.window
+	display: inline-block
 	background: #505050
 	+clr
 	color: #ccc 
-	opacity: 0
-	+tr(all .2s linear)
-	&.is-active
-		top: 0
-		left: 50%
-		margin-left: -350px
-		opacity: 1
-	
+.window_sms
+	display: table
+.window_filter
+	background: #424242 
 .window__col-left
-	float: left
+	display: table-cell
 	padding-bottom: 20px
 	width: 380px
 	background: #424242 
 .window__col-right
-	float: left
+	display: table-cell
 	width: 320px
 .window__top
 	margin-bottom: 9px
@@ -45,7 +51,7 @@
 		opacity: .9
 	&:active
 		top: 1px
-	i
+	i 
 		display: inline-block
 		margin-left: 8px
 		vertical-align: middle
@@ -223,3 +229,11 @@ $tab: tab-event, tab-status, tab-consult, tab-prod, tab-date, tab-group
 		+s(#{$i})  
 .tab-cont
 	padding: 0 12px 13px 
+	.input-wrap_checkbox
+		.input
+			margin-right: 10px
+			width: 75%
+		.input,
+		.checkbox
+			display: inline-block
+			vertical-align: middle

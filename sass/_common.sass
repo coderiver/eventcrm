@@ -96,7 +96,7 @@ button
 	left: 0
 	right: 0
 	bottom: 0
-	
+	z-index: 2
 .header
 	position: absolute
 	top: 0
@@ -118,6 +118,7 @@ button
 	top: 55px
 	left: 0
 	bottom: 0
+	z-index: 21000
 	width: 299px 
 	background: #fff
 	border-right: 1px solid #ccc  
@@ -159,12 +160,17 @@ button
 .logo
 	position: absolute
 	top: 0
-	left: 20px
+	left: 0
+	z-index: 21000
+	padding-left: 20px
+	background: #262626 
 	height: 55px
+	width: 300px
 	+fblackc
 	line-height: 55px
 	font-size: 38px
-	color: #FFF 
+	color: #fff 
+	+box
 	span
 		color: #ccc 
 		

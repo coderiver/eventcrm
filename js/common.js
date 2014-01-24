@@ -49,6 +49,7 @@ $(document).ready(function() {
 	$(document).click(function() {
         $(".js-select-list").hide();
         $(".js-select").removeClass("is-active");
+        $(".js-window").removeClass("is-active");
     });
     function select() {
         $(".js-select").each(function(){
@@ -107,6 +108,7 @@ $(document).ready(function() {
     });
 
     var overlay = $(".js-overlay");
+    var window_el = $(".js-window");
     $(".js-popup-link").click(function(){  
         if ($(this).attr("href")) {
             var link = $(this).attr("href");
@@ -114,19 +116,25 @@ $(document).ready(function() {
         else {
             var link = $(this).attr("data-href");
         }
-        
-        $("."+link).addClass("is-active");
-        overlay.addClass("is-active");
+        window_el.removeClass("is-active");
+        $("."+link).toggleClass("is-active");
+        //overlay.addClass("is-active");
         return false;  
     });
-    overlay.click(function(){
-        $(this).removeClass("is-active");
-        $(".js-window").removeClass("is-active");
-    });
+    // overlay.click(function(){
+    //     $(this).removeClass("is-active");
+    //     $(".js-window").removeClass("is-active");
+    // });
     $(".js-close").click(function(){
         $(this).parents(".js-window").removeClass("is-active");
-        overlay.removeClass("is-active");
+        //overlay.removeClass("is-active");
     });
+
+    window_el.click(function(event) {
+        event.stopPropagation();
+    });
+
+
     $(".js-hidden").hide();
     $(".js-hidden-item-btn").click(function(){
         $(".js-hidden").slideToggle("fast");
