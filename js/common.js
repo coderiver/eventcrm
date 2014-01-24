@@ -126,7 +126,7 @@ $(document).ready(function() {
     //     $(".js-window").removeClass("is-active");
     // });
     $(".js-close").click(function(){
-        $(this).parents(".js-window").removeClass("is-active");
+        window_el.removeClass("is-active");
         //overlay.removeClass("is-active");
     });
 
