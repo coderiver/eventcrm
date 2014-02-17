@@ -18,6 +18,13 @@
 	text-transform: uppercase
 	color: #262626 
 	+freg
+.input-group
+	+clr
+	.input-wrap
+		width: 49%
+		float: right
+		&:first-child
+			float: left
 .input-wrap
 	position: relative
 	margin: 0 0 6px
@@ -25,6 +32,8 @@
 	text-align: left
 	+clr
 	&.is-required
+		.input
+			padding-right: 25px
 		&:after 
 			content: ""
 			position: absolute
@@ -34,6 +43,8 @@
 			+s(required)
 	&.is-valid-ok,
 	&.is-valid-error
+		.input
+			padding-right: 35px
 		&:after
 			content: ""
 			position: absolute
