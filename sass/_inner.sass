@@ -92,7 +92,7 @@
 		+s(btn-filter)
 	&:hover
 		i
-			+s(btn-filter-h)
+			+sp(btn-filter-h)
 
 .select-all	
 	border-bottom: 1px solid #ccc 
@@ -748,14 +748,14 @@
 		+s(arr-left)
 	&:hover
 		i
-			+s(arr-left-h)
+			+sp(arr-left-h)
 .date__next
 	i
 		right: 10px
 		+s(arr-right)
 	&:hover
 		i
-			+s(arr-right-h)
+			+sp(arr-right-h)
 .date_current
 	span
 		border-bottom: none
@@ -1428,7 +1428,7 @@
 		position: absolute
 		top: -11px
 		right: -11px
-		z-index: 3
+		z-index: 4
 		&:after
 			+s(del2)
 			margin: -4px 0 0 -4px
@@ -1691,10 +1691,12 @@
 	&.is-active
 		z-index: 10
 		.btn-dot
-			+s(dot-h)
+			+sp(dot2-h)
 		.user__menu
 			display: block
-
+	&.is-active-edit
+		.comment
+			display: none
 	&:first-child
 		margin-top: 0
 	&:after
@@ -1703,10 +1705,10 @@
 		position: absolute
 		top: 5px
 		right: 8px
-		+s(dot)
+		+s(dot2)
 		z-index: 3
 		&:hover
-			+s(dot-h)
+			+sp(dot2-h)  
 
 	+tr(all .2s linear)
 	&:hover
@@ -1735,10 +1737,12 @@
 		padding: 15px 10px 5px
 		background: #1d1d1d
 		text-align: center
-		li
-			margin-bottom: 5px
 		a
+			display: block
+			padding: 5px 0 
 			+tr(color .2s linear)
+			+freg  
+			font-size: 16px
 			&:hover
 				color: #fff 
 	.btn-confirm
@@ -2005,3 +2009,38 @@
 		line-height: 1
 .item-row_transp
 	background: transparent
+	
+
+.comment-edit
+	position: relative
+	margin-top: 11px
+	+clr
+	&:before
+		content: "" 
+		position: absolute
+		top: -5px
+		left: 14px   
+		+s(arr4)
+	textarea
+		display: block
+		width: 100%
+		+box
+		padding: 10px
+		font-size: 13px
+		color: #747474  
+		height: 70px
+		resize: none
+		+freg
+		border: 1px solid #add1e3
+		border-bottom: 0
+		+box-shadow(inset 0 0 5px rgba(28,146,203,.3))
+	.btn
+		float: left
+		height: 28px
+		font-size: 13px
+		+fbold
+		line-height: 28px
+	.btn_red
+		width: 67%
+	.btn_blue
+		width: 33%
