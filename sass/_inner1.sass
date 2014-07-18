@@ -25,6 +25,7 @@
 	
 .fwrap__type
 	text-align: center 
+	margin-bottom: 20px 
 	label
 		padding-right: 50px 		
 	span
@@ -44,49 +45,53 @@
 	font-size: 14px
 	
 .radio-key
-	span
-		color: #aaaaaa 
-		border-bottom: none
-		&:before 
-			width: 50px
-			height: 25px
-			border: 1px solid #9e9e9e
-			border-radius: 20px
-		&:after
-			top: 4px
-			width: 19px
-			height: 19px
-			border-radius: 50%
-			background: $blue 
-	input
-		position: absolute
-		top: 0
-		left: 0
-		opacity: 0 
-		&:checked + span
-			color: $blue
-			border-color: transparent
+	&.blue
+		span
+			color: #aaaaaa 
+			border-bottom: none
+			&:before 
+				width: 50px
+				height: 25px
+				border: 1px solid #9e9e9e
+				border-radius: 20px
+			&:after
+				top: 4px
+				width: 19px
+				height: 19px
+				border-radius: 50%
+				background: $blue 
+		input
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 0 
+			&:checked + span
+				color: $blue
+				border-color: transparent
 .radio-key__var-1
-	padding-right: 30px
-	& > span
-		&:before
-			right: -56px
-		&:after
-			right: -50px
-	& > input
-		&:checked + span
-			z-index: 2
+	&.blue
+		padding-right: 30px
+		& > span
+			&:before
+				right: -56px
 			&:after
-				right: -31px
+				right: -50px
+		& > input
+			&:checked + span
+				z-index: 2
+				&:after
+					right: -31px
+					
 .radio-key__var-2
-	padding-left: 30px
-	& > span
-		&:before
-			left: -59px
-		&:after
-			left: -50px
-	& > input
-		&:checked + span
-			z-index: 2
+	&.blue
+		padding-left: 30px
+		& > span
+			&:before
+				left: -59px
 			&:after
-				left: -32px	  
+				left: -50px
+		& > input
+			&:checked + span
+				z-index: 2
+				&:after
+					left: -32px	  
