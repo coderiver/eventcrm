@@ -110,14 +110,15 @@
 //form 1
 body
 	&.wrapz
-		background: url(../img/bg_new.jpg) 40% no-repeat
+		background: url(../img/bg_new.jpg) 100% 40% no-repeat
 		background-size: cover 
 	
 .form1
 	position: relative
 	width: 560px
-	margin: 20% auto 0
-	background: rgba(255,255,255, 0.7) 
+	margin: 21% auto 0
+	background: rgba(255,255,255, 0.7)
+	background: #fff\9
 	border: 1px solid #fff 	
 	
 .form1__title
@@ -208,6 +209,11 @@ body
 
 .main__in
 	margin-bottom: 20px
+	width: 470px 
+	+box
+	&:hover
+		border: 1px solid #000
+		cursor: pointer
 	input
 		width: 470px
 		display: block
@@ -229,8 +235,8 @@ body
 			width: 470px
 			height: 35px
 			left: 35px 	
-			opacity: 0
 			z-index: 5
+			+opacity(0)
 			   	
 .divider
 	border-top: 1px solid #dcdcdb 		

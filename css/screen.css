@@ -1497,9 +1497,9 @@ a.btn { line-height: 41px; }
 .popup .exit { top: 40px; right: 30px; background: url('../img/icons-s95b07fc12c.png') 0 -770px no-repeat; width: 25px; height: 26px; }
 .popup .exit:after { background: none; }
 
-body.wrapz { background: url(../img/bg_new.jpg) 40% no-repeat; background-size: cover; }
+body.wrapz { background: url(../img/bg_new.jpg) 100% 40% no-repeat; background-size: cover; }
 
-.form1 { position: relative; width: 560px; margin: 20% auto 0; background: rgba(255, 255, 255, 0.7); border: 1px solid white; }
+.form1 { position: relative; width: 560px; margin: 21% auto 0; background: rgba(255, 255, 255, 0.7); background: white \9; border: 1px solid white; }
 
 .form1__title { background: rgba(255, 255, 255, 0.7); font-size: 17px; padding: 20px 85px 20px 40px; color: #5b5b5b; border-bottom: 1px solid white; font-family: "roadradio-webfont", Verdana, Arial, sans-serif; }
 .form1__title:after { background: url('../img/icons-s95b07fc12c.png') 0 -114px no-repeat; width: 111px; height: 108px; content: ""; position: absolute; top: 0; right: 0; z-index: 1; }
@@ -1526,12 +1526,13 @@ body.wrapz { background: url(../img/bg_new.jpg) 40% no-repeat; background-size: 
 .form1__main .garant { font-size: 11.4px; color: #727271; position: relative; padding-bottom: 5px; font-family: "roadradio-webfont", Verdana, Arial, sans-serif; }
 .form1__main .garant i { content: ""; position: absolute; left: 20px; background: url('../img/icons-s95b07fc12c.png') 0 -1118px no-repeat; width: 13px; height: 15px; }
 
-.main__in { margin-bottom: 20px; }
+.main__in { margin-bottom: 20px; width: 470px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.main__in:hover { border: 1px solid black; cursor: pointer; }
 .main__in input { width: 470px; display: block; color: #5b5b5b; background: none; font-size: 20px; padding-left: 10px; font-family: "roboto-thin", Verdana, Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .main__in input:-moz-placeholder { color: #5b5b5b; }
 .main__in input::-webkit-input-placeholder { color: #5b5b5b; }
 .main__in:after { background: url('../img/icons-s95b07fc12c.png') 0 -974px no-repeat; width: 470px; height: 10px; content: ""; position: absolute; left: 35px; }
-.main__in.dropdown select { position: absolute; width: 470px; height: 35px; left: 35px; opacity: 0; z-index: 5; }
+.main__in.dropdown select { position: absolute; width: 470px; height: 35px; left: 35px; z-index: 5; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 
 .divider { border-top: 1px solid #dcdcdb; }
 
