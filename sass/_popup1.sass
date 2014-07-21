@@ -208,36 +208,46 @@ body
 			+s(lock)
 
 .main__in
-	margin-bottom: 20px
-	width: 470px 
+	width: 470px
+	height: 40px
+	margin-bottom: 10px
+	background: url(../img/input_b.png) bottom no-repeat
 	+box
 	&:hover
-		border: 1px solid #000
-		cursor: pointer
+		input
+			border: 2px solid #65a2dc	
+			padding-left: 8px
 	input
 		width: 470px
+		height: 40px
+		padding-left: 10px  
 		display: block
 		color: #5B5B5B
 		background: none
-		font-size: 20px
-		padding-left: 10px  
+		font-size: 20px		
 		+robth
 		+placeholder-color(#5b5b5b) 
-		+box
-	&:after
-		+s(input_b)
-		content: ""
-		position: absolute
-		left: 35px
+		+box		 
+		&:focus	
+			background: #FFF
+			border: 2px solid #65a2dc 		
+			padding-left: 8px  
 	&.dropdown
+		position: relative
 		select
 			position: absolute
 			width: 470px
-			height: 35px
-			left: 35px 	
-			z-index: 5
+			height: 40px
+			left: 0
+			z-index: 10
 			+opacity(0)
-			   	
+		&:before
+			content: ""
+			position: absolute
+			top: 14px	
+			right: 20px
+			+s(arr)	
+	   	
 .divider
 	border-top: 1px solid #dcdcdb 		
 	

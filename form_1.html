@@ -2,13 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Download client 2</title>
+	<title>Form_1</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/placeholder.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
 </head>
 <body class="wrapz">
 <!-- BEGIN  out-->
@@ -42,7 +43,7 @@
 						<input type="text" placeholder="ваш E-mail">
 					</div>
 					<div class="main__in">
-						<input type="text" placeholder="(xxx) xxx-xx-xx">
+						<input class="phone" type="text" placeholder="(xxx) xxx-xx-xx">
 					</div>
 					<div class="main__in dropdown">
 						<select>
@@ -51,7 +52,7 @@
 							<option value="14 июля">14 июля</option>
 							<option value="15 июля">15 июля</option>
 						</select>
-						<input type="text" placeholder="12 июля">
+						<input type="text" placeholder="12 июля" disabled>
 					</div>
 					<button type="submit">Зарегистрироваться</button>
 					<p class="garant"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
