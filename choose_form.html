@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Choose Form</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN  header-->
+	<header class="header">
+		<a class="logo" href="#">Event<span>CRM</span></a>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Лента</a></li>
+				<li><a href="#">События</a></li>
+				<li class="is-active"><a href="#">Товары</a></li>
+				<li><a href="#">Кабинет</a></li>                           
+			</ul>
+		</nav>
+		<div class="add">
+			<div class="add__in">
+				<button>Добавить</button>
+				<ul>
+					<li><a href="#">Событие</a></li>
+					<li><a href="#">Клиента</a></li>
+					<li><a href="#">Товар</a></li>
+					<li><a href="#">Задачу</a></li>
+				</ul>
+			</div>			
+		</div>
+		<div class="login">
+			<div class="login__head new">
+				<img src="http://lorempixel.com/40/40/" alt="">
+				<span>Павел Переятенец</span>
+				<i></i>
+			</div>
+			<div class="login__drop">
+				<ul class="login__actions">
+					<li><a href="#"><i class="login__ico-setting"></i>Настройки</a></li>
+					<li><a href="#"><i class="login__ico-edit"></i>Редактировать профайл</a></li>
+					<li><a href="#"><i class="login__ico-out"></i>Выйти из системы</a></li>
+				</ul>
+				<div class="login__event">
+					<a class="login__event-item" href="#">
+						<i>23.12.2013 в 18:30</i>
+						<span>Позвонить Андрею Попову +7(656) 554-33-22 и сообщить о событии</span>
+					</a>
+					<a class="login__event-item" href="#">
+						<i>23.12.2013 в 18:30</i>
+						<span>Позвонить Андрею Попову</span>
+					</a>
+				</div>				
+			</div>
+		</div>
+	</header>
+	<!-- END header-->
+	<!-- BEGIN  sidebar-->
+	<div class="sidebar">
+		<ul class="stats">
+			<li class="is-active"><a href="#"><span>Клиенты</span><sup>12345</sup></a></li>
+			<li><a href="#"><span>Фильтр</span><sup>25</sup></a></li>
+		</ul>
+		<div class="actions">
+			<div class="search">
+				<input type="text" placeholder="Поиск клиентов">
+				<i></i>
+			</div>
+			<button class="btn-filter"><i></i></button>
+		</div>
+		<div class="sidebar__in new">
+			<div class="sidebar__wrap">
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Анна Кашапова</a>
+					<span>+7 (495) 727-28-28</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Андрей Кутергин</a>
+					<span>+7 (495) 224-33-25</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Алина Луканина</a>
+					<span>+7 (495) 723-98-99</span>
+				</div>			
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Анна Скворцова</a>
+					<span>+7 (495) 135-66-90</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Алексина Идрисова</a>
+					<span>+7 (495) 095-00-78</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Анна Кашапова</a>
+					<span>+7 (495) 727-28-28</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Андрей Хисамутдинов</a>
+					<span>+7 (495) 224-33-25</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Валентина Салимзянова</a>
+					<span>+7 (495) 543-21-98</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Валентина Федорина</a>
+					<span>+7 (495) 727-28-28</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Валерия Малашенкова</a>
+					<span>+7 (495) 723-98-99</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Валентин Блинов</a>
+					<span>+7 (495) 224-23-25</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Валентин Карамов</a>
+					<span>+7 (495) 114-13-21</span>
+				</div>
+				<div class="user">
+					<label class="checkbox">
+						<input type="checkbox"><i></i>
+					</label>
+					<div class="user__pic">
+						<i></i>
+						<img src="http://lorempixel.com/40/40/" alt="">
+					</div>						
+					<a href="#">Валерия Вавилова</a>
+					<span>+7 (495) 135-66-90</span>
+				</div>				
+			</div>
+			<div class="subscribe">
+				<div class="subscribe__title">выберите людей для рассылки</div>
+				<ul class="subscribe__list">
+					<li><a href="#">SMS</a></li>
+					<li><a href="#">email</a></li>
+					<li><a href="#">exel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END sidebar-->
+	<!-- BEGIN  container-->
+	<div class="container container_mod">
+		<div class="top">
+			<div class="top__title">Добавить товар</div>	
+			<button class="btn-cancel btn-cancel_big new"></button>
+		</div>
+		<div class="container__in">
+			<div class="container__wrap">
+				<div class="steps-wrap">
+					<div class="step is-done">
+						<span class="step__img"><i></i></span>
+						<span class="step__text">Основные данные</span>
+					</div>
+					<div class="step is-active">
+						<span class="step__img"><i></i></span>
+						<span class="step__text">Дополнительные данные</span>
+					</div>
+					<div class="step">
+						<span class="step__img"><i></i></span>
+						<span class="step__text">Вставка на сайт</span>
+					</div>
+				</div>
+				<div class="add-event-wrap new">
+					<div class="title-counter">
+						<span>1</span>Настройка формы регистрации на вашем сайте
+					</div>					
+				</div>
+				<!-- begin fwrap  -->
+				<div class="fwrap">
+					<div class="fwrap__type">
+						<label class="checkbox checkbox_inline">
+							<input type="radio" name="type" checked><i></i>
+							<span>тип 1</span>
+						</label>
+						<label class="checkbox checkbox_inline">
+							<input type="radio" name="type"><i></i>
+							<span>тип 2</span>
+						</label>
+						<label class="checkbox checkbox_inline">
+							<input type="radio" name="type"><i></i>
+							<span>тип 3</span>
+						</label>
+					</div>
+					<div class="fwrap__variation">
+						<div class="variaton__bl">
+							<label class="checkbox checkbox_inline">
+								<input type="checkbox" checked><i></i>
+								<span>Отображать заголовок</span>
+							</label>
+						</div>
+						<div class="variaton__bl">
+							<label class="checkbox checkbox_inline">
+								<input type="checkbox" checked><i></i>
+								<span>Отображать дату</span>
+							</label>
+						</div>
+						<div class="variaton__bl">
+							<label class="checkbox checkbox_inline">
+								<input type="checkbox" checked><i></i>
+								<span>Запрашивать фамилию</span>
+							</label>
+						</div>
+						<div class="variaton__bl">
+							<label class="checkbox checkbox_inline">
+								<input type="checkbox" checked><i></i>
+								<span>Запрашивать телефон</span>
+							</label>
+						</div>
+						<div class="radio-key blue">
+							<p class="radio-key__title">Формат номера</p>
+							<label class="radio-key__var-1 blue">
+								<input type="radio" name="name" checked>
+								<span>Россия</span>
+							</label>
+							<label class="radio-key__var-2 blue">
+								<input type="radio" name="name">
+								<span>Украина</span>
+							</label>
+						</div>
+					</div>
+					<!-- begin fwrap__form  -->
+					<!--div class="fwrap__form">
+						<div class="form1 small">
+							<div class="form1__title">
+								<p>Как пить каждый день, курить, трахаться </p><p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
+							</div>
+							<div class="form1__when">
+								<div class="form1__date">
+									<table>
+										<tbody>
+											<tr>
+												<td class="number">12</td>
+												<td><p>июль</p><p>2014</p></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="form1__time">19:30</div>
+							</div>
+							<form>
+								<div class="form1__main">
+									<div class="main__in">
+										<input type="text" placeholder="ваше Имя">
+									</div>
+									<div class="main__in">
+										<input type="text" placeholder="ваша Фамилия">
+									</div>
+									<div class="main__in">
+										<input type="text" placeholder="ваш E-mail">
+									</div>
+									<div class="main__in">
+										<input class="phone" type="text" placeholder="(xxx) xxx-xx-xx">
+									</div>
+									<div class="main__in dropdown">
+										<select>
+											<option value="12 июля">12 июля</option>
+											<option value="13 июля">13 июля</option>
+											<option value="14 июля">14 июля</option>
+											<option value="15 июля">15 июля</option>
+										</select>
+										<input type="text" placeholder="12 июля" disabled>
+									</div>
+									<button type="submit">Зарегистрироваться</button>
+									<p class="garant"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
+								</div>				
+							</form>
+							<div class="divider"></div>
+							<div class="madeby">
+								Форма создана и работает благодаря 
+								<a href="#" class="madeby__logo"></a>
+							</div>
+						</div>
+					</div-->
+					<!-- end fwrap__form -->
+				</div>
+				<!-- end fwrap -->
+				<div class="add-event-wrap new">
+					<div class="title-counter">
+						<span>2</span>Настройка всплывающего окна уведомления об оплате
+					</div>
+					<div class="payment">
+						<div class="payment__left">
+							<label class="checkbox checkbox_inline">
+								<input type="checkbox" checked><i></i>
+								<span>Принимать оплату на сайте</span>
+							</label>
+						</div>
+						<div class="payment__right">
+							<div class="ask"><a href="#">Как получить деньги за проданные билеты?</a></div>
+						</div>	
+					</div>	
+					<div class="payment">
+						<div class="title-counter">
+								Можно заменить заголовок окна
+							</div>	
+						<div class="payment__left">							
+							<div class="edit">
+								<i></i>
+								<input class="edited" type="text" placeholder="Ересь не неси это низкий СРС">
+							</div>
+							<div class="title-counter">
+								Укажите важный текст в самом окне уведомления
+							</div>	
+							<div class="edit">
+								<i></i>
+								<input class="edited" type="text" placeholder="Ты ж с огнем играешь дико задирая цену клика">
+							</div>
+							<div class="title-counter">
+								Надпись на кнопке окна
+							</div>	
+							<div class="edit">
+								<i></i>
+								<input class="edited" type="text" placeholder="ОПЛАТИТЬ">
+							</div>
+						</div>
+						<div class="payment__right">
+							<div class="forted">
+								<div class="ted">
+									<div class="form new">
+										<div class="form__title form__title_big">
+											<p>Ересь не неси это низкий срс</p>
+										</div>
+										<div class="form__center">
+											<div class="center__text">
+												<p>Ты ж с огнем играешь</p><p>дико задирая цену клика </p>
+											</div>
+											<div class="center__ted"></div>
+										</div>	
+										<div class="form__bottom">
+											<div class="bottom__text">
+												<p>Онлайн курс</p>
+												<p>«Низкий CPC»</p>
+											</div>
+											<div class="bottom__pay">
+												<span>670 руб.</span>
+												<button type="submit">Оплатить</button>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="download pict">
+							<div class="download__action">
+								<button class="btn btn_liquid btn_red">Загрузить картинку</button>
+								<a href="#">Выбрать файл</a>
+							</div>
+							<div class="download__field">
+								<i></i>
+								<div>Чтобы начать обработку, выберите файл <br> или перетащите его в эту область.</div>
+							</div>
+					</div>														
+				</div>
+				<div class="add-event-wrap new">
+					<div class="title-counter">
+						<span>3</span>Скопируйте код для вставки на сайт
+					</div>					
+				</div>
+				<div class="ask"><a href="#">Как вставить код формы на свой сайт?</a></div>
+				<!-- begin insert  -->
+				<div class="insert">
+					<div class="insert__bl">
+						<input type="text" placeholder="Стандартный билет">
+						<button type="button" class="btn btn_red">Код формы</button>
+						<button type="button" class="btn btn_red">Код кнопки</button>
+					</div>
+					<div class="insert__code">
+						<div class="code__left">
+							<p class="insert__title">Скопируйте код и вставьте там, где должна быть форма записи.</p>
+						</div>
+						<div class="code__right">
+							<a class="copy-link" href="#"><i></i>Скопировать код</a>
+						</div>		
+					</div>
+					<div class="input textarea input_box input_code" contenteditable>
+						<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/media/js/invite_event_validation.js"></script><p>Приглашаем на эвент: </p><form onsubmit="return validate2()" action="http://test.event.piter-trening.ru/invite/" method="POST"><label class="label">Ваше  имя*:<input name="imya" class="required2" type="text"></label><br><label class="label">Фамилия*:&nbsp;<input name="familiya" class="required2" type="text"></label><br><label class="label">Email*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email2" class="required2" type="text"></label><br><label class="label">Телефон:&nbsp;&nbsp;&nbsp;&nbsp;<input name="telefon" type="text"></label><br><input name="event" type="hidden" value="823"><p>* - Обязательные поля</p><p><input type="submit" value="Записаться"></p></form></xmp> 
+					</div>
+					<div class="insert__code">
+						<div class="code__left">
+							<p class="insert__title">Выберите вид кнопки и вставьте код на свой сайт</p>
+							<div class="fwrap__type">
+								<label class="checkbox checkbox_inline">
+									<input type="radio" name="btype" checked><i></i>
+									<span>тип 1</span>
+								</label>
+								<label class="checkbox checkbox_inline">
+									<input type="radio" name="btype"><i></i>
+									<span>тип 2</span>
+								</label>
+								<label class="checkbox checkbox_inline last">
+									<input type="radio" name="btype"><i></i>
+									<span>тип 3</span>
+								</label>
+								<a class="copy-link" href="#"><i></i>Скопировать код</a>
+							</div>							
+						</div>
+						<div class="code__right">
+							<p class="insert__title">замените надпись на кнопке</p>
+							<div class="edit">
+								<i></i>
+								<input class="edited" type="text" placeholder="записаться" maxlength="20">
+							</div>
+						</div>
+					</div>
+					<div class="insert__bl">						
+						<button type="button" class="btn btn-change">записаться</button>
+						<!--div class="input textarea input_box input_code" contenteditable>
+							<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/idation.js"></script></xmp>
+						</div-->
+					</div>
+					</div>
+				<!-- end insert -->
+				<!-- begin tickets  -->
+				<div class="ticket">
+					<div class="item-row item-row_billing">
+						<div class="item-row__cell ticket__icon"><div></div></div>
+						<div class="item-row__cell ticket__part">Билет участника</div>
+						<div class="item-row__cell ticket__price">18 900</div>
+						<div class="item-row__cell">текущая цена</div>
+					</div>
+					<div class="item-row item-row_billing">
+						<div class="item-row__cell ticket__icon"><div></div></div>
+						<div class="item-row__cell ticket__part">Vip билет</div>
+						<div class="item-row__cell ticket__price">24 900</div>
+						<div class="item-row__cell">текущая цена</div>
+					</div>						
+				</div>
+				<!-- end tickets -->
+			</div>                             
+
+		</div>
+	</div>
+	<!-- END container-->
+</div>
+<!-- END out-->
+</body>
+</html>
