@@ -1,88 +1,88 @@
 //ted popup
 .ted
 	width: 740px
-	margin-left: -370px  
-	padding: 0 
+	margin-left: -370px
+	padding: 0
 	+radio
 	.form
 		background: #EEE
-		border: 1px solid #fff 
+		border: 1px solid #fff
 		&.new
-			text-align: left 
-			color: #5B5B5B 
+			text-align: left
+			color: #5B5B5B
 			position: relative
 			.form__title
 				padding: 5.405% 4.324% 5.405% 7.027%
-				margin-bottom: 0  
-				text-align: left 
+				margin-bottom: 0
+				text-align: left
 				text-transform: uppercase
-				font-size: 26px   
+				font-size: 26px
 
 .form__center
 	+clr
-	background: #D4D4D4 	
-	text-transform: uppercase 
+	background: #D4D4D4
+	text-transform: uppercase
 	padding: 7.027% 4.504% 6.756% 7.027%
 	border-top: 1px solid #fff
 	border-bottom: 1px solid #fff
 
 .center__text
 	float: left
-	color: #454545 
-	font-size: 21px 
+	color: #454545
+	font-size: 21px
 	padding-top: 6.276%
-	line-height: 1.1 
-	
+	line-height: 1.1
+
 .center__ted
 	float: right
-	padding-right: 3.108% 
+	padding-right: 3.108%
 	content: ""
 	+s(ted)
 
 .form__bottom
 	+clr
-	padding: 6.279% 4.504% 6.441% 7.027%	
-	
+	padding: 6.279% 4.504% 6.441% 7.027%
+
 .bottom__text
 	float: left
 	padding-top: 2.027%
-	line-height: 1.1 
-	color: #3D3D3D 
+	line-height: 1.1
+	color: #3D3D3D
 	font-size: 21px
-	+robl 
+	+robl
 
 .bottom__pay
 	float: right
 	text-align: right
-	width: 64% 	
+	width: 64%
 	span
-		font-size: 34px 
-		padding-top: 4.651% 	
+		font-size: 34px
+		padding-top: 4.651%
 		padding-right: 3%
-		float: left  
+		float: left
 	button
 		width: 250px
 		height: 70px
 		background: #5a9fe0
 		text-transform: uppercase
-		color: #fff   
+		color: #fff
 		font-size: 28px
 		border-radius: 2px
-		box-shadow: 0 3px 4px #aca9a7  
-		+radio 	
+		box-shadow: 0 3px 4px #aca9a7
+		+radio
 		&:active
-			background: darken(#5a9fe0, 5%) 
-			
+			background: darken(#5a9fe0, 5%)
+
 .form__payable
 	position: absolute
-	bottom: 2.325%	
+	bottom: 2.325%
 	right: 2.027%
 	li
 		float: left
 		a
 			display: inline-block
 			content: ""
-			padding-right: 5px 
+			padding-right: 5px
 	.robokassa
 		+s(pay1)
 	.visa
@@ -92,12 +92,12 @@
 	.evro
 		+s(pay4)
 	.qiwi
-		+s(pay5)	
+		+s(pay5)
 	.unknown
 		+s(pay6)
 	.alfa
 		+s(pay7)
-		padding-right: 0 				
+		padding-right: 0
 
 .popup
 	.exit
@@ -111,40 +111,51 @@
 body
 	&.wrapz
 		background: url(../img/bg_new.jpg) 100% 40% no-repeat
-		background-size: cover 
+		background-size: cover
 		&.another
-			background: url(../img/bg_another.jpg) 50% 20% no-repeat	
-	
+			background: url(../img/bg_another.jpg) 50% 20% no-repeat
+
 .form1
 	position: relative
 	width: 560px
 	margin: 21% auto 0
 	background: rgba(255,255,255, 0.7)
 	background: #fff\9
-	border: 1px solid #fff 	
+	border: 1px solid #fff
+	box-shadow: 0 0 16px 2px rgba(0,0,0,.47)
 	&.another
 		border-radius: 4px
 		background: #F3F3F3
 		margin: 20% auto 5%
 	&.small
-		margin: 0	
-	
+		margin: 0
+		width: 275px
+	&.form3
+		border: 0
+		border-radius: 0
+		background: #FFF
+
 .form1__title
-	background: rgba(255,255,255, 0.7) 	
-	font-size: 17px 
+	background: rgba(255,255,255, 0.7)
+	font-size: 17px
 	padding: 20px 85px 20px 40px
 	color: #5B5B5B
-	border-bottom: 1px solid #fff 
+	border-bottom: 1px solid #fff
 	+radio
 	&.another
-		background: #D6DDDE 
-		text-align: center 
+		background: #D6DDDE
+		text-align: center
 		text-transform: uppercase
 		padding: 20px
-		font-size: 22px 
-		+circ 
+		font-size: 22px
+		+circ
 		&:after
-			display: none 
+			display: none
+	&.small
+		font-size: 10px
+		padding: 5px 10px 5px 20px
+		&:after
+			+s(form_bg_s)
 	&:after
 		+s(form_bg)
 		content: ""
@@ -155,11 +166,13 @@ body
 	p
 		position: relative
 		z-index: 5
-		
+
 .form1__when
-	padding: 0 85px 0 25px		
+	padding: 0 85px 0 25px
 	text-align: center
 	+clr
+	&.small
+		padding: 0 42px
 
 .form1__date, .form1__time
 	position: relative
@@ -168,96 +181,124 @@ body
 .form1__date
 	float: left
 	color: #5B5B5B
-	font-size: 21px 
-	padding-left: 105px 
+	font-size: 21px
+	padding-left: 105px
 	td
 		vertical-align: middle
 		p
 			line-height: 0.9
 	.number
-		font-size: 60px	
+		font-size: 60px
 	&:before
 		content: ""
 		position: absolute
-		top: 24px
-		left: 66px 
-		+s(calendar)		  
+		top: 12px
+		left: 25px
+		+s(calendar)
+	&.small
+		padding-left: 25px
+		font-size: 11px
+		.number
+			font-size: 32px
+		&:before
+			top: 12px
+			left: 3px
+			+s(cal_s)
 
 .form1__time
 	float: right
 	color: #00A0E3
-	font-size: 60px  	
+	font-size: 60px
 	&:before
 		position: absolute
 		content: ""
 		top: 25px
-		left: -40px 
+		left: -40px
 		+s(clock1)
+	&.small
+		font-size: 32px
+		&:before
+			top: 14px
+			left: -21px
+			+s(clock_s)
 
 .form1__main
-	padding: 0 35px 	
+	padding: 0 35px
 	text-align: center
 	&.another
 		padding: 10px 45px 0
-	button
+	&.form3
+		padding: 25px 45px 0
+		.btn-change
+			width: 345px
+			height: 66px
+			margin: 10px 0 0 0
+			font-size: 30px
+			box-shadow: 0 4px 1px #942924
+	.btn-reg
 		background: #599EE0
-		text-transform: uppercase  	
-		color: #fff 
-		width: 470px 
+		text-transform: uppercase
+		color: #fff
+		width: 470px
 		height: 55px
 		display: block
-		margin: 25px 0 10px 0 
-		font-size: 21px 
+		margin: 25px 0 10px 0
+		font-size: 21px
 		box-shadow: 0 3px 4px #aca9a7
 		+radio
 		&:hover
 			background: #4B83A1
 		&:active
-			background: #4E88C1 
+			background: #4E88C1
 		&.another
 			background: #629AB2
 			border-radius: 5px
-			padding-top: 4px 
+			padding-top: 4px
 			width: 410px
-			margin: 25px auto 10px 
+			margin: 25px auto 10px
 			border-top: #dedede
 			+circ
 			&:hover
-				background: #6C8D9B 	
+				background: #6C8D9B
 			&:active
-				background: #8f98b1 	
-	.garant
-		font-size: 11.4px
-		color: #727271  
-		position: relative
-		padding-bottom: 5px
-		+radio		
-		i
-			content: "" 
-			position: absolute
-			left: 20px
-			+s(lock)
-		&.another
-			font-size: 12px
-			color: #BDBDA3
-			padding-left: 20px 
-			+circ 
-			i
-				left: 45px 
+				background: #8f98b1
+	&.small
+		padding: 0 20px
+		.btn-reg
+			width: 240px
+			height: 25px
+			font-size: 10px
 
-.form2__when
-	padding-top: 20px
-	text-align: center
-	text-transform: uppercase
-	color: #5B5B5B
-	font-size: 25px 
-	+circ
-	.form2__date
-		margin-left: -20px 	
-		margin-right: 30px 
-		display: inline-block 	
-	.form2__month
-		color: #DDD 		
+.garant
+	font-size: 11.4px
+	color: #727271
+	position: relative
+	padding-bottom: 5px
+	+radio
+	i
+		content: ""
+		position: absolute
+		left: 20px
+		+s(lock)
+	&.another
+		font-size: 12px
+		color: #BDBDA3
+		padding-left: 20px
+		+circ
+		i
+			left: 45px
+	&.small
+		font-size: 5px
+		i
+			left: 15px
+			+s(lock_s)
+	&.form3
+		padding: 15px 0 15px 17px
+		font-size: 13px
+		text-align: center
+		i
+			top: 16px
+			left: 24px
 
 .main__in
 	width: 470px
@@ -267,14 +308,14 @@ body
 	+box
 	&:hover
 		input
-			border: 2px solid #65a2dc	
+			border: 2px solid #65a2dc
 			padding-left: 8px
 	&.another
 		border: 1px solid #fff
 		border-radius: 5px
 		input
-			background: #FFF 
-			color: #C5C6C6 
+			background: #FFF
+			color: #C5C6C6
 			margin: 0 auto 10px
 			border: 1px solid #c4c5c5
 			border-bottom: 1px solid #dadbdb
@@ -283,30 +324,45 @@ body
 			+circ
 			&:focus
 				border-color: #3a3a3a
-				background: #3A3A3A 
-				padding-left: 9px 
+				background: #3A3A3A
+				padding-left: 9px
+				color: #e7e7e7
 				&:hover
-					border-color: #3a3a3a	
+					border-color: #3a3a3a
 		&:hover
 			input
-				border: 2px solid #65a2dc	
-				padding-left: 9px	
-						
+				border: 2px solid #65a2dc
+				padding-left: 9px
+		&.form3
+			height: 55px
+			margin-bottom: 15px
+			input
+				height: 55px
+				border-radius: 0
+				color: #5b5b5b
+				font-size: 30px
+				box-shadow: inset 0 0 12px 1px #ababab
+				+placeholder-color(#5b5b5b)
+				+skp
+				&:focus
+					box-shadow: none
+					color: #e8e8e8
+					+placeholder-color(#e8e8e8)
 	input
 		width: 470px
 		height: 40px
-		padding-left: 10px  
+		padding-left: 10px
 		display: block
 		color: #5B5B5B
 		background: none
-		font-size: 20px		
+		font-size: 20px
 		+robth
-		+placeholder-color(#5b5b5b) 
-		+box		 
-		&:focus	
+		+placeholder-color(#5b5b5b)
+		+box
+		&:focus
 			background: #FFF
-			border: 2px solid #65a2dc 		
-			padding-left: 8px  
+			border: 2px solid #65a2dc
+			padding-left: 8px
 	&.dropdown
 		position: relative
 		select
@@ -319,33 +375,93 @@ body
 		&:before
 			content: ""
 			position: absolute
-			top: 14px	
+			top: 14px
 			right: 20px
-			+s(arr)	
+			+s(arr)
 		&.another
 			&:before
-				+s(arr_another)	
-				content: ""
-			//.black__in
-			//	border-color: #3a3a3a
-			//	background: #3a3a3a 		   	
+				+s(arr_another)
+		&.small
+			select
+				width: 240px
+				height: 20px
+			&:before
+				top: 8px
+				right: 15px
+				+s(arr_s)
+	&.small
+		width: 240px
+		height: 20px
+		background: url(../img/input_b_s.png) bottom no-repeat
+		input
+			width: 240px
+			height: 20px
+			font-size: 10px
+
 .divider
-	border-top: 1px solid #dcdcdb 		
-	
+	background: #dcdcdb
+	height: 1px
+	&.form3
+		height: 2px
+		background: #555555
+		margin: 0px 30px
+
 .madeby
 	position: relative
-	text-align: center 
-	padding: 15px 0 10px 0 
+	text-align: center
+	padding: 15px 0 10px 0
 	color: #727271
 	font-size: 17px
-	border-top: 1px solid #fff   
+	border-top: 1px solid #fff
 	+robreg
+	&.small
+		font-size: 8px
+		padding: 10px 0
 	&.another
-		background: #D6DDDE 
-		padding: 10px 0 
+		background: #D6DDDE
+		padding: 10px 0
 	.madeby__logo
 		+s(logo_mini)
-		display: inline-block 
+		display: inline-block
 		content: ""
 		margin-left: 5px
-		vertical-align: -2px    	
+		vertical-align: -2px
+		&.small
+			+s(logo_s)
+	&.form3
+		border: 0
+		background: #FFF
+
+
+//form 2
+.form2__when
+	padding-top: 20px
+	text-align: center
+	text-transform: uppercase
+	color: #5B5B5B
+	font-size: 25px
+	+circ
+	.form2__date
+		margin-left: -20px
+		margin-right: 30px
+		display: inline-block
+	.form2__month
+		color: #DDD
+
+//form3
+.form3__title
+	padding: 20px 30px
+	text-align: center
+	color: #575757
+	text-transform: uppercase
+	font-size: 19px
+	+intro
+
+.form3__when
+	padding-top: 20px
+	text-align: center
+	font-size: 33px
+	+circ
+
+.form3__date
+	margin-right: 12px

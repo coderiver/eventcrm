@@ -4,105 +4,113 @@
 		> span
 			padding-top: 13px
 		> i
-			margin: 17px 0 0 20px 
-			
+			margin: 17px 0 0 20px
+
 .btn-cancel_big
 	&.new
 		background: #959595
-		
+
 .sidebar__in
 	&.new
-		top: 89px	
-		
+		top: 89px
+
 .add-event-wrap
 	&.new
-		border-bottom: none 	
-		padding-bottom: 0 			
-		
+		border-bottom: none
+		padding-bottom: 0
+
 //form
 .fwrap
 	+clr
-	padding: 0 30px 
-	
+	padding: 0 30px
+
 .fwrap__type
-	text-align: center 
+	text-align: center
 	margin-bottom: 20px
 	label
-		display: inline-block 
-		margin-right: 50px 
+		display: inline-block
+		margin-right: 50px
 	.last
-		margin-right: 35px 	 		
+		margin-right: 35px
 	span
 		font-size: 15px
-		display: block 
-		margin-left: -2px  	
-		
+		display: block
+		margin-left: -2px
+
 .fwrap__variation, .fwrap__form
 	float: left
 
 .variaton__bl
-	margin-bottom: 35px 	
+	margin-bottom: 35px
+
+.fwrap__form
+	+s(fbg)
+	content: ""
 
 //payment block
 .payment
 	margin: 15px 10px 0
 	+clr
-	 
+
 .payment__left
 	float: left
+	width: 45%
+	padding-right: 5%
 	.checkbox
 		margin: 0
 	.edit
-		width: 412px 
-		margin-bottom: 15px 
+		margin-bottom: 15px
 	.edited
 		height: 70px
-		padding: 0 32px 0 15px	
-	 
+		padding: 0 32px 0 15px
+
 .payment__right
 	float: right
+	margin-left: 25px
+	width: 45%
 	.ask
-		padding-right: 0 
-		margin-bottom: 0 
+		padding-right: 0
+		margin-bottom: 0
 		a
 			color: #00a0e3
 			font-size: 14px
 			&:before
 				content: ""
-				+s(ask-h)	
+				+s(ask-h)
 	.forted
 		content: ""
-		+s(ted_bg)				
+		+s(ted_bg)
+		float: right
 	.ted
 		margin: 0 auto
 		width: 375px
-		padding-top: 15px 
+		padding-top: 15px
 		.form.new .form__title
-			font-size: 13px  
+			font-size: 13px
 		.center__text, .bottom__text
 			font-size: 10px
 		.center__ted
 			+s(ted_s)
 			content: ""
-		.bottom__pay 
+		.bottom__pay
 			span
-				font-size: 17px 	
+				font-size: 17px
 			button
 				width: 125px
 				height: 35px
-				font-size: 14px   	
-//radio-key new	
+				font-size: 14px
+//radio-key new
 .radio-key__title
-	color: #2B2A29 
+	color: #2B2A29
 	padding-bottom: 15px
 	font-size: 14px
-	
+
 .radio-key
 	&.blue
 		span
-			color: #aaaaaa 
+			color: #aaaaaa
 			border-bottom: none
-			&:before 
+			&:before
 				width: 50px
 				height: 25px
 				border: 1px solid #9e9e9e
@@ -112,12 +120,12 @@
 				width: 19px
 				height: 19px
 				border-radius: 50%
-				background: $blue 
+				background: $blue
 		input
 			position: absolute
 			top: 0
 			left: 0
-			opacity: 0 
+			opacity: 0
 			&:checked + span
 				color: $blue
 				border-color: transparent
@@ -134,7 +142,7 @@
 				z-index: 2
 				&:after
 					right: -31px
-					
+
 .radio-key__var-2
 	&.blue
 		padding-left: 30px
@@ -147,97 +155,97 @@
 			&:checked + span
 				z-index: 2
 				&:after
-					left: -32px	  
-					
+					left: -32px
+
 //ask block
 .ask
-	padding-right: 20px 
-	margin-bottom: 15px 
-	text-align: right 
+	padding-right: 20px
+	margin-bottom: 15px
+	text-align: right
 	a
-		font-size: 11px 
-		color: #000 
-		display: inline-block 
+		font-size: 11px
+		color: #000
+		display: inline-block
 		text-decoration: underline
 		position: relative
-		+freg		
+		+freg
 		&:before
 			+s(ask)
 			content: ""
 			position: absolute
 			top: -1px
 			left: -28px
-			
+
 //insert code
 .insert
 	background: #e9e9e9
 	box-shadow: inset 0 0 8px 3px #d3d3d3
-	padding: 15px 10px 10px  
+	padding: 15px 10px 10px
 	margin: 0 20px
 	.input_code
-		padding-right: 45px 
-		margin-bottom: 25px 
+		padding-right: 45px
+		margin-bottom: 25px
 		.code
 			white-space: pre-wrap
-	
+
 .insert__bl
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	input
-		width: 260px 		
+		width: 260px
 		height: 40px
 		margin-right: 15px
-		padding-left: 20px 
+		padding-left: 20px
 		color: #262626
 		font-size: 15px
-		border: 1px solid #b9b9b9 
-		+placeholder-color(#262626)  	 		
+		border: 1px solid #b9b9b9
+		+placeholder-color(#262626)
 	.btn_red
-		width: 160px  
-		margin-right: 10px		 
-		
+		width: 160px
+		margin-right: 10px
+
 .insert__code
-	margin-bottom: 10px 
+	margin-bottom: 10px
 	+clr
 	.copy-link
-		font-size: 14px 
+		font-size: 14px
 		i
 			vertical-align: middle
-			
+
 .insert__title
-	color: #262626 				
-	font-size: 15px 
-	padding-left: 10px 					
+	color: #262626
+	font-size: 15px
+	padding-left: 10px
 
 .code__left
 	float: left
-	width: 50% 
+	width: 50%
 	.fwrap__type
 		text-align: left
 		margin: 15px 0 0 30px
 	.copy-link
-		vertical-align: 4px 	
-	
+		vertical-align: 4px
+
 .code__right
 	float: right
 	width: 50%
-	text-align: right 
+	text-align: right
 	.copy-link
-		padding-right: 10px 		
+		padding-right: 10px
 	p
-		text-align: left 
-		padding: 0 		
-			 	
+		text-align: left
+		padding: 0
+
 //button change
-.btn-change	
-	width: 240px   		
+.btn-change
+	width: 240px
 	height: 45px
-	margin: 0 12px 0 5px  
+	margin: 0 12px 0 5px
 	background: #F24841
 	color: #FFF
 	font-size: 21px
 	text-shadow: 0 3px 5px rgba(0,0,0,.75)
 	box-shadow: 0 4px 1px #942924
-	+skp	
+	+skp
 	&.btn
 		padding: 0 10px
 
@@ -246,7 +254,7 @@
 	position: relative
 	&:hover
 		i
-			display: block 
+			display: block
 	i
 		content: ""
 		position: absolute
@@ -254,47 +262,46 @@
 		right: 20px
 		cursor: pointer
 		+s(edit)
-		display: none 
+		display: none
 
 .edited
 	color: #262626
-	font-size: 15px	
+	font-size: 15px
 	border: 1px solid #cfcfcf
-	width: 100% 
+	width: 100%
 	height: 50px
-	padding: 0 50px 0 15px 
+	padding: 0 50px 0 15px
 	+placeholder-color(#262626)
 	+box
 	+freg
-	 
+
 //tickets block
 .ticket
 	margin: 0 20px
-	font-size: 16px  
+	font-size: 16px
 	.item-row__cell
-		width: auto 
+		width: auto
 	.ticket__icon
-		width: 8% 
+		width: 8%
 		div
-			display: block 
+			display: block
 			background: #d5d5d5
-			border-radius: 20px	
+			border-radius: 20px
 			width: 40px
-			height: 40px 
+			height: 40px
 			position: relative
 			&:before
 				content: ""
-				position: absolute 
+				position: absolute
 				top: 7px
 				left: 8px
 				z-index: 3
 				+s(ticket)
 	.ticket__part
-		width: 18% 				
+		width: 18%
 	.ticket__price
-		width: 10% 
-		font-size: 14px 
-		+fbold				
-	
-	
-		
+		width: 10%
+		font-size: 14px
+		+fbold
+
+
