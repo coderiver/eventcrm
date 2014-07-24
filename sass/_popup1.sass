@@ -114,6 +114,7 @@ body
 		background-size: cover
 		&.another
 			background: url(../img/bg_another.jpg) 50% 20% no-repeat
+			background-size: auto
 
 .form1
 	position: relative
@@ -310,6 +311,23 @@ body
 		input
 			border: 2px solid #65a2dc
 			padding-left: 8px
+	input
+		width: 470px
+		height: 40px
+		padding-left: 10px
+		display: block
+		color: #5B5B5B
+		background: none
+		font-size: 20px
+		+robth
+		+placeholder-color(#5b5b5b)
+		+box
+		&:focus
+			background: #FFF
+			border: 2px solid #65a2dc
+			padding-left: 8px
+
+	//on form 2 page
 	&.another
 		border: 1px solid #fff
 		border-radius: 5px
@@ -333,62 +351,24 @@ body
 			input
 				border: 2px solid #65a2dc
 				padding-left: 9px
+
+		//on form 3 page
 		&.form3
 			height: 55px
 			margin-bottom: 15px
 			input
 				height: 55px
 				border-radius: 0
-				color: #5b5b5b
+				color: #afb0b0
 				font-size: 30px
 				box-shadow: inset 0 0 12px 1px #ababab
-				+placeholder-color(#5b5b5b)
+				+placeholder-color(#afb0b0)
 				+skp
 				&:focus
 					box-shadow: none
 					color: #e8e8e8
-					+placeholder-color(#e8e8e8)
-	input
-		width: 470px
-		height: 40px
-		padding-left: 10px
-		display: block
-		color: #5B5B5B
-		background: none
-		font-size: 20px
-		+robth
-		+placeholder-color(#5b5b5b)
-		+box
-		&:focus
-			background: #FFF
-			border: 2px solid #65a2dc
-			padding-left: 8px
-	&.dropdown
-		position: relative
-		select
-			position: absolute
-			width: 470px
-			height: 40px
-			left: 0
-			z-index: 10
-			+opacity(0)
-		&:before
-			content: ""
-			position: absolute
-			top: 14px
-			right: 20px
-			+s(arr)
-		&.another
-			&:before
-				+s(arr_another)
-		&.small
-			select
-				width: 240px
-				height: 20px
-			&:before
-				top: 8px
-				right: 15px
-				+s(arr_s)
+
+	//on choose__form page
 	&.small
 		width: 240px
 		height: 20px
@@ -397,6 +377,64 @@ body
 			width: 240px
 			height: 20px
 			font-size: 10px
+
+	// dropdown select
+	&.dropdown
+		position: relative
+		select
+			position: absolute
+			width: 470px
+			height: 40px
+			left: 0
+			z-index: 10
+			-webkit-appearance: none
+			-moz-appearance: none
+			font-size: 20px
+			+opacity(0)
+			+robth
+			option
+				background: lighten(#000, 90%)
+		.is-active
+			option
+				cursor: pointer
+				background: #3a3a3a
+				color: #e8e8e8
+		&:before
+			content: ""
+			position: absolute
+			top: 14px
+			right: 20px
+			+s(arr)
+
+		//form 2
+		&.another
+			select
+				font-size: 20px
+				color: #c5c6c6
+				+circ
+			&:before
+				+s(arr_another)
+
+		//choose__page
+		&.small
+			select
+				width: 240px
+				height: 20px
+			&:before
+				top: 8px
+				right: 15px
+				+s(arr_s)
+
+		//form 3
+		&.form3
+			select
+				height: 55px
+				color: #afb0b0
+				font-size: 30px
+				+skp
+			&:before
+				top: 23px
+
 
 .divider
 	background: #dcdcdb
