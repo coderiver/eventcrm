@@ -1436,18 +1436,18 @@ a.btn { line-height: 41px; }
 
 .add-event-wrap.new { border-bottom: none; padding-bottom: 0; }
 
-.fwrap { *zoom: 1; padding: 0 30px; }
+.fwrap { *zoom: 1; position: relative; padding: 0 30px; }
 .fwrap:after { content: " "; display: table; clear: both; }
 
-.fwrap__bl { float: left; width: 33%; }
-.fwrap__bl.type { text-align: center; margin-bottom: 20px; float: none; width: 100%; }
+.fwrap__bl { width: 33%; float: left; }
+.fwrap__bl.type { text-align: center; margin-bottom: 20px; }
 .fwrap__bl.type span { font-size: 15px; display: block; margin: 0 50px 0 -2px; }
 .fwrap__bl.type .last span { margin-right: 0; }
-.fwrap__bl.verse { width: 24%; min-width: 240px; }
-.fwrap__bl.right { padding-top: 25px; float: right; width: 38.09524%; }
+.fwrap__bl.verse { width: 25%; }
+.fwrap__bl.right { padding-top: 25px; float: right; width: 32%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .fwrap__bl.right .edited { height: 70px; margin-bottom: 25px; }
 .fwrap__bl.right .checkbox { margin-top: 12px; }
-.fwrap__bl.form { background: url('../img/icons-sc185387aae.png') 0 -288px no-repeat; width: 330px; height: 350px; content: ""; margin: 0 auto; float: none; padding-top: 10px; }
+.fwrap__bl.form { background: url('../img/icons-sc185387aae.png') 0 -288px no-repeat; width: 330px; height: 350px; content: ""; margin: 0 auto; padding-top: 10px; float: none; }
 
 .verse__bl { margin-bottom: 35px; }
 .verse__bl.first { padding-top: 25px; }

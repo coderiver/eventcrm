@@ -22,16 +22,15 @@
 //form
 .fwrap
 	+clr
+	position: relative
 	padding: 0 30px
 
 .fwrap__bl
-	float: left
 	width: 33%
+	float: left
 	&.type
 		text-align: center
 		margin-bottom: 20px
-		float: none
-		width: 100%
 		span
 			font-size: 15px
 			display: block
@@ -40,12 +39,12 @@
 			span
 				margin-right: 0
 	&.verse
-		width: 24%
-		min-width: 240px
+		width: 25%
 	&.right
 		padding-top: 25px
 		float: right
-		width: percentage(320px/840px)
+		width: 32%
+		+box
 		.edited
 			height: 70px
 			margin-bottom: 25px
@@ -55,8 +54,8 @@
 		+s(fbg)
 		content: ""
 		margin: 0 auto
-		float: none
 		padding-top: 10px
+		float: none
 
 .verse__bl
 	margin-bottom: 35px
