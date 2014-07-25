@@ -261,7 +261,7 @@
 				</div>
 				<!-- begin fwrap  -->
 				<div class="fwrap">
-					<div class="fwrap__type">
+					<div class="fwrap__bl type">
 						<label class="checkbox checkbox_inline">
 							<input type="radio" name="type" checked><i></i>
 							<span>тип 1</span>
@@ -270,33 +270,34 @@
 							<input type="radio" name="type"><i></i>
 							<span>тип 2</span>
 						</label>
-						<label class="checkbox checkbox_inline">
+						<label class="checkbox checkbox_inline last">
 							<input type="radio" name="type"><i></i>
 							<span>тип 3</span>
 						</label>
 					</div>
-					<div class="fwrap__variation">
-						<div class="variaton__bl">
+					<!-- begin fwrap__verse  -->
+					<div class="fwrap__bl verse">
+						<div class="verse__bl first">
 							<label class="checkbox checkbox_inline">
-								<input type="checkbox" checked><i></i>
+								<input class="checkbox_title" type="checkbox" checked><i></i>
 								<span>Отображать заголовок</span>
 							</label>
 						</div>
-						<div class="variaton__bl">
+						<div class="verse__bl">
 							<label class="checkbox checkbox_inline">
-								<input type="checkbox" checked><i></i>
+								<input class="checkbox_date" type="checkbox" checked><i></i>
 								<span>Отображать дату</span>
 							</label>
 						</div>
-						<div class="variaton__bl">
+						<div class="verse__bl">
 							<label class="checkbox checkbox_inline">
-								<input type="checkbox" checked><i></i>
+								<input class="checkbox_surname" type="checkbox" checked><i></i>
 								<span>Запрашивать фамилию</span>
 							</label>
 						</div>
-						<div class="variaton__bl">
+						<div class="verse__bl">
 							<label class="checkbox checkbox_inline">
-								<input type="checkbox" checked><i></i>
+								<input class="checkbox_call" type="checkbox" checked><i></i>
 								<span>Запрашивать телефон</span>
 							</label>
 						</div>
@@ -312,6 +313,9 @@
 							</label>
 						</div>
 					</div>
+					<!-- end fwrap__verse -->
+					<div class="fwrap__bl">
+					<div class="fwrap__bl form">
 					<!-- begin fwrap__form  -->
 					<div class="fwrap__form">
 						<div class="form1 small">
@@ -336,13 +340,13 @@
 									<div class="main__in small">
 										<input type="text" placeholder="ваше Имя">
 									</div>
-									<div class="main__in small">
+									<div class="main__in small surname">
 										<input type="text" placeholder="ваша Фамилия">
 									</div>
 									<div class="main__in small">
 										<input type="text" placeholder="ваш E-mail">
 									</div>
-									<div class="main__in small">
+									<div class="main__in small call">
 										<input class="phone" type="text" placeholder="(xxx) xxx-xx-xx">
 									</div>
 									<div class="main__in small dropdown">
@@ -366,6 +370,30 @@
 						</div>
 					</div>
 					<!-- end fwrap__form -->
+					</div>
+					</div>
+					<!-- begin fwrap__right  -->
+					<div class="fwrap__bl right">
+						<div class="title-counter">
+							Можно изменить заголовок формы
+						</div>
+						<div class="edit">
+							<i></i>
+							<input class="edited" type="text" placeholder="Как пить курить трахаться">
+						</div>
+						<div class="title-counter">
+							Можно заменить текст на кнопке
+						</div>
+						<div class="edit">
+							<i></i>
+							<input class="edited" type="text" placeholder="Зарегистрироваться">
+						</div>
+						<label class="checkbox checkbox_inline">
+							<input class="checkbox_shadow" type="checkbox"><i></i>
+							<span>Отображать тень формы</span>
+						</label>
+					</div>
+					<!-- end fwrap__right -->
 				</div>
 				<!-- end fwrap -->
 				<div class="add-event-wrap new">
@@ -386,7 +414,7 @@
 					<div class="payment">
 						<div class="title-counter">
 								Можно заменить заголовок окна
-							</div>
+						</div>
 						<div class="payment__left">
 							<div class="edit">
 								<i></i>
@@ -472,7 +500,7 @@
 					<div class="insert__code">
 						<div class="code__left">
 							<p class="insert__title">Выберите вид кнопки и вставьте код на свой сайт</p>
-							<div class="fwrap__type">
+							<div class="type">
 								<label class="checkbox checkbox_inline">
 									<input type="radio" name="btype" checked><i></i>
 									<span>тип 1</span>
@@ -498,9 +526,9 @@
 					</div>
 					<div class="insert__bl">
 						<button type="button" class="btn btn-change">записаться</button>
-						<!--div class="input textarea input_box input_code" contenteditable>
+						<div class="input textarea input_box input_code" contenteditable>
 							<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/idation.js"></script></xmp>
-						</div-->
+						</div>
 					</div>
 					</div>
 				<!-- end insert -->

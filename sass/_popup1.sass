@@ -129,8 +129,9 @@ body
 		background: #F3F3F3
 		margin: 20% auto 5%
 	&.small
-		margin: 0
+		margin: 0 auto
 		width: 275px
+		box-shadow: none
 	&.form3
 		border: 0
 		border-radius: 0
@@ -154,7 +155,8 @@ body
 			display: none
 	&.small
 		font-size: 10px
-		padding: 5px 10px 5px 20px
+		padding: 11px 10px 11px 11px
+		text-align: left
 		&:after
 			+s(form_bg_s)
 	&:after
@@ -202,7 +204,7 @@ body
 		.number
 			font-size: 32px
 		&:before
-			top: 12px
+			top: 9px
 			left: 3px
 			+s(cal_s)
 
@@ -219,7 +221,7 @@ body
 	&.small
 		font-size: 32px
 		&:before
-			top: 14px
+			top: 9px
 			left: -21px
 			+s(clock_s)
 
@@ -264,11 +266,12 @@ body
 			&:active
 				background: #8f98b1
 	&.small
-		padding: 0 20px
+		padding: 10px 20px 0 20px
 		.btn-reg
 			width: 240px
 			height: 25px
 			font-size: 10px
+			margin: 15px 0 10px 0
 
 .garant
 	font-size: 11.4px
@@ -418,6 +421,7 @@ body
 		//choose__page
 		&.small
 			select
+				font-size: 10px
 				width: 240px
 				height: 20px
 			&:before

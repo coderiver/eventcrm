@@ -24,28 +24,44 @@
 	+clr
 	padding: 0 30px
 
-.fwrap__type
-	text-align: center
-	margin-bottom: 20px
-	label
-		display: inline-block
-		margin-right: 50px
-	.last
-		margin-right: 35px
-	span
-		font-size: 15px
-		display: block
-		margin-left: -2px
-
-.fwrap__variation, .fwrap__form
+.fwrap__bl
 	float: left
+	width: 33%
+	&.type
+		text-align: center
+		margin-bottom: 20px
+		float: none
+		width: 100%
+		span
+			font-size: 15px
+			display: block
+			margin: 0 50px 0 -2px
+		.last
+			span
+				margin-right: 0
+	&.verse
+		width: 24%
+		min-width: 240px
+	&.right
+		padding-top: 25px
+		float: right
+		width: percentage(320px/840px)
+		.edited
+			height: 70px
+			margin-bottom: 25px
+		.checkbox
+			margin-top: 12px
+	&.form
+		+s(fbg)
+		content: ""
+		margin: 0 auto
+		float: none
+		padding-top: 10px
 
-.variaton__bl
+.verse__bl
 	margin-bottom: 35px
-
-.fwrap__form
-	+s(fbg)
-	content: ""
+	&.first
+		padding-top: 25px
 
 //payment block
 .payment
@@ -107,6 +123,7 @@
 
 .radio-key
 	&.blue
+		//text-align: left
 		span
 			color: #aaaaaa
 			border-bottom: none
@@ -190,6 +207,7 @@
 
 .insert__bl
 	margin-bottom: 20px
+	+clr
 	input
 		width: 260px
 		height: 40px
@@ -202,6 +220,16 @@
 	.btn_red
 		width: 160px
 		margin-right: 10px
+	.btn-change
+		float: left
+		width: 24%
+		max-width: 240px
+	.input_code
+		float: right
+		max-width: 72%
+		min-height: 50px
+		margin-bottom: 0
+		line-height: 2
 
 .insert__code
 	margin-bottom: 10px
@@ -219,9 +247,14 @@
 .code__left
 	float: left
 	width: 50%
-	.fwrap__type
-		text-align: left
+	.type
 		margin: 15px 0 0 30px
+		span
+			display: block
+			margin: 0 50px 0 -2px
+		.last
+			span
+				margin-right: 0
 	.copy-link
 		vertical-align: 4px
 
