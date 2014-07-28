@@ -71,10 +71,27 @@ $(document).ready(function() {
 		$('.form1').find('.btn-change').text(value);
 	});
 
+	//form title change
+	$('.fwrap__bl.right').find('.edited.ttl').keyup(function(event) {
+		var value = $(this).val();
+		$('.form1').find('.form1__title').text(value);
+		$('.form1').find('.form3__title').text(value);
+	});
+
 	//ted change
 	$('.payment__left').find('.edited.pay').keyup(function(event) {
 		var value = $(this).val();
 	$('.bottom__pay').find('button').text(value);
+	});
+
+	$('.payment__left').find('.eres').keyup(function(event) {
+		var value = $(this).val();
+		$('.payment__right').find('.form__title').text(value);
+	});
+
+	$('.payment__left').find('.message').keyup(function(event) {
+		var value = $(this).val();
+		$('.payment__right').find('.center__text').text(value);
 	});
 
 //button text change

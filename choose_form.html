@@ -316,6 +316,7 @@
 					<!-- end fwrap__verse -->
 					<div class="fwrap__bl">
 						<div class="fwrap__bl form">
+							<!--FIRST TYPE-->
 							<div class="form1 small type1">
 								<div class="form1__title small">
 									<p>Как пить каждый день, курить, трахаться </p><p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
@@ -462,7 +463,7 @@
 						</div>
 						<div class="edit">
 							<i></i>
-							<input class="edited" type="text" placeholder="Как пить курить трахаться">
+							<input class="edited ttl" type="text" placeholder="Как пить курить трахаться" maxlength="140">
 						</div>
 						<div class="title-counter">
 							Можно заменить текст на кнопке
@@ -501,28 +502,28 @@
 						<div class="payment__left">
 							<div class="edit">
 								<i></i>
-								<input class="edited" type="text" placeholder="Ересь не неси это низкий СРС">
+								<input class="edited eres" type="text" placeholder="Ересь не неси это низкий СРС" maxlength="70">
 							</div>
 							<div class="title-counter">
 								Укажите важный текст в самом окне уведомления
 							</div>
 							<div class="edit">
 								<i></i>
-								<input class="edited" type="text" placeholder="Ты ж с огнем играешь дико задирая цену клика">
+								<input class="edited message" type="text" placeholder="Ты ж с огнем играешь дико задирая цену клика" maxlength="100">
 							</div>
 							<div class="title-counter">
 								Надпись на кнопке окна
 							</div>
 							<div class="edit">
 								<i></i>
-								<input class="edited pay" type="text" placeholder="ОПЛАТИТЬ" maxlength="10">
+								<input class="edited pay" type="text" placeholder="ОПЛАТИТЬ" maxlength="15">
 							</div>
 						</div>
 						<div class="payment__right">
 							<div class="forted">
 								<div class="ted">
 									<div class="form new">
-										<div class="form__title form__title_big">
+										<div class="form__title">
 											<p>Ересь не неси это низкий срс</p>
 										</div>
 										<div class="form__center">
@@ -542,6 +543,7 @@
 											</div>
 										</div>
 									</div>
+									<!--button class="btn-close exit"></button-->
 								</div>
 							</div>
 						</div>
@@ -584,19 +586,24 @@
 						<div class="code__left">
 							<p class="insert__title">Выберите вид кнопки и вставьте код на свой сайт</p>
 							<div class="type">
-								<label class="checkbox checkbox_inline">
-									<input type="radio" name="btype" checked><i></i>
-									<span>тип 1</span>
-								</label>
-								<label class="checkbox checkbox_inline">
-									<input type="radio" name="btype"><i></i>
-									<span>тип 2</span>
-								</label>
-								<label class="checkbox checkbox_inline last">
-									<input type="radio" name="btype"><i></i>
-									<span>тип 3</span>
-								</label>
-								<a class="copy-link" href="#"><i></i>Скопировать код</a>
+								<div class="type__check">
+									<label class="checkbox checkbox_inline">
+										<input type="radio" name="btype" checked><i></i>
+										<span>тип 1</span>
+									</label>
+								</div>
+								<div class="type__check">
+									<label class="checkbox checkbox_inline">
+										<input type="radio" name="btype"><i></i>
+										<span>тип 2</span>
+									</label>
+								</div>
+								<div class="type__check last">
+									<label class="checkbox checkbox_inline">
+										<input type="radio" name="btype"><i></i>
+										<span>тип 3</span>
+									</label>
+								</div>
 							</div>
 						</div>
 						<div class="code__right">
@@ -609,6 +616,7 @@
 					</div>
 					<div class="insert__bl">
 						<button type="button" class="btn btn-change">записаться</button>
+						<a class="copy-link" href="#"><i></i>Скопировать код</a>
 						<div class="input textarea input_box input_code" contenteditable>
 							<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/idation.js"></script></xmp>
 						</div>

@@ -107,6 +107,7 @@
 		.center__ted
 			+s(ted_s)
 			content: ""
+			width: 30%
 		.bottom__pay
 			span
 				font-size: 17px
@@ -207,6 +208,7 @@
 
 .insert__bl
 	margin-bottom: 20px
+	position: relative
 	+clr
 	input
 		width: 260px
@@ -231,6 +233,11 @@
 		min-height: 50px
 		margin-bottom: 0
 		line-height: 2
+		+prevent-text
+	.copy-link
+		position: absolute
+		top: -25px
+		left: 28%
 
 .insert__code
 	margin-bottom: 10px
@@ -250,14 +257,14 @@
 	width: 50%
 	.type
 		margin: 15px 0 0 30px
-		span
-			display: block
-			margin: 0 50px 0 -2px
-		.last
+		.type__check
+			margin-right: 7%
+			display: inline-block
 			span
+				display: block
+				margin-left: -2px
+			&.last
 				margin-right: 0
-	.copy-link
-		vertical-align: 4px
 
 .code__right
 	float: right
