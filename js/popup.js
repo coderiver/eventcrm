@@ -3,30 +3,37 @@ $(document).ready(function() {
 		$(this).next().val($(this).val());
 	});
 
+//form input mask for phone
 	$('.phone').inputmask("(999) 999-99-99",{placeholder:"x"});
 
-	$('.code__right .edited').keyup(function(event) {
-		var value = $(this).val();
-    	$('.insert__bl').find('.btn-change').text(value);
+//form type change
+	$('.fwrap__bl.type > label').click(function(event) {
+		$('.fwrap__bl.form > .form1').hide();
+		$('.fwrap__bl.form > .'+ $(this).data('form')).show();
 	});
-
 
 //form checkbox show/hide
 	$('.checkbox_title').on('change', function(event) {
 		if(this.checked) {
 			$('.form1__title').show();
+			$('.form3__title').show();
 		}
 		else {
 			$('.form1__title').hide();
+			$('.form3__title').hide();
 		}
 	});
 
 	$('.checkbox_date').on('change', function(event) {
 		if(this.checked) {
 			$('.form1__when').show();
+			$('.form2__when').show();
+			$('.form3__when').show();
 		}
 		else {
 			$('.form1__when').hide();
+			$('.form2__when').hide();
+			$('.form3__when').hide();
 		}
 	});
 
@@ -56,5 +63,26 @@ $(document).ready(function() {
 			$('.form1').css('box-shadow', 'none');
 		}
 	});
+
+	//form button text change
+	$('.fwrap__bl.right').find('.edited.forbtn').keyup(function(event) {
+		var value = $(this).val();
+		$('.form1').find('.btn-reg').text(value);
+		$('.form1').find('.btn-change').text(value);
+	});
+
+	//ted change
+	$('.payment__left').find('.edited.pay').keyup(function(event) {
+		var value = $(this).val();
+	$('.bottom__pay').find('button').text(value);
+	});
+
+//button text change
+	$('.code__right .edited').keyup(function(event) {
+		var value = $(this).val();
+	$('.insert__bl').find('.btn-change').text(value);
+	});
+
+
 
 });

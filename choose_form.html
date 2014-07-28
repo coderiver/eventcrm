@@ -261,20 +261,20 @@
 				</div>
 				<!-- begin fwrap  -->
 				<div class="fwrap">
-					<!--div class="fwrap__bl type">
-						<label class="checkbox checkbox_inline">
-							<input type="radio" name="type" checked><i></i>
+					<div class="fwrap__bl type">
+						<label class="checkbox checkbox_inline" data-form="type1">
+							<input class="type1" type="radio" name="type" checked><i></i>
 							<span>тип 1</span>
 						</label>
-						<label class="checkbox checkbox_inline">
-							<input type="radio" name="type"><i></i>
+						<label class="checkbox checkbox_inline" data-form="type2">
+							<input class="type2" type="radio" name="type"><i></i>
 							<span>тип 2</span>
 						</label>
-						<label class="checkbox checkbox_inline last">
-							<input type="radio" name="type"><i></i>
+						<label class="checkbox checkbox_inline last" data-form="type3">
+							<input class="type3" type="radio" name="type"><i></i>
 							<span>тип 3</span>
 						</label>
-					</div-->
+					</div>
 					<!-- begin fwrap__verse  -->
 					<div class="fwrap__bl verse">
 						<div class="verse__bl first">
@@ -315,62 +315,145 @@
 					</div>
 					<!-- end fwrap__verse -->
 					<div class="fwrap__bl">
-					<div class="fwrap__bl form">
-					<!-- begin fwrap__form  -->
-					<div class="fwrap__form">
-						<div class="form1 small">
-							<div class="form1__title small">
-								<p>Как пить каждый день, курить, трахаться </p><p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
-							</div>
-							<div class="form1__when small">
-								<div class="form1__date small">
-									<table>
-										<tbody>
-											<tr>
-												<td class="number">12</td>
-												<td><p>июль</p><p>2014</p></td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="fwrap__bl form">
+							<div class="form1 small type1">
+								<div class="form1__title small">
+									<p>Как пить каждый день, курить, трахаться </p><p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
 								</div>
-								<div class="form1__time small">19:30</div>
-							</div>
-							<form>
-								<div class="form1__main small">
-									<div class="main__in small">
-										<input type="text" placeholder="ваше Имя">
+								<div class="form1__when small">
+									<div class="form1__date small">
+										<table>
+											<tbody>
+												<tr>
+													<td class="number">12</td>
+													<td><p>июль</p><p>2014</p></td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<div class="main__in small surname">
-										<input type="text" placeholder="ваша Фамилия">
-									</div>
-									<div class="main__in small">
-										<input type="text" placeholder="ваш E-mail">
-									</div>
-									<div class="main__in small call">
-										<input class="phone" type="text" placeholder="(xxx) xxx-xx-xx">
-									</div>
-									<div class="main__in small dropdown">
-										<select>
-											<option value="12 июля">12 июля</option>
-											<option value="13 июля">13 июля</option>
-											<option value="14 июля">14 июля</option>
-											<option value="15 июля">15 июля</option>
-										</select>
-										<input type="text" placeholder="12 июля" disabled>
-									</div>
-									<button class="btn-reg" type="submit">Зарегистрироваться</button>
-									<p class="garant small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
+									<div class="form1__time small">19:30</div>
 								</div>
-							</form>
-							<div class="divider"></div>
-							<div class="madeby small">
-								Форма создана и работает благодаря
-								<a href="#" class="madeby__logo small"></a>
+								<form>
+									<div class="form1__main small">
+										<div class="main__in small">
+											<input type="text" placeholder="ваше Имя">
+										</div>
+										<div class="main__in small surname">
+											<input type="text" placeholder="ваша Фамилия">
+										</div>
+										<div class="main__in small">
+											<input type="text" placeholder="ваш E-mail">
+										</div>
+										<div class="main__in small call">
+											<input class="phone" type="text" placeholder="(xxx) xxx-xx-xx">
+										</div>
+										<div class="main__in small dropdown">
+											<select>
+												<option value="12 июля">12 июля</option>
+												<option value="13 июля">13 июля</option>
+												<option value="14 июля">14 июля</option>
+												<option value="15 июля">15 июля</option>
+											</select>
+											<input type="text" placeholder="12 июля" disabled>
+										</div>
+										<button class="btn-reg" type="submit">Зарегистрироваться</button>
+										<p class="garant small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
+									</div>
+								</form>
+								<div class="divider"></div>
+								<div class="madeby small">
+									Форма создана и работает благодаря
+									<a href="#" class="madeby__logo small"></a>
+								</div>
+							</div>
+							<!--SECOND TYPE-->
+							<div class="form1 another small type2" hidden>
+								<div class="form1__title another small">
+									<p>Как пить каждый день, курить, трахаться </p>
+									<p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
+								</div>
+								<div class="form2__when small">
+									<span class="form2__date small">12 <span class="form2__month">июля</span> 2014</span>
+									<span>19:30</span>
+								</div>
+								<form>
+									<div class="form1__main another small">
+										<div class="main__in another small">
+											<input type="text" placeholder="ваше Имя">
+										</div>
+										<div class="main__in another small surname">
+											<input type="text" placeholder="ваша Фамилия">
+										</div>
+										<div class="main__in another small">
+											<input type="email" placeholder="ваш E-mail">
+										</div>
+										<div class="main__in another small call">
+											<input class="phone another" type="text" placeholder="(xxx) xxx-xx-xx">
+										</div>
+										<div class="main__in dropdown another small">
+											<select class="is-active">
+												<option value="12 июля">12 июля</option>
+												<option value="13 июля">13 июля</option>
+												<option value="14 июля">14 июля</option>
+												<option value="15 июля">15 июля</option>
+											</select>
+											<input type="text" placeholder="12 июля" disabled>
+										</div>
+										<button class="btn btn-reg another" type="submit">Зарегистрироваться</button>
+										<p class="garant small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
+										</div>
+								</form>
+								<div class="divider"></div>
+								<div class="madeby another small">
+									Форма создана и работает благодаря
+									<a href="#" class="madeby__logo small"></a>
+								</div>
+							</div>
+							<!--THIRD TYPE-->
+							<div class="form1 another form3 small type3" hidden>
+								<div class="form3__title small">
+									<p>Как пить каждый день, курить, трахаться</p>
+									<p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
+								</div>
+								<div class="divider form3"></div>
+								<div class="form3__when small">
+									<span class="form3__date">12 июля 2014</span>
+									<span>19:00</span>
+								</div>
+								<form>
+									<div class="form1__main another form3 small">
+										<div class="main__in another form3 small">
+											<input type="text" placeholder="Ваше имя">
+										</div>
+										<div class="main__in another form3 small surname">
+											<input type="text" placeholder="Ваша фамилия">
+										</div>
+										<div class="main__in another form3 small">
+											<input type="email" placeholder="Ваш e-mail">
+										</div>
+										<div class="main__in another form3 small call">
+											<input class="phone another" type="text" placeholder="Ваш телефон">
+										</div>
+										<div class="main__in dropdown another form3 small">
+											<select class="is-active">
+												<option value="12 июля">12 июля</option>
+												<option value="13 июля">13 июля</option>
+												<option value="14 июля">14 июля</option>
+												<option value="15 июля">15 июля</option>
+											</select>
+											<input type="text" placeholder="12 июля" disabled>
+										</div>
+											<button class="btn btn-change small" type="submit">записаться</button>
+									</div>
+									<p class="garant form3 small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
+								</form>
+								<div class="divider form3"></div>
+								<div class="madeby another form3 small">
+									Форма создана и работает благодаря
+									<a href="#" class="madeby__logo small"></a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- end fwrap__form -->
-					</div>
 					</div>
 					<!-- begin fwrap__right  -->
 					<div class="fwrap__bl right">
@@ -386,7 +469,7 @@
 						</div>
 						<div class="edit">
 							<i></i>
-							<input class="edited" type="text" placeholder="Зарегистрироваться">
+							<input class="edited forbtn" type="text" placeholder="Зарегистрироваться" maxlength="26">
 						</div>
 						<label class="checkbox checkbox_inline">
 							<input class="checkbox_shadow" type="checkbox"><i></i>
@@ -432,7 +515,7 @@
 							</div>
 							<div class="edit">
 								<i></i>
-								<input class="edited" type="text" placeholder="ОПЛАТИТЬ">
+								<input class="edited pay" type="text" placeholder="ОПЛАТИТЬ" maxlength="10">
 							</div>
 						</div>
 						<div class="payment__right">

@@ -1440,7 +1440,7 @@ a.btn { line-height: 41px; }
 .fwrap:after { content: " "; display: table; clear: both; }
 
 .fwrap__bl { width: 33%; float: left; }
-.fwrap__bl.type { text-align: center; margin-bottom: 20px; }
+.fwrap__bl.type { float: none; margin: 0 auto 20px; }
 .fwrap__bl.type span { font-size: 15px; display: block; margin: 0 50px 0 -2px; }
 .fwrap__bl.type .last span { margin-right: 0; }
 .fwrap__bl.verse { width: 25%; }
@@ -1470,7 +1470,7 @@ a.btn { line-height: 41px; }
 .payment__right .ted .center__text, .payment__right .ted .bottom__text { font-size: 10px; }
 .payment__right .ted .center__ted { background: url('../img/icons-sc185387aae.png') 0 -880px no-repeat; width: 107px; height: 52px; content: ""; }
 .payment__right .ted .bottom__pay span { font-size: 17px; }
-.payment__right .ted .bottom__pay button { width: 125px; height: 35px; font-size: 14px; }
+.payment__right .ted .bottom__pay button { width: 125px; height: 35px; font-size: 14px; overflow: hidden; }
 
 .radio-key__title { color: #2b2a29; padding-bottom: 15px; font-size: 14px; }
 
@@ -1506,7 +1506,7 @@ a.btn { line-height: 41px; }
 .insert__bl input:-moz-placeholder { color: #262626; }
 .insert__bl input::-webkit-input-placeholder { color: #262626; }
 .insert__bl .btn_red { width: 160px; margin-right: 10px; }
-.insert__bl .btn-change { float: left; width: 24%; max-width: 240px; }
+.insert__bl .btn-change { float: left; width: 24%; max-width: 240px; overflow: hidden; }
 .insert__bl .input_code { float: right; max-width: 72%; min-height: 50px; margin-bottom: 0; line-height: 2; }
 
 .insert__code { margin-bottom: 10px; *zoom: 1; }
@@ -1592,7 +1592,7 @@ body.wrapz.another { background: url(../img/bg_another.jpg) 50% 20% no-repeat; b
 .form1__title { background: rgba(255, 255, 255, 0.7); font-size: 17px; padding: 20px 85px 20px 40px; color: #5b5b5b; border-bottom: 1px solid white; font-family: "roadradio-webfont", Verdana, Arial, sans-serif; }
 .form1__title.another { background: #d6ddde; text-align: center; text-transform: uppercase; padding: 20px; font-size: 22px; font-family: "circle-regular", Verdana, Arial, sans-serif; }
 .form1__title.another:after { display: none; }
-.form1__title.small { font-size: 10px; padding: 11px 10px 11px 11px; text-align: left; }
+.form1__title.small { font-size: 10px; padding: 11px 10px 11px 11px; text-align: left; height: 30px; }
 .form1__title.small:after { background: url('../img/icons-sc185387aae.png') 0 -942px no-repeat; width: 60px; height: 54px; }
 .form1__title:after { background: url('../img/icons-sc185387aae.png') 0 -762px no-repeat; width: 111px; height: 108px; content: ""; position: absolute; top: 0; right: 0; z-index: 1; }
 .form1__title p { position: relative; z-index: 5; }
@@ -1621,6 +1621,7 @@ body.wrapz.another { background: url(../img/bg_another.jpg) 50% 20% no-repeat; b
 .form1__main.another { padding: 10px 45px 0; }
 .form1__main.form3 { padding: 25px 45px 0; }
 .form1__main.form3 .btn-change { width: 345px; height: 66px; margin: 10px 0 0 0; font-size: 30px; box-shadow: 0 4px 1px #942924; }
+.form1__main.form3 .btn-change.small { width: 240px; height: 33px; font-size: 15px; margin-top: 0; }
 .form1__main .btn-reg { background: #599ee0; text-transform: uppercase; color: white; width: 470px; height: 55px; display: block; margin: 25px 0 10px 0; font-size: 21px; box-shadow: 0 3px 4px #aca9a7; font-family: "roadradio-webfont", Verdana, Arial, sans-serif; }
 .form1__main .btn-reg:hover { background: #4b83a1; }
 .form1__main .btn-reg:active { background: #4e88c1; }
@@ -1638,6 +1639,8 @@ body.wrapz.another { background: url(../img/bg_another.jpg) 50% 20% no-repeat; b
 .garant.small i { left: 15px; background: url('../img/icons-sc185387aae.png') 0 -2263px no-repeat; width: 5px; height: 6px; }
 .garant.form3 { padding: 15px 0 15px 17px; font-size: 13px; text-align: center; }
 .garant.form3 i { top: 16px; left: 24px; }
+.garant.form3.small { font-size: 6px; padding: 9px 0 4px 13px; }
+.garant.form3.small i { top: 8px; right: 21px; }
 
 .main__in { width: 470px; height: 40px; margin-bottom: 10px; background: url(../img/input_b.png) bottom no-repeat; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .main__in:hover input { border: 2px solid #65a2dc; padding-left: 8px; }
@@ -1649,14 +1652,16 @@ body.wrapz.another { background: url(../img/bg_another.jpg) 50% 20% no-repeat; b
 .main__in.another input { background: white; color: #c5c6c6; margin: 0 auto 10px; border: 1px solid #c4c5c5; border-bottom: 1px solid #dadbdb; border-radius: 5px; font-family: "circle-regular", Verdana, Arial, sans-serif; }
 .main__in.another input:-moz-placeholder { color: #c5c6c6; }
 .main__in.another input::-webkit-input-placeholder { color: #c5c6c6; }
-.main__in.another input:focus { border-color: #3a3a3a; background: #3a3a3a; padding-left: 9px; color: #e7e7e7; }
+.main__in.another input:focus { border-color: #3a3a3a; background: #3a3a3a; padding-left: 10px; color: #e7e7e7; }
 .main__in.another input:focus:hover { border-color: #3a3a3a; }
 .main__in.another:hover input { border: 2px solid #65a2dc; padding-left: 9px; }
 .main__in.another.form3 { height: 55px; margin-bottom: 15px; }
-.main__in.another.form3 input { height: 55px; border-radius: 0; color: #afb0b0; font-size: 30px; box-shadow: inset 0 0 12px 1px #ababab; font-family: "skoda-pro", Verdana, Arial, sans-serif; }
+.main__in.another.form3 input { height: 55px; border-radius: 0; color: #afb0b0; box-shadow: inset 0 0 12px 1px #ababab; font-size: 30px; font-family: "skoda-pro", Verdana, Arial, sans-serif; }
 .main__in.another.form3 input:-moz-placeholder { color: #afb0b0; }
 .main__in.another.form3 input::-webkit-input-placeholder { color: #afb0b0; }
 .main__in.another.form3 input:focus { box-shadow: none; color: #e8e8e8; }
+.main__in.another.form3.small { height: 25px; margin-bottom: 10px; }
+.main__in.another.form3.small input { height: 25px; font-size: 12px; }
 .main__in.small { width: 240px; height: 20px; background: url(../img/input_b_s.png) bottom no-repeat; }
 .main__in.small input { width: 240px; height: 20px; font-size: 10px; }
 .main__in.dropdown { position: relative; }
@@ -1670,6 +1675,9 @@ body.wrapz.another { background: url(../img/bg_another.jpg) 50% 20% no-repeat; b
 .main__in.dropdown.small:before { top: 8px; right: 15px; background: url('../img/icons-sc185387aae.png') 0 -2279px no-repeat; width: 7px; height: 5px; }
 .main__in.dropdown.form3 select { height: 55px; color: #afb0b0; font-size: 30px; font-family: "skoda-pro", Verdana, Arial, sans-serif; }
 .main__in.dropdown.form3:before { top: 23px; }
+.main__in.dropdown.form3.small { height: 25px; }
+.main__in.dropdown.form3.small select { font-size: 12px; height: 25px; }
+.main__in.dropdown.form3.small:before { top: 11px; }
 
 .divider { background: #dcdcdb; height: 1px; }
 .divider.form3 { height: 2px; background: #555555; margin: 0px 30px; }
@@ -1678,16 +1686,20 @@ body.wrapz.another { background: url(../img/bg_another.jpg) 50% 20% no-repeat; b
 .madeby.small { font-size: 8px; padding: 10px 0; }
 .madeby.another { background: #d6ddde; padding: 10px 0; }
 .madeby .madeby__logo { background: url('../img/icons-sc185387aae.png') 0 -1127px no-repeat; width: 101px; height: 18px; display: inline-block; content: ""; margin-left: 5px; vertical-align: -2px; }
-.madeby .madeby__logo.small { background: url('../img/icons-sc185387aae.png') 0 -1828px no-repeat; width: 41px; height: 8px; }
+.madeby .madeby__logo.small { background: url('../img/icons-sc185387aae.png') 0 -1828px no-repeat; width: 41px; height: 8px; vertical-align: baseline; }
 .madeby.form3 { border: 0; background: white; }
 
 .form2__when { padding-top: 20px; text-align: center; text-transform: uppercase; color: #5b5b5b; font-size: 25px; font-family: "circle-regular", Verdana, Arial, sans-serif; }
+.form2__when.small { font-size: 12px; padding-top: 10px; }
 .form2__when .form2__date { margin-left: -20px; margin-right: 30px; display: inline-block; }
+.form2__when .form2__date.small { margin-right: 15px; }
 .form2__when .form2__month { color: #dddddd; }
 
 .form3__title { padding: 20px 30px; text-align: center; color: #575757; text-transform: uppercase; font-size: 19px; font-family: "intro", Verdana, Arial, sans-serif; }
+.form3__title.small { font-size: 9px; padding: 6px 15px; }
 
 .form3__when { padding-top: 20px; text-align: center; font-size: 33px; font-family: "circle-regular", Verdana, Arial, sans-serif; }
+.form3__when.small { font-size: 12px; padding-top: 10px; }
 
 .form3__date { margin-right: 12px; }
 
