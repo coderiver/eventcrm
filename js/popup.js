@@ -3,6 +3,9 @@ $(document).ready(function() {
 		$(this).next().val($(this).val());
 	});
 
+//textarea autosize
+	$('.sizing').autosize();
+
 //form input mask for phone
 	$('.phone').inputmask("(999) 999-99-99",{placeholder:"x"});
 
@@ -10,6 +13,8 @@ $(document).ready(function() {
 	$('.choice__bl').click(function(event) {
 		$('.forform > .form1').hide();
 		$('.forform > .'+ $(this).data('form')).show();
+		$('.choice__bl').removeClass('is-active')
+		$(this).addClass('is-active');
 	});
 
 //form checkbox show/hide
