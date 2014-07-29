@@ -101,15 +101,14 @@ $(document).ready(function() {
 	});
 
 //show tickets
-	$('.checkbox_tickets').on('click', function(event) {
-		if(this.checked) {
+	$('.payment__left').find('input').on('change', function(event) {
+		if($(this).val() === '2') {
 			$('.insert').slideDown();
 			$('.ticket').slideDown();
 		}
-		else {
-			//$('.insert').slideUp();
-			//$('.ticket').slideUp();
-			alert('wut');
+		if ($(this).val() === '1') {
+			$('.insert').slideUp();
+			$('.ticket').slideUp();
 		}
 	});
 
