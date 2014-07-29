@@ -256,70 +256,87 @@
 				</div>
 				<div class="add-event-wrap new">
 					<div class="title-counter">
-						<span>1</span>Настройка формы регистрации на вашем сайте
+						<span>1</span>Выберите дизайн формы для вашего сайта
+					</div>
+					<div class="choice">
+						<div class="choice__bl form-1" data-form="type1"></div>
+						<div class="choice__bl form-2" data-form="type2"></div>
+						<div class="choice__bl form-3" data-form="type3"></div>
 					</div>
 				</div>
-				<!-- begin fwrap  -->
-				<div class="fwrap">
-					<div class="fwrap__bl type">
-						<label class="checkbox checkbox_inline" data-form="type1">
-							<input class="type1" type="radio" name="type" checked><i></i>
-							<span>тип 1</span>
-						</label>
-						<label class="checkbox checkbox_inline" data-form="type2">
-							<input class="type2" type="radio" name="type"><i></i>
-							<span>тип 2</span>
-						</label>
-						<label class="checkbox checkbox_inline last" data-form="type3">
-							<input class="type3" type="radio" name="type"><i></i>
-							<span>тип 3</span>
-						</label>
+				<div class="add-event-wrap new">
+					<div class="title-counter">
+						<span>2</span>Настройка формы регистрации на вашем сайте
 					</div>
-					<!-- begin fwrap__verse  -->
-					<div class="fwrap__bl verse">
-						<div class="verse__bl first">
+					<!-- begin fwrap  -->
+					<div class="fwrap">
+						<div class="fwrap__bl">
+							<div class="verse first">
+								<label class="checkbox checkbox_inline">
+									<input class="checkbox_title" type="checkbox" checked><i></i>
+									<span>Отображать заголовок</span>
+								</label>
+							</div>
+							<div class="verse">
+								<label class="checkbox checkbox_inline">
+									<input class="checkbox_date" type="checkbox" checked><i></i>
+									<span>Отображать дату</span>
+								</label>
+							</div>
+							<div class="verse">
+								<label class="checkbox checkbox_inline">
+									<input class="checkbox_surname" type="checkbox" checked><i></i>
+									<span>Запрашивать фамилию</span>
+								</label>
+							</div>
+							<div class="verse">
+								<label class="checkbox checkbox_inline">
+									<input class="checkbox_call" type="checkbox" checked><i></i>
+									<span>Запрашивать телефон</span>
+								</label>
+							</div>
+							<div class="verse">
+								<div class="radio-key blue">
+									<p class="radio-key__title">Формат номера</p>
+									<label class="radio-key__var-1 blue">
+										<input type="radio" name="name" checked>
+										<span>Россия</span>
+									</label>
+									<label class="radio-key__var-2 blue">
+										<input type="radio" name="name">
+										<span>Украина</span>
+									</label>
+								</div>
+							</div>
+							<div class="verse">
+								<div class="title-counter">
+									Можно изменить заголовок формы
+								</div>
+								<div class="edit">
+									<i></i>
+									<input class="edited ttl" type="text" placeholder="Как пить курить трахаться" maxlength="140">
+								</div>
+							</div>
+							<div class="verse last">
+								<div class="title-counter">
+									Можно заменить текст на кнопке
+								</div>
+								<div class="edit">
+									<i></i>
+									<input class="edited forbtn" type="text" placeholder="Зарегистрироваться" maxlength="26">
+								</div>
+							</div>
 							<label class="checkbox checkbox_inline">
-								<input class="checkbox_title" type="checkbox" checked><i></i>
-								<span>Отображать заголовок</span>
+								<input class="checkbox_shadow" type="checkbox"><i></i>
+								<span>Отображать тень формы</span>
 							</label>
 						</div>
-						<div class="verse__bl">
-							<label class="checkbox checkbox_inline">
-								<input class="checkbox_date" type="checkbox" checked><i></i>
-								<span>Отображать дату</span>
-							</label>
-						</div>
-						<div class="verse__bl">
-							<label class="checkbox checkbox_inline">
-								<input class="checkbox_surname" type="checkbox" checked><i></i>
-								<span>Запрашивать фамилию</span>
-							</label>
-						</div>
-						<div class="verse__bl">
-							<label class="checkbox checkbox_inline">
-								<input class="checkbox_call" type="checkbox" checked><i></i>
-								<span>Запрашивать телефон</span>
-							</label>
-						</div>
-						<div class="radio-key blue">
-							<p class="radio-key__title">Формат номера</p>
-							<label class="radio-key__var-1 blue">
-								<input type="radio" name="name" checked>
-								<span>Россия</span>
-							</label>
-							<label class="radio-key__var-2 blue">
-								<input type="radio" name="name">
-								<span>Украина</span>
-							</label>
-						</div>
-					</div>
-					<!-- end fwrap__verse -->
-					<div class="fwrap__bl">
-						<div class="fwrap__bl form">
+						<div class="forform">
+							<p class="preview">Предпросмотр</p>
 							<!--FIRST TYPE-->
-							<div class="form1 small type1">
+							<div class="form1 small type1" >
 								<div class="form1__title small">
-									<p>Как пить каждый день, курить, трахаться </p><p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
+									<p>Как пить каждый день, курить, трахаться</p><p> с кем попало, перестать беспокоиться и </p><p>располагать к себе людей.</p>
 								</div>
 								<div class="form1__when small">
 									<div class="form1__date small">
@@ -359,7 +376,7 @@
 										</div>
 										<button class="btn-reg" type="submit">Зарегистрироваться</button>
 										<p class="garant small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
-									</div>
+										</div>
 								</form>
 								<div class="divider"></div>
 								<div class="madeby small">
@@ -368,121 +385,100 @@
 								</div>
 							</div>
 							<!--SECOND TYPE-->
-							<div class="form1 another small type2" hidden>
-								<div class="form1__title another small">
-									<p>Как пить каждый день, курить, трахаться </p>
-									<p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
-								</div>
-								<div class="form2__when small">
-									<span class="form2__date small">12 <span class="form2__month">июля</span> 2014</span>
-									<span>19:30</span>
-								</div>
-								<form>
-									<div class="form1__main another small">
-										<div class="main__in another small">
-											<input type="text" placeholder="ваше Имя">
-										</div>
-										<div class="main__in another small surname">
-											<input type="text" placeholder="ваша Фамилия">
-										</div>
-										<div class="main__in another small">
-											<input type="email" placeholder="ваш E-mail">
-										</div>
-										<div class="main__in another small call">
-											<input class="phone another" type="text" placeholder="(xxx) xxx-xx-xx">
-										</div>
-										<div class="main__in dropdown another small">
-											<select class="is-active">
-												<option value="12 июля">12 июля</option>
-												<option value="13 июля">13 июля</option>
-												<option value="14 июля">14 июля</option>
-												<option value="15 июля">15 июля</option>
-											</select>
-											<input type="text" placeholder="12 июля" disabled>
-										</div>
-										<button class="btn btn-reg another" type="submit">Зарегистрироваться</button>
-										<p class="garant small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
-										</div>
-								</form>
-								<div class="divider"></div>
-								<div class="madeby another small">
-									Форма создана и работает благодаря
-									<a href="#" class="madeby__logo small"></a>
-								</div>
+						<div class="form1 another small type2" hidden>
+							<div class="form1__title another small">
+								<p>Как пить каждый день, курить, трахаться </p>
+								<p> с кем попало, перестать беспокоиться</p><p> и располагать к себе людей.</p>
 							</div>
-							<!--THIRD TYPE-->
-							<div class="form1 another form3 small type3" hidden>
-								<div class="form3__title small">
-									<p>Как пить каждый день, курить, трахаться</p>
-									<p> с кем попало, перестать беспокоиться и располагать к себе людей.</p>
+							<div class="form2__when small">
+								<span class="form2__date small">12 <span class="form2__month">июля</span> 2014</span>
+								<span>19:30</span>
+							</div>
+							<form>
+							<div class="form1__main another small">
+								<div class="main__in another small">
+									<input type="text" placeholder="ваше Имя">
 								</div>
-								<div class="divider form3"></div>
-								<div class="form3__when small">
-									<span class="form3__date">12 июля 2014</span>
-									<span>19:00</span>
+								<div class="main__in another small surname">
+									<input type="text" placeholder="ваша Фамилия">
 								</div>
-								<form>
-									<div class="form1__main another form3 small">
-										<div class="main__in another form3 small">
-											<input type="text" placeholder="Ваше имя">
-										</div>
-										<div class="main__in another form3 small surname">
-											<input type="text" placeholder="Ваша фамилия">
-										</div>
-										<div class="main__in another form3 small">
-											<input type="email" placeholder="Ваш e-mail">
-										</div>
-										<div class="main__in another form3 small call">
-											<input class="phone another" type="text" placeholder="Ваш телефон">
-										</div>
-										<div class="main__in dropdown another form3 small">
-											<select class="is-active">
-												<option value="12 июля">12 июля</option>
-												<option value="13 июля">13 июля</option>
-												<option value="14 июля">14 июля</option>
-												<option value="15 июля">15 июля</option>
-											</select>
-											<input type="text" placeholder="12 июля" disabled>
-										</div>
-											<button class="btn btn-change small" type="submit">записаться</button>
+								<div class="main__in another small">
+									<input type="email" placeholder="ваш E-mail">
+								</div>
+								<div class="main__in another small call">
+									<input class="phone another" type="text" placeholder="(xxx) xxx-xx-xx">
+								</div>
+								<div class="main__in dropdown another small">
+									<select class="is-active">
+										<option value="12 июля">12 июля</option>
+										<option value="13 июля">13 июля</option>
+										<option value="14 июля">14 июля</option>
+										<option value="15 июля">15 июля</option>
+									</select>
+									<input type="text" placeholder="12 июля" disabled>
+								</div>
+								<button class="btn btn-reg another" type="submit">Зарегистрироваться</button>
+								<p class="garant small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
+							</div>
+							</form>
+							<div class="divider"></div>
+							<div class="madeby another small">
+								Форма создана и работает благодаря
+								<a href="#" class="madeby__logo small"></a>
+							</div>
+						</div>
+						<!--THIRD TYPE-->
+						<div class="form1 another form3 small type3" hidden>
+							<div class="form3__title small">
+								<p>Как пить каждый день, курить, трахаться</p>
+								<p>с кем попало, перестать беспокоиться</p><p> и располагать к себе людей.</p>
+							</div>
+							<div class="divider form3"></div>
+							<div class="form3__when small">
+								<span class="form3__date">12 июля 2014</span>
+								<span>19:00</span>
+							</div>
+							<form>
+								<div class="form1__main another form3 small">
+									<div class="main__in another form3 small">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+									<div class="main__in another form3 small surname">
+									<input type="text" placeholder="Ваша фамилия">
+									</div>
+									<div class="main__in another form3 small">
+										<input type="email" placeholder="Ваш e-mail">
+									</div>
+									<div class="main__in another form3 small call">
+										<input class="phone another" type="text" placeholder="Ваш телефон">
+									</div>
+									<div class="main__in dropdown another form3 small">
+										<select class="is-active">
+											<option value="12 июля">12 июля</option>
+											<option value="13 июля">13 июля</option>
+											<option value="14 июля">14 июля</option>
+											<option value="15 июля">15 июля</option>
+										</select>
+										<input type="text" placeholder="12 июля" disabled>
+									</div>
+									<button class="btn btn-change small" type="submit">записаться</button>
 									</div>
 									<p class="garant form3 small"><i></i>Внесенные вами данные гарантировано не попадут в третие руки.</p>
-								</form>
-								<div class="divider form3"></div>
-								<div class="madeby another form3 small">
-									Форма создана и работает благодаря
-									<a href="#" class="madeby__logo small"></a>
-								</div>
+							</form>
+							<div class="divider form3"></div>
+							<div class="madeby another form3 small">
+								Форма создана и работает благодаря
+								<a href="#" class="madeby__logo small"></a>
 							</div>
 						</div>
+						</div>
 					</div>
-					<!-- begin fwrap__right  -->
-					<div class="fwrap__bl right">
-						<div class="title-counter">
-							Можно изменить заголовок формы
-						</div>
-						<div class="edit">
-							<i></i>
-							<input class="edited ttl" type="text" placeholder="Как пить курить трахаться" maxlength="140">
-						</div>
-						<div class="title-counter">
-							Можно заменить текст на кнопке
-						</div>
-						<div class="edit">
-							<i></i>
-							<input class="edited forbtn" type="text" placeholder="Зарегистрироваться" maxlength="26">
-						</div>
-						<label class="checkbox checkbox_inline">
-							<input class="checkbox_shadow" type="checkbox"><i></i>
-							<span>Отображать тень формы</span>
-						</label>
-					</div>
-					<!-- end fwrap__right -->
+					<!-- end fwrap -->
+
 				</div>
-				<!-- end fwrap -->
 				<div class="add-event-wrap new">
 					<div class="title-counter">
-						<span>2</span>Настройка всплывающего окна уведомления об оплате
+						<span>3</span>Настройка всплывающего окна уведомления об оплате
 					</div>
 					<div class="payment">
 						<div class="payment__left">
@@ -543,7 +539,6 @@
 											</div>
 										</div>
 									</div>
-									<!--button class="btn-close exit"></button-->
 								</div>
 							</div>
 						</div>
@@ -560,87 +555,77 @@
 				</div>
 				<div class="add-event-wrap new">
 					<div class="title-counter">
-						<span>3</span>Скопируйте код для вставки на сайт
+						<span>4</span>Скопируйте код для вставки на сайт
 					</div>
-				</div>
-				<div class="ask"><a href="#">Как вставить код формы на свой сайт?</a></div>
-				<!-- begin insert  -->
-				<div class="insert">
-					<div class="insert__bl">
-						<input type="text" placeholder="Стандартный билет">
-						<button type="button" class="btn btn_red">Код формы</button>
-						<button type="button" class="btn btn_red">Код кнопки</button>
+					<div class="payment">
+						<div class="payment__left">
+						<label class="checkbox checkbox_inline">
+							<input type="radio" name="formshow" value="1" checked><i></i>
+							<span>Показать форму при загрузке страницы</span>
+						</label>
+						</div>
+						<div class="payment__left">
+							<label class="checkbox checkbox_inline">
+								<input class="checkbox_tickets" type="radio" name="formshow" value="2"><i></i>
+								<span>Показать форму при нажатии на кнопку</span>
+							</label>
+						</div>
 					</div>
 					<div class="insert__code">
-						<div class="code__left">
-							<p class="insert__title">Скопируйте код и вставьте там, где должна быть форма записи.</p>
-						</div>
-						<div class="code__right">
-							<a class="copy-link" href="#"><i></i>Скопировать код</a>
-						</div>
-					</div>
-					<div class="input textarea input_box input_code" contenteditable>
-						<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/media/js/invite_event_validation.js"></script><p>Приглашаем на эвент: </p><form onsubmit="return validate2()" action="http://test.event.piter-trening.ru/invite/" method="POST"><label class="label">Ваше  имя*:<input name="imya" class="required2" type="text"></label><br><label class="label">Фамилия*:&nbsp;<input name="familiya" class="required2" type="text"></label><br><label class="label">Email*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email2" class="required2" type="text"></label><br><label class="label">Телефон:&nbsp;&nbsp;&nbsp;&nbsp;<input name="telefon" type="text"></label><br><input name="event" type="hidden" value="823"><p>* - Обязательные поля</p><p><input type="submit" value="Записаться"></p></form></xmp>
-					</div>
-					<div class="insert__code">
-						<div class="code__left">
-							<p class="insert__title">Выберите вид кнопки и вставьте код на свой сайт</p>
-							<div class="type">
-								<div class="type__check">
-									<label class="checkbox checkbox_inline">
-										<input type="radio" name="btype" checked><i></i>
-										<span>тип 1</span>
-									</label>
-								</div>
-								<div class="type__check">
-									<label class="checkbox checkbox_inline">
-										<input type="radio" name="btype"><i></i>
-										<span>тип 2</span>
-									</label>
-								</div>
-								<div class="type__check last">
-									<label class="checkbox checkbox_inline">
-										<input type="radio" name="btype"><i></i>
-										<span>тип 3</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="code__right">
-							<p class="insert__title">замените надпись на кнопке</p>
-							<div class="edit">
-								<i></i>
-								<input class="edited" type="text" placeholder="записаться" maxlength="20">
-							</div>
-						</div>
-					</div>
-					<div class="insert__bl">
-						<button type="button" class="btn btn-change">записаться</button>
-						<a class="copy-link" href="#"><i></i>Скопировать код</a>
+						<p class="insert__title">Скопируйте код и вставьте там, где должна быть форма записи.</p>
 						<div class="input textarea input_box input_code" contenteditable>
-							<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/idation.js"></script></xmp>
+							<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/media/js/invite_event_validation.js"></script><p>Приглашаем на эвент: </p><form onsubmit="return validate2()" action="http://test.event.piter-trening.ru/invite/" method="POST"><label class="label">Ваше  имя*:<input name="imya" class="required2" type="text"></label><br><label class="label">Фамилия*:&nbsp;<input name="familiya" class="required2" type="text"></label><br><label class="label">Email*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="email2" class="required2" type="text"></label><br><label class="label">Телефон:&nbsp;&nbsp;&nbsp;&nbsp;<input name="telefon" type="text"></label><br><input name="event" type="hidden" value="823"><p>* - Обязательные поля</p><p><input type="submit" value="Записаться"></p></form></xmp>
 						</div>
 					</div>
+					<!-- begin insert  -->
+					<div class="insert" hidden>
+						<div class="insert__bl">
+							<div class="code__left">
+								<p class="title-counter">Стандартный билет</p>
+								<p class="insert__text">Скопируйте и вставьте код, где должна быть кнопка.</p>
+								<p class="insert__text">Форма регистрации будет показана только при клике на кнопку.</p>
+							</div>
+							<div class="code__left">
+								<p>Предпросмотр</p>
+								<button type="button" class="btn btn-change">записаться</button>
+							</div>
+						</div>
+						<div class="insert__bl another">
+							<div class="code__left">
+								<p class="code__text">замените надпись на кнопке</p>
+								<div class="edit">
+									<i></i>
+									<input class="edited" type="text" placeholder="записаться" maxlength="20">
+								</div>
+							</div>
+							<div class="code__right">
+								<a class="copy-link" href="#"><i></i>Скопировать код</a>
+								<div class="input textarea input_box input_code" contenteditable>
+									<xmp class="code"><script type="text/javascript" src="http://test.event.piter-trening.ru/idation.js"></script></xmp>
+								</div>
+							</div>
+						</div>
 					</div>
-				<!-- end insert -->
-				<!-- begin tickets  -->
-				<div class="ticket">
-					<div class="item-row item-row_billing">
-						<div class="item-row__cell ticket__icon"><div></div></div>
-						<div class="item-row__cell ticket__part">Билет участника</div>
-						<div class="item-row__cell ticket__price">18 900</div>
-						<div class="item-row__cell">текущая цена</div>
+					<!-- end insert -->
+					<!-- begin tickets  -->
+					<div class="ticket" hidden>
+						<div class="item-row item-row_billing">
+							<div class="item-row__cell ticket__icon"><div></div></div>
+							<div class="item-row__cell ticket__part">Билет участника</div>
+							<div class="item-row__cell ticket__price">18 900</div>
+							<div class="item-row__cell">текущая цена</div>
+						</div>
+						<div class="item-row item-row_billing">
+							<div class="item-row__cell ticket__icon"><div></div></div>
+							<div class="item-row__cell ticket__part">Vip билет</div>
+							<div class="item-row__cell ticket__price">24 900</div>
+							<div class="item-row__cell">текущая цена</div>
+						</div>
 					</div>
-					<div class="item-row item-row_billing">
-						<div class="item-row__cell ticket__icon"><div></div></div>
-						<div class="item-row__cell ticket__part">Vip билет</div>
-						<div class="item-row__cell ticket__price">24 900</div>
-						<div class="item-row__cell">текущая цена</div>
-					</div>
+					<!-- end tickets -->
 				</div>
-				<!-- end tickets -->
 			</div>
-
+		</div>
 		</div>
 	</div>
 	<!-- END container-->

@@ -7,9 +7,9 @@ $(document).ready(function() {
 	$('.phone').inputmask("(999) 999-99-99",{placeholder:"x"});
 
 //form type change
-	$('.fwrap__bl.type > label').click(function(event) {
-		$('.fwrap__bl.form > .form1').hide();
-		$('.fwrap__bl.form > .'+ $(this).data('form')).show();
+	$('.choice__bl').click(function(event) {
+		$('.forform > .form1').hide();
+		$('.forform > .'+ $(this).data('form')).show();
 	});
 
 //form checkbox show/hide
@@ -65,14 +65,14 @@ $(document).ready(function() {
 	});
 
 	//form button text change
-	$('.fwrap__bl.right').find('.edited.forbtn').keyup(function(event) {
+	$('.fwrap__bl').find('.edited.forbtn').keyup(function(event) {
 		var value = $(this).val();
 		$('.form1').find('.btn-reg').text(value);
 		$('.form1').find('.btn-change').text(value);
 	});
 
 	//form title change
-	$('.fwrap__bl.right').find('.edited.ttl').keyup(function(event) {
+	$('.fwrap__bl').find('.edited.ttl').keyup(function(event) {
 		var value = $(this).val();
 		$('.form1').find('.form1__title').text(value);
 		$('.form1').find('.form3__title').text(value);
@@ -95,11 +95,23 @@ $(document).ready(function() {
 	});
 
 //button text change
-	$('.code__right .edited').keyup(function(event) {
+	$('.insert__bl.another').find('.edited').keyup(function(event) {
 		var value = $(this).val();
 	$('.insert__bl').find('.btn-change').text(value);
 	});
 
+//show tickets
+	$('.checkbox_tickets').on('click', function(event) {
+		if(this.checked) {
+			$('.insert').slideDown();
+			$('.ticket').slideDown();
+		}
+		else {
+			//$('.insert').slideUp();
+			//$('.ticket').slideUp();
+			alert('wut');
+		}
+	});
 
 
 });
