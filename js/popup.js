@@ -4,10 +4,23 @@ $(document).ready(function() {
 	});
 
 //textarea autosize
-	$('.sizing').autosize();
+	$(document).on('input.textarea', '.autoExpand', function(){
+		var minRows = this.getAttribute('data-min-rows')|0,
+		rows = this.value.split("\n").length;
+		this.rows = rows < minRows ? minRows : rows;
+});
 
 //form input mask for phone
-	$('.phone').inputmask("(999) 999-99-99",{placeholder:"x"});
+	$('.radio-key.blue').find('input').change(function(event) {
+		if($(this).val() === 'rus') {
+			$('.phone').inputmask("+7 (999) 999-99-99",{placeholder:"x"});
+			$('.phone').attr('placeholder', '+7 (xxx) xxx-xx-xx');
+		}
+		if ($(this).val() === 'ukr') {
+			$('.phone').inputmask("+38 (999) 999-99-99",{placeholder:"x"});
+			$('.phone').attr('placeholder', '+38 (xxx) xxx-xx-xx');
+		}
+	});
 
 //form type change
 	$('.choice__bl').click(function(event) {
@@ -15,7 +28,12 @@ $(document).ready(function() {
 		$('.forform > .'+ $(this).data('form')).show();
 		$('.choice__bl').removeClass('is-active')
 		$(this).addClass('is-active');
+		$('.code__left').find('button').hide();
+		$('.code__left > .'+ $(this).data('form')).show();
 	});
+
+	$('.code__left').find('.btn').hide();
+	$('.code__left').find('.is-active').show();
 
 //form checkbox show/hide
 	$('.checkbox_title').on('change', function(event) {
@@ -103,6 +121,7 @@ $(document).ready(function() {
 	$('.insert__bl.another').find('.edited').keyup(function(event) {
 		var value = $(this).val();
 	$('.insert__bl').find('.btn-change').text(value);
+	$('.insert__bl').find('.btn-reg').text(value);
 	});
 
 //show tickets
@@ -116,6 +135,5 @@ $(document).ready(function() {
 			$('.ticket').slideUp();
 		}
 	});
-
 
 });

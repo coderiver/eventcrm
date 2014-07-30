@@ -300,11 +300,11 @@
 								<div class="radio-key blue">
 									<p class="radio-key__title">Формат номера</p>
 									<label class="radio-key__var-1 blue">
-										<input type="radio" name="name" checked>
+										<input type="radio" value="rus" name="name" checked>
 										<span>Россия</span>
 									</label>
 									<label class="radio-key__var-2 blue">
-										<input type="radio" name="name">
+										<input type="radio" value="ukr" name="name">
 										<span>Украина</span>
 									</label>
 								</div>
@@ -315,7 +315,7 @@
 								</div>
 								<div class="edit">
 									<i></i>
-									<textarea class="edited ttl sizing" type="text" placeholder="" maxlength="140">Как пить курить трахаться</textarea>
+									<textarea rows='1' data-min-rows='2' class="ttl autoExpand" placeholder="Как пить курить трахаться" maxlength="140"></textarea>
 								</div>
 							</div>
 							<div class="verse last">
@@ -324,7 +324,7 @@
 								</div>
 								<div class="edit">
 									<i></i>
-									<textarea class="edited forbtn sizing" type="text" placeholder="" maxlength="26">Зарегистрироваться</textarea>
+									<textarea rows='1' data-min-rows='2' class="forbtn autoExpand" placeholder="Зарегистрироваться" maxlength="26"></textarea>
 								</div>
 							</div>
 							<label class="checkbox checkbox_inline">
@@ -364,7 +364,7 @@
 											<input type="text" placeholder="ваш E-mail">
 										</div>
 										<div class="main__in small call">
-											<input class="phone" type="text" placeholder="(xxx) xxx-xx-xx">
+											<input class="phone" type="text" placeholder="+7 (xxx) xxx-xx-xx">
 										</div>
 										<div class="main__in small dropdown">
 											<select>
@@ -498,21 +498,21 @@
 						<div class="payment__left">
 							<div class="edit">
 								<i></i>
-								<textarea class="edited eres sizing" placeholder="" type="text" maxlength="70">Ересь не неси это низкий СРС</textarea>
+								<textarea rows='1' data-min-rows='2' class="eres autoExpand" placeholder="Ересь не неси это низкий СРС" maxlength="70"></textarea>
 							</div>
 							<div class="title-counter">
 								Укажите важный текст в самом окне уведомления
 							</div>
 							<div class="edit">
 								<i></i>
-								<textarea placeholder="" class="edited message sizing" type="text" maxlength="100">Ты ж с огнем играешь дико задирая цену клика</textarea>
+								<textarea rows='1' data-min-rows='2' class="autoExpand message" placeholder="Ты ж с огнем играешь дико задирая цену клика"  maxlength="100"></textarea>
 							</div>
 							<div class="title-counter">
 								Надпись на кнопке окна
 							</div>
 							<div class="edit">
 								<i></i>
-								<textarea placeholder="" class="edited pay sizing" type="text" maxlength="15">ОПЛАТИТЬ</textarea>
+								<textarea rows='1' data-min-rows='2' class="autoExpand pay" placeholder="Оплатить" type="text" maxlength="15"></textarea>
 							</div>
 						</div>
 						<div class="payment__right">
@@ -578,7 +578,7 @@
 						</div>
 					</div>
 					<!-- begin insert  -->
-					<div class="insert" hidden>
+					<div class="insert" >
 						<div class="insert__bl">
 							<div class="code__left">
 								<p class="title-counter">Стандартный билет</p>
@@ -587,7 +587,9 @@
 							</div>
 							<div class="code__left">
 								<p>Предпросмотр</p>
-								<button type="button" class="btn btn-change">записаться</button>
+								<button type="button" class="btn is-active btn-reg type1" >записаться</button>
+								<button type="button" class="btn btn-reg another type2" >записаться</button>
+								<button type="button" class="btn btn-change type3" >записаться</button>
 							</div>
 						</div>
 						<div class="insert__bl another">
@@ -595,7 +597,7 @@
 								<p class="code__text">замените надпись на кнопке</p>
 								<div class="edit">
 									<i></i>
-									<textarea class="edited sizing" noresize type="text" placeholder="записаться" maxlength="20"></textarea>
+									<textarea rows='1' data-min-rows='2'class="autoExpand" placeholder="записаться" maxlength="20"></textarea>
 								</div>
 							</div>
 							<div class="code__right">

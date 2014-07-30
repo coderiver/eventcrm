@@ -1455,7 +1455,6 @@ a.btn { line-height: 41px; }
 .fwrap:after { content: " "; display: table; clear: both; }
 
 .fwrap__bl { width: 45%; padding: 0 4% 0 3%; float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.fwrap__bl textarea { resize: none; }
 .fwrap__bl.forms { float: right; width: 50%; padding-left: 0; }
 
 .forform { position: absolute; right: 20px; content: ""; background: url('../img/icons-se78bc95212.png') 0 -288px no-repeat; width: 482px; height: 512px; }
@@ -1469,9 +1468,10 @@ a.btn { line-height: 41px; }
 .edit:hover i { display: block; }
 .edit i { content: ""; position: absolute; top: 15px; right: 20px; cursor: pointer; background: url('../img/icons-se78bc95212.png') 0 -5284px no-repeat; width: 14px; height: 14px; display: none; }
 
-.edited { color: #262626; text-align: left; font-size: 15px; border: 1px solid #cfcfcf; width: 100%; font-family: "novareg", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px 35px 0 10px; }
-.edited:-moz-placeholder { color: #262626; }
-.edited::-webkit-input-placeholder { color: #262626; }
+textarea.autoExpand { display: block; overflow: hidden; width: 100%; padding: 25px 35px 25px 10px; color: #262626; font-size: 15px; border: 1px solid #cfcfcf; resize: none; font-family: "novareg", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+textarea.autoExpand:-moz-placeholder { color: #262626; }
+textarea.autoExpand::-webkit-input-placeholder { color: #262626; }
+textarea.autoExpand:focus { border: 1px solid #aed3e4; box-shadow: 0 0 5px rgba(13, 138, 202, 0.3); }
 
 .payment { margin: 15px 10px 0; *zoom: 1; }
 .payment:after { content: " "; display: table; clear: both; }
@@ -1481,7 +1481,6 @@ a.btn { line-height: 41px; }
 .payment.another .input-wrap.input-wrap_with-select .select { width: 77%; }
 
 .payment__left { float: left; width: 45%; padding-right: 5%; }
-.payment__left textarea { resize: none; }
 .payment__left .checkbox { margin: 0; }
 .payment__left .edit { margin-bottom: 15px; }
 
@@ -1542,6 +1541,13 @@ a.btn { line-height: 41px; }
 
 .code__left { float: left; width: 50%; }
 .code__left .code__text { font-size: 14px; margin-bottom: 10px; }
+.code__left .btn-reg { background: #599ee0; text-transform: uppercase; color: white; min-width: 240px; min-height: 45px; font-size: 20px; box-shadow: 0 3px 4px #aca9a7; font-family: "roadradio-webfont", Verdana, Arial, sans-serif; }
+.code__left .btn-reg:hover { background: #4b83a1; }
+.code__left .btn-reg:active { background: #4e88c1; }
+.code__left .btn-reg.another { background: #629ab2; border-radius: 5px; padding-top: 4px; border-top: #dedede; font-size: 18px; font-family: "circle-regular", Verdana, Arial, sans-serif; }
+.code__left .btn-reg.another:hover { background: #6c8d9b; }
+.code__left .btn-reg.another:active { background: #8f98b1; }
+.code__left textarea { padding: 15px 35px 15px 10px; }
 
 .code__right { float: right; }
 .code__right .input_code { margin: 0; min-height: 50px; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }

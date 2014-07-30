@@ -61,8 +61,6 @@
 	padding: 0 4% 0 3%
 	float: left
 	+box
-	textarea
-		resize: none
 	&.forms
 		float: right
 		width: 50%
@@ -98,16 +96,23 @@
 		+s(edit)
 		display: none
 
-.edited
+//textarea styling
+textarea.autoExpand
+	display: block
+	overflow: hidden
+	width: 100%
+	padding: 25px 35px 25px 10px
 	color: #262626
-	text-align: left
 	font-size: 15px
 	border: 1px solid #cfcfcf
-	width: 100%
+	resize: none
 	+placeholder-color(#262626)
 	+freg
 	+box
-	padding: 10px 35px 0 10px
+	+transition(all 0.2s ease)
+	&:focus
+		border: 1px solid #aed3e4
+		box-shadow: 0 0 5px rgba(13, 138, 202, 0.3)
 
 //payment block
 .payment
@@ -129,8 +134,6 @@
 	float: left
 	width: 45%
 	padding-right: 5%
-	textarea
-		resize: none
 	.checkbox
 		margin: 0
 	.edit
@@ -285,6 +288,32 @@
 	.code__text
 		font-size: 14px
 		margin-bottom: 10px
+	.btn-reg
+		background: #599EE0
+		text-transform: uppercase
+		color: #fff
+		min-width: 240px
+		min-height: 45px
+		font-size: 20px
+		box-shadow: 0 3px 4px #aca9a7
+		+radio
+		&:hover
+			background: #4B83A1
+		&:active
+			background: #4E88C1
+		&.another
+			background: #629AB2
+			border-radius: 5px
+			padding-top: 4px
+			border-top: #dedede
+			font-size: 18px
+			+circ
+			&:hover
+				background: #6C8D9B
+			&:active
+				background: #8f98b1
+	textarea
+		padding: 15px 35px 15px 10px
 
 .code__right
 	float: right
