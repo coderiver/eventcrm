@@ -4,7 +4,8 @@ $(document).ready(function() {
 	});
 
 //textarea autosize
-	$('.sizing').autosize();
+	$('.sizing').val().trigger('autosize.resize');
+	//$('.sizing').autosize();
 
 //form input mask for phone
 	$('.phone').inputmask("(999) 999-99-99",{placeholder:"x"});

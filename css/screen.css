@@ -1469,7 +1469,7 @@ a.btn { line-height: 41px; }
 .edit:hover i { display: block; }
 .edit i { content: ""; position: absolute; top: 15px; right: 20px; cursor: pointer; background: url('../img/icons-se78bc95212.png') 0 -5284px no-repeat; width: 14px; height: 14px; display: none; }
 
-.edited { color: #262626; text-align: left; font-size: 15px; border: 1px solid #cfcfcf; width: 100%; font-family: "novareg", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px 30px 0 10px; }
+.edited { color: #262626; text-align: left; font-size: 15px; border: 1px solid #cfcfcf; width: 100%; font-family: "novareg", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px 35px 0 10px; }
 .edited:-moz-placeholder { color: #262626; }
 .edited::-webkit-input-placeholder { color: #262626; }
 
