@@ -550,3 +550,42 @@ body
 
 .form3__date
 	margin-right: 12px
+
+
+//api mailchimp popup
+.popup
+	&.mailchimp
+		padding: 25px 127px 43px
+		.form__title
+			margin-bottom: 15px
+		.mailchimp__txt
+			margin-bottom: 27px
+			font-size: 16px
+			color: #8a8a8a
+			line-height: 1.2
+		.user-enter-img
+			margin-bottom: 27px
+			&:after
+				+gh(rgba(0,0,0,.025), rgba(0,0,0,0) 100%)
+		.input-wrap
+			&.last
+				margin-bottom: 15px
+		.input
+			font-size: 15px
+			color: #2A2A2A
+			+placeholder-color(#2a2a2a)
+		.mailchimp__ask
+			display: block
+			margin-top: 35px
+			padding-left: 22px
+			font-size: 14px
+			color: #5591C8
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: -2px
+				left: 10px
+				+s(ask-s)
+			&:hover
+				text-decoration: underline
