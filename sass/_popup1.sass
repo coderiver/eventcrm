@@ -589,3 +589,63 @@ body
 				+s(ask-s)
 			&:hover
 				text-decoration: underline
+
+
+//popup do-together
+.popup
+	&.together
+		padding: 25px 42px 103px
+		.form__title
+			margin-bottom: 30px
+		.together__txt
+			padding: 0 80px
+			margin-bottom: 50px
+			font-size: 16px
+			color: #8a8a8a
+			line-height: 1.2
+		.together__icons
+			+clr
+		.icons__inner
+			display: block
+			float: left
+			&.video
+				padding-right: 60px
+				.user-enter-img
+					margin-bottom: 35px
+					&:after
+						top: 50px
+						margin-left: -52px
+						width: 256px
+						height: 146%
+						border-radius: 30px
+						+gh(rgba(0,0,0,.025), rgba(0,0,0,0) 100%)
+					img
+						border-radius: 5%
+			&.to-add
+				padding-left: 44px
+			&.to-create
+				float: right
+			&:hover
+				.icons__txt
+					text-decoration: underline
+		.icons__divider
+			width: 1px
+			height: 157px
+			float: left
+			background: #030303
+		.icons__txt
+			position: relative
+			font-size: 26px
+			color: #2A2A2A
+			margin-bottom: 7px
+			z-index: 5
+			+fbold
+		.icons__span
+			display: block
+			color: #8A8A8A
+			font-size: 16px
+			line-height: 1.2
+
+
+
+
