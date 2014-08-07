@@ -594,7 +594,7 @@ body
 //popup do-together
 .popup
 	&.together
-		padding: 25px 42px 103px
+		padding: 25px 42px 98px
 		.form__title
 			margin-bottom: 30px
 		.together__txt
@@ -646,6 +646,69 @@ body
 			font-size: 16px
 			line-height: 1.2
 
+//popup sendmail
+.popup
+	&.sendmail
+		padding: 28px 55px 45px
+		.form__title
+			padding-bottom: 20px
+			margin-bottom: 17px
+			border-bottom: 2px solid #060606
+		.sendmail__txt
+			padding: 15px 85px 0
+			font-size: 16px
+			color: #8a8a8a
+			line-height: 1.2
+		.sendmail__wrap
+			margin-top: 30px
+			padding: 10px 0
+			position: relative
+			overflow: hidden
+			+clr
+			.btn
+				width: 240px
+				display: block
+		.sendmail__captis
+			float: left
+			.btn
+				margin-top: 5px
+		.sendmail__mailchimp
+			float: right
+			.btn
+				margin-top: 11px
+		.block-or
+			position: absolute
+			top: 50%
+			right: 50%
+			margin: -20px -20px 0 0
+		.sendmail__ask
+			display: block
+			margin-top: 41px
+			padding-left: 22px
+			font-size: 14px
+			color: #5591C8
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: -2px
+				left: 153px
+				+s(ask-s)
+			&:hover
+				text-decoration: underline
+		.sendmail__compare
+			margin-top: 15px
+			+clr
+		.compare__item
+			float: left
+			width: 50%
+			&:last-child
+				float: right
+		.compare__txt
+			font-size: 13px
+			color: #898989
+			padding: 0 50px
+			line-height: 1.4
 
 
 
