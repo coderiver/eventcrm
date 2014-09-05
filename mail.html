@@ -64,10 +64,21 @@
 	    font-style: normal;
 	}
 
+	@font-face {
+	    font-family: pfdlight;
+	    src: url('css/fonts/PFDinTextCondPro-Light.eot');
+	    src: url('css/fonts/PFDinTextCondPro-Light.eot?#iefix') format('embedded-opentype'),
+	         url('css/fonts/PFDinTextCondPro-Light.woff') format('woff'),
+	         url('css/fonts/PFDinTextCondPro-Light.ttf') format('truetype'),
+	         url('css/fonts/PFDinTextCondPro-Light.svg#proxima_nova_cn_rgbold') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
 	    body{
             width: 100%;
             height: 100%;
-            background-color: #fff;
+            background-color: #ffffff;
             margin:0;
             padding:0;
             -webkit-font-smoothing: antialiased;
@@ -95,24 +106,6 @@
         	text-decoration: underline !important;
         }
 
-		.lines:before {
-			content: "";
-			position: absolute;
-			width: 80px;
-			top: 21px;
-			left: -92px;
-			border: 1px solid #d9d9d9;
-		}
-
-		.lines:after {
-			content: "";
-			position: absolute;
-			width: 80px;
-			top: 21px;
-			right: -92px;
-			border: 1px solid #d9d9d9;
-		}
-
 		 /* ----------- responsivity ----------- */
         @media only screen and (max-width: 1120px){
 
@@ -123,309 +116,304 @@
 
             /*----- main image -------*/
 			body[yahoo] .main-image img{width: 440px !important; height: auto !important;}
-
-			/* ====== divider ====== */
-			body[yahoo] .divider img{width: 440px !important;}
-			body[yahoo] .align-center{text-align: center !important;}
-
-			/*--------- banner ----------*/
-			body[yahoo] .banner img{width: 440px !important; height: auto !important;}
-			/*-------- container --------*/
-			body[yahoo] .container590{width: 440px !important;}
-			body[yahoo] .container580{width: 400px !important;}
-			body[yahoo] .half-container590{width: 200px !important;}
-
-			/*-------- secions ----------*/
-			body[yahoo] .section-item{width: 440px !important;}
-            body[yahoo] .section-img img{width: 440px !important; height: auto !important;}
-        }
-
-		@media only screen and (max-width: 480px){
-			/*------ top header ------ */
-			body[yahoo] .main-header{font-size: 20px !important;}
-
-            /*----- main image -------*/
-			body[yahoo] .main-image img{width: 280px !important; height: auto !important;}
-
-			/* ====== divider ====== */
-			body[yahoo] .divider{width: 280px !important;}
-			body[yahoo] .align-center{text-align: center !important;}
-
-			/*--------- banner ----------*/
-			body[yahoo] .banner img{width: 280px !important; height: auto !important;}
-			/*-------- container --------*/
-			body[yahoo] .container590{width: 280px !important;}
-			body[yahoo] .container580{width: 260px !important;}
-			body[yahoo] .half-container590{width: 280px !important;}
-
-			/*-------- secions ----------*/
-			body[yahoo] .section-item{width: 280px !important;}
-			body[yahoo] .section-item-iphone{width: 280px !important;}
-            body[yahoo] .section-img img{width: 280px !important; height: auto !important;}
-            body[yahoo] .section-iphone-img img{width: 280px !important; height: auto !important;}
-
-            /*------- CTA -------------*/
-            body[yahoo] .cta-btn{width: 200px !important;}
-
 		}
 
 </style>
 </head>
 <body yahoo="fix" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<!--begin leftside-->
-<table class="leftside" style="width: 73.5%; float: left">
-	<tr>
-		<td style="text-align: center; padding-top: 73px">
-			<table class="ticket_title" style="width: 800px; float: right;">
-				<tr>
-					<td>
-						<p style="font: 40px novaboldc; text-transform: uppercase; line-height: 1; padding-bottom: 2px;">
-							<span style="position: relative;" class="lines">Отлично!</span></p>
-						<p style="font: 27px novaregc; line-height: 1; letter-spacing: -0.25px;">Вы зарегистрировались на событие</p>
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<!--begin ticket-->
-			<table class="ticket" style="background: #f6f6f6; border: 1px solid #e5e5e5; box-shadow: 0 3px 10px rgba(0,0,0,.13); margin-top: 38px; float: right; width: 800px">
-				<tr>
-					<td style="padding: 27px 0 0 40px; width: 64.5%; vertical-align: top;">
-						<p style="font: 16px novaregc; color: #5ec7a5; text-transform: uppercase; padding-left: 7px; border-left: 4px solid #5ec7a5; line-height: 1; margin-bottom: 6px;">Федерация модномоторного спорта</p>
-						<p style="font: 26px novaregc; text-transform: uppercase; text-transform: uppercase; letter-spacing: 0.25px;">Кулинария для чайников</p>
-						<p style="font: 26px novaregc; text-transform: uppercase; letter-spacing: 0.2px; padding-top: 5px;">Базовый курс</p>
-						<table style="margin-top: 30px">
-							<tr>
-								<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase; position: relative; width: 71.5%">
-									<i style="position: absolute; background: url(img/iconmail/date.png); width: 35px; height: 35px"></i>
-									<p style="padding-left: 45px">31 февраля 2015</p>
-									<p style="padding-left: 45px">вторник</p>
-								</td>
-								<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase; position: relative">
-									<i style="position: absolute; background: url(img/iconmail/clock.png); width: 31px; height: 35px; top: 2px; left: 3px;"></i>
-									<p style="padding-left: 45px">Начало</p>
-									<p style="padding-left: 45px">16:30 МСК</p>
-								</td>
-							</tr>
-						</table>
-						<table style="margin-top: 25px">
-							<tr>
-								<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase; position: relative">
-									<i style="position: absolute; background: url(img/iconmail/place.png) no-repeat; width: 29px; height: 35px; top: 0; left: 4px;"></i>
-									<p style="padding-left: 44px; letter-spacing: -0.1px;">г. Санкт-Петербург, ул. Хорошая 35, корп. 2</p>
-									<p style="padding-left: 45px">Вход со двора</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-					<td style="position: relative;">
-						<i style="background: url(img/iconmail/ticket_top.png) no-repeat; width: 70px; height: 43px; content: none; position: absolute; background-color: #fff; top: -6px;"></i>
-						<table style="position: absolute; top: 20px; left: 35px; z-index: 10;">
-							<tr>
-								<td style="background: url(img/iconmail/cut.png) repeat-y; height: 340px;"></td>
-							</tr>
-						</table>
-					</td>
-					<td width="31.2%" style="vertical-align: top; padding-bottom: 50px">
-						<table style="margin: 25px auto 0">
-							<tr>
-								<td style="padding-left: 22px">
-									<img src="img/iconmail/qr.png">
-								</td>
-							</tr>
-							<tr>
-								<td style="position: relative">
-									<p style="color: #5ec7a5; font: 55px pfd, Arial, sans-serif; letter-spacing: -0.9px; padding-top: 12px;">10 500
-									<i style="font-size: 42px; margin-left: -10px;" class="fa fa-rub"></i>
-									<i style="background: url(img/iconmail/arrow.png) no-repeat; width: 25px; height: 13px;position: absolute;left: 50%;margin-left: -12px;bottom: -25px;"></i>
-									</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td style="background: #00c8a5; position: relative; vertical-align: top; padding-bottom: 19px">
-						<table>
-							<tr>
-								<td style="color: #fff; font-family: novaregc, Arial, sans-serif;">
-									<p style=" font-size: 16px; text-transform: uppercase; margin-top: 23px; margin-left: 11px; border-left: 4px solid #fff; line-height: 0.9; padding-left: 8px; letter-spacing: 0.1px;">Билет участника</p>
-									<p style="color: #fff; font-size: 25px; text-transform: uppercase; letter-spacing: -0.3px; padding: 8px 0 0 10px; line-height: 1">
-										Супер Никита Ульянович Третий
-									</p>
-									<a style="color: #fff; text-decoration: none; padding-left: 10px" href="mailto: grechka.obratno@mail.ru">grechka.obratno@mail.ru</a>
-								</td>
-							</tr>
-						</table>
-						<table style="position: absolute; top: -20px; right: 0; z-index: 5">
-							<tr>
-								<td>
-									<p style="font: 26px novabold; color: #000; background: #fff; border: 4px solid #00c8a5; border-radius: 5px; letter-spacing: -0.3px; padding: 0 51px;">308021</p>
-								</td>
-							</tr>
-						</table>
-					</td>
-					<td style="position: relative;">
-						<i style="background: url(img/iconmail/ticket_bottom.png) no-repeat; width: 107px; height: 122px; content: none; position: absolute; background-color: #fff; bottom: -10px; left: -18px;"></i>
-					</td>
-					<td style="background: #00c8a5; text-align: center; color: #fff; font: 20px novaregc, Arial, sans-serif; text-transform: uppercase; vertical-align: top">
-						<p style="padding: 20px 0 10px 0">
-							Участие
-						</p>
-						<p style="letter-spacing: 0.25px;">
-							Не оплачено!
-						</p>
-					</td>
-				</tr>
-			</table>
-			<!--end ticket-->
-		</td>
-	</tr>
-</table>
-<!--end leftside-->
-<!--begin sidebar-->
-<table class="sidebar" style="margin-left: -80%; float: right; width: 285px; height: 100%">
-	<tbody>
-		<tr>
-			<td style="vertical-align: top; background: #f4f4f4; box-shadow: -3px 0 10px rgba(0,0,0,.1);" width="285">
-				<table style="font-family: novaregc, Arial, sans-serif; margin: 35px auto 0;">
-					<tbody>
+	<!--begin wrapper-->
+		<table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+			<tr>
+				<td>
+					<!--begin leftside-->
+					<table cellpadding="0" cellspacing="0" class="leftside" style="width: 73.5%; float: left; border-collapse: collapse;">
 						<tr>
-							<td>
-								<table width="220">
+							<td style="text-align: center; padding-top: 73px">
+								<table cellpadding="0" cellspacing="0" class="ticket_title" style="width: 800px; float: right; border-collapse: collapse;">
+									<tr>
+										<td>
+
+											<p style="font: 40px novaboldc; text-transform: uppercase; line-height: 1; padding-bottom: 2px;">
+												<span style="width: 80px; height: 2px; background: #d9d9d9; display: inline-block; margin-bottom: 13px;"></span>
+												<span>Отлично!</span>
+												<span style="width: 80px; height: 2px; background: #d9d9d9; display: inline-block; margin-bottom: 13px;"></span>
+											</p>
+											<p style="font: 27px novaregc; line-height: 1; letter-spacing: -0.25px;">Вы зарегистрировались на событие</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td style="">
+								<!--begin ticket-->
+								<table width="816" height="416" align="right" background="img/iconmail/ticket.png" cellpadding="0" cellspacing="0" class="ticket" style="border-collapse: collapse; margin-top: 38px">
 									<tbody>
 										<tr>
-											<td style="padding: 0 0 6px 5px">
-												<p style="text-transform: uppercase; color: #5ec7a5;">Организатор</p>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding: 0 0 7px 5px">
-												<p style="text-transform: uppercase; color: #000;">
-													Федерация модномоторного спорта
-												</p>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding: 0 0 7px 6px">
-												<p style="text-transform: uppercase; color: #5ec7a5;">Телефон</p>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding: 0 0 9px 4px">
-												<p style="text-transform: uppercase; color: #000;">
-													8(921) 321-98-05
-												</p>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding: 0 0 5px 5px">
-												<p style="text-transform: uppercase; color: #5ec7a5;">E-mail</p>
-											</td>
-										</tr>
-										<tr>
-											<td style="border-bottom: 2px solid #000; padding: 0 0 4px 5px">
-												<a href="mailto: info@hangout.ru" style="text-transform: uppercase; text-decoration: none; color: #000;">
-													info@hangout.ru
-												</a>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding: 15px 0 7px 5px">
-												<p style="text-transform: uppercase; color: #000;">
-													Вы можете оплатить на месте
-												</p>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding: 10px 0 7px 0">
-												<button style="outline: none; width: 220px; background: #c6c6c6; color: #fff; font-size: 20px; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #a0a0a0; border-top: none; border-left: none; border-right: none; cursor: pointer;"  type="button">сохранить приглашение</button>
-											</td>
-										</tr>
-										<tr>
-											<td style="padding-bottom: 11px">
-												<p style="text-align: center; text-transform: uppercase; font-size: 18px;">или</p>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<button style="outline: none; width: 220px; background: #5ec7a5; color: #fff; font: 20px novabold, Arial, sans-serif; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #459b7b; border-top: none; border-left: none; border-right: none; cursor: pointer;" type="button">оплатить сейчас</button>
-											</td>
-										</tr>
-										<tr>
-											<td style="text-align: center; font-size: 32px; padding-top: 18px;">
-												<p style="background: url(img/iconmail/price.png) 18px 6px no-repeat; padding: 20px 0 23px; color: #5ec7a5; font-family: novaexcl;">10 500 <i style="font-size: 24px" class="fa fa-rub"></i></p>
-											</td>
-										</tr>
-										<tr>
-											<td style="text-align: center;">
-												<p style="text-transform: uppercase; color: #000;">До повышения стоимости</p>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<!--div id="countdown_dashboard_60" class="time_counter">
-													<div class="dash days_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
-														<span class="time_bg"><div class="digit">0</div><div class="digit">0</div></span>
-														<span class="time__heading">дней</span>
-													</div>
-													<div class="dash hours_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
-														<span class="time_bg middle"><div class="digit">0</div><div class="digit">0</div></span>
-														<span class="time__heading">часов</span>
-													</div>
-													<div class="dash minutes_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
-														<span class="time_bg middle2"><div class="digit">0</div><div class="digit">0</div></span>
-														<span class="time__heading">минут</span>
-													</div>
-													<div class="dash seconds_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
-														<span class="time_bg seconds"><div class="digit">0</div><div class="digit">0</div></span>
-														<span class="time__heading">секунд</span>
-													</div>
-													<br><div class="clear"></div>
-												</div>
-												</div-->
+											<td style="vertical-align: top">
+												<table cellpadding="0" cellspacing="0" width="816" align="right" class="ticket" style="float: right; border-collapse: collapse;">
+													<tr>
+														<td style="padding: 34px 0 0 49px; vertical-align: top;">
+															<p style="font: 16px novaregc; color: #5ec7a5; text-transform: uppercase; padding-left: 7px; border-left: 4px solid #5ec7a5; line-height: 1; margin-bottom: 6px;">Федерация модномоторного спорта</p>
+															<p style="font: 26px novaregc; text-transform: uppercase; text-transform: uppercase; letter-spacing: 0.25px;">Кулинария для чайников</p>
+															<p style="font: 26px novaregc; text-transform: uppercase; letter-spacing: 0.2px; padding-top: 5px;">Базовый курс</p>
+															<table cellpadding="0" cellspacing="0" style="margin-top: 30px; border-collapse: collapse;">
+																<tr>
+																	<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase; width: 73.15%">
+																		<table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+																			<tr>
+																				<td>
+																					<img src="img/iconmail/date.png" width="35" height="35" alt="date">
+																				</td>
+																				<td style="padding-left: 10px">
+																					<p>31 февраля 2015</p>
+																					<p>вторник</p>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase">
+																		<table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+																			<tr>
+																				<td>
+																					<img src="img/iconmail/clock.png" width="31" height="35" alt="time">
+																				</td>
+																				<td style="padding-left: 9.5px">
+																					<p>Начало</p>
+																					<p>16:30 МСК</p>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<table cellpadding="0" cellspacing="0" style="margin-top: 25px; border-collapse: collapse;">
+																<tr>
+																	<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase">
+																		<table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+																			<tr>
+																				<td style="padding-left: 2px">
+																					<img src="img/iconmail/place.png" width="29" height="35" alt="place">
+																				</td>
+																				<td style="padding-left: 13px">
+																					<p style="letter-spacing: -0.1px;">г. Санкт-Петербург, ул. Хорошая 35, корп. 2</p>
+																					<p>Вход со двора</p>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<table cellpadding="0" cellspacing="0" align="right" style="margin: 16px 21px 0 0; border-collapse: collapse;">
+																<tr>
+																	<td>
+																		<p style="font: 26px novabold; color: #000; background: #ffffff; border: 4px solid #00c8a5; border-radius: 5px; letter-spacing: -0.3px; padding: 0 51px;">308021</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td width="33.5%" style="vertical-align: top;">
+															<table cellpadding="0" cellspacing="0" style="margin: 33px auto 0; border-collapse: collapse;">
+																<tr>
+																	<td style="padding-left: 22px">
+																		<img src="img/iconmail/qr.png">
+																	</td>
+																</tr>
+																<tr>
+																	<td style="text-align: center">
+																		<p style="color: #5ec7a5; font: 55px pfd, Arial, sans-serif; letter-spacing: -0.9px; padding: 12px 0 14px 0;">10 500
+																		<i style="font-size: 42px; margin-left: -10px;" class="fa fa-rub"></i></p>
+																		<img style="margin-left: 3px" src="img/iconmail/arrow.png" width="25" height="13" alt="arrow">
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td style="vertical-align: top; padding-left: 10px;">
+															<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-top: -20px">
+																<tr>
+																	<td style="color: #ffffff; font-family: novaregc, Arial, sans-serif;">
+																		<p style=" font-size: 16px; text-transform: uppercase; margin-top: 23px; margin-left: 11px; border-left: 4px solid #ffffff; line-height: 0.9; padding-left: 8px; letter-spacing: 0.1px;">Билет участника</p>
+																		<p style="color: #ffffff; font-size: 25px; text-transform: uppercase; letter-spacing: -0.3px; padding: 8px 0 0 10px; line-height: 1">
+																			Супер Никита Ульянович Третий
+																		</p>
+																		<a style="color: #ffffff; text-decoration: none; padding-left: 10px" href="mailto: grechka.obratno@mail.ru">grechka.obratno@mail.ru</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td style="text-align: center; color: #ffffff; font: 20px novaregc, Arial, sans-serif; text-transform: uppercase; vertical-align: top">
+															<p style="padding-bottom: 10px">
+																Участие
+															</p>
+															<p style="letter-spacing: 0.25px;">
+																Не оплачено!
+															</p>
+														</td>
+													</tr>
+												</table>
 											</td>
 										</tr>
 									</tbody>
 								</table>
+								<!--end ticket-->
 							</td>
 						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<!--end sidebar-->
+					</table>
+					<!--end leftside-->
+					<!--begin sidebar-->
+					<table cellpadding="0" cellspacing="0" align="right" width="285" class="sidebar" style="border-collapse: collapse; margin-left: -80px">
+						<tbody>
+							<tr>
+								<td style="vertical-align: top; background: #f4f4f4; box-shadow: -3px 0 10px rgba(0,0,0,.1);" width="285">
+									<table cellpadding="0" cellspacing="0"  style="font-family: novaregc, Arial, sans-serif; margin: 35px auto 0; border-collapse: collapse;">
+										<tbody>
+											<tr>
+												<td>
+													<table cellpadding="0" cellspacing="0"  width="220" style="border-collapse: collapse;">
+														<tbody>
+															<tr>
+																<td style="padding: 0 0 6px 5px">
+																	<p style="text-transform: uppercase; color: #5ec7a5;">Организатор</p>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 0 0 7px 5px">
+																	<p style="text-transform: uppercase; color: #000;">
+																		Федерация модномоторного спорта
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 0 0 7px 6px">
+																	<p style="text-transform: uppercase; color: #5ec7a5;">Телефон</p>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 0 0 9px 4px">
+																	<p style="text-transform: uppercase; color: #000;">
+																		8(921) 321-98-05
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 0 0 5px 5px">
+																	<p style="text-transform: uppercase; color: #5ec7a5;">E-mail</p>
+																</td>
+															</tr>
+															<tr>
+																<td style="border-bottom: 2px solid #000; padding: 0 0 4px 5px">
+																	<a href="mailto: info@hangout.ru" style="text-transform: uppercase; text-decoration: none; color: #000;">
+																		info@hangout.ru
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 15px 0 7px 5px">
+																	<p style="text-transform: uppercase; color: #000;">
+																		Вы можете оплатить на месте
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 10px 0 7px 0">
+																	<button style="outline: none; width: 220px; background: #c6c6c6; color: #ffffff; font-size: 20px; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #a0a0a0; border-top: none; border-left: none; border-right: none; cursor: pointer;"  type="button">сохранить приглашение</button>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding-bottom: 11px">
+																	<p style="text-align: center; text-transform: uppercase; font-size: 18px;">или</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<button style="outline: none; width: 220px; background: #5ec7a5; color: #ffffff; font: 20px novabold, Arial, sans-serif; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #459b7b; border-top: none; border-left: none; border-right: none; cursor: pointer;" type="button">оплатить сейчас</button>
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center; font-size: 32px; padding-top: 18px;">
+																	<img style="padding: 20px 0 23px" src="img/iconmail/price.png" alt="price">
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center;">
+																	<p style="text-transform: uppercase; color: #000; margin-bottom: 15px">До повышения стоимости</p>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<!--begin counter-->
+																	<table cellpadding="0" cellspacing="0"  class="counter" style="margin: 0 auto 100px; border-collapse: collapse;">
+																		<tr style="font: 40px pfdlight, Arial, sans-serif; color: #ffffff;">
+																			<td background="img/iconmail/counter_bg.png" style="width: 50px; height: 50px; text-align: center;">
+																				<span>02</span>
+																			</td>
+																			<td>
+																				<span style="color: #b4b4b4;">.</span>
+																			</td>
+																			<td background="img/iconmail/counter_bg.png" style="width: 50px; height: 50px; text-align: center;">
+																				<span>15</span>
+																			</td>
+																			<td>&nbsp;</td>
+																			<td background="img/iconmail/counter_gr.png" style="width: 50px; height: 50px; text-align: center;">
+																				<span>23</span>
+																			</td>
+																			<td>
+																				<span style="color: #5ec7a5">:</span>
+																			</td>
+																			<td background="img/iconmail/counter_gr.png" style="width: 50px; height: 50px; text-align: center;">
+																				<span>40</span>
+																			</td>
+																		</tr>
+																		<tr style="text-align: center;">
+																			<td style="font: 16px pfdlight; color: #b4b4b4;">
+																				<span>месяцы</span>
+																			</td>
+																			<td>&nbsp;</td>
+																			<td style="font: 16px pfdlight; color: #b4b4b4;">
+																				<span>
+																					дни
+																				</span>
+																			</td>
+																			<td>&nbsp;</td>
+																			<td style="font: 16px pfdlight; color: #5ec7a5;">
+																				<span>часы</span>
+																			</td>
+																			<td>&nbsp;</td>
+																			<td style="font: 16px pfdlight; color: #5ec7a5;">
+																				<span>минуты</span>
+																			</td>
+																		</tr>
+																	</table>
+																	<!--end counter-->
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!--end sidebar-->
+				</td>
+			</tr>
+		</table>
+	<!--end wrapper-->
+
 <!--begin footer-->
-<table class="footer" style="position: absolute; bottom: 0; width: 100%">
+<table  cellpadding="0" cellspacing="0" class="footer" style="width: 100%; border-collapse: collapse;">
 	<tr>
-		<td style="background: rgba(0, 0, 0, 0.6); color: #fff; font-family: novaregc; text-transform: uppercase; text-align: center;">
+		<td style="background: rgba(0, 0, 0, 0.6); color: #ffffff; font-family: novaregc; text-transform: uppercase; text-align: center;">
 			<p style="padding: 14px 0 0 9%; width: 80%; margin: 0 auto; letter-spacing: 0.1px;">Получая билеты на событие, вы принимаете <a style="color: #008aff; text-decoration: none;" href="#">Пользовательское соглашение</a> и подтверждаете ваше <a style="color: #008aff; text-decoration: none;" href="#">согласие на обработку персональных данных</a></p>
 			<p style="padding: 17px 0 0 7%; width: 46%; letter-spacing: 0.1px; margin: 0 auto;">Система управления клиентами и продажи билетами на мероприятия <i style="background: url(img/iconmail/logo.png) no-repeat; display: inline-block; width: 117px; height: 33px; vertical-align: middle; padding-top: 7px; margin-left: 5px;"></i></p>
 		</td>
 	</tr>
 </table>
 <!--end footer-->
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/time.js"></script>
-<script>
-	jQuery(document).ready(function() {
-		$('#countdown_dashboard_60').countDown({
-			targetDate: {
-				'day': 		11,
-				'month': 	09,
-				'year': 	2014,
-				'hour': 	23,
-				'min': 		59,
-				'sec': 		59
-				},
-				omitWeeks: true
-		});
-
-	});
-</script>
 </body>
 </html>
