@@ -78,6 +78,7 @@
 	    body{
             width: 100%;
             height: 100%;
+            min-width: 320px;
             background-color: #ffffff;
             margin:0;
             padding:0;
@@ -112,11 +113,32 @@
             body[yahoo] .leftside {width: 100% !important; margin-bottom: 20px}
             body[yahoo] .sidebar{float: none !important; margin-left: 0 !important; height: auto; width: 100% !important}
             body[yahoo] .footer{position: static !important;}
-            body[yahoo] .ticket, .ticket_title{float: none !important; margin: 0 auto;}
-
-            /*----- main image -------*/
-			body[yahoo] .main-image img{width: 440px !important; height: auto !important;}
+            body[yahoo] .ticket, .ticket_title{float: none !important; margin: 0 auto !important;}
 		}
+
+		@media only screen and (max-width: 830px){
+
+            body[yahoo] .ticket {width: 100% !important; height: auto !important; background: none; margin-top: 15px !important}
+            body[yahoo] .ticket_title {width: 90% !important; }
+            body[yahoo] .kitchen{background: #f6f6f6 !important; padding: 34px 0px 30px 5% !important}
+            body[yahoo] .qr, .part{display: none !important;}
+            body[yahoo] .person{width: 100% !important; background: #00c8a5 !important;}
+            body[yahoo] .person_t{margin-top: 20px !important;}
+            body[yahoo] .number{display: table !important;}
+            body[yahoo] .number_first{display: none !important;}
+            body[yahoo] .dash{display: table !important;}
+			body[yahoo] .topay{display: table !important; }
+            body[yahoo] .footer{padding: 0 10% !important;}
+			body[yahoo] .footer_txt {padding-right: 0 !important; padding-left: 0 !important; width: 100% !important; font-size: 14px !important}
+		}
+
+		@media only screen and (max-width: 560px){
+
+            body[yahoo] .ticket_desc {width: 66% !important; }
+            body[yahoo] .main_ttl{font-size: 27px !important;}
+            body[yahoo] .lines{margin-bottom: 9px !important;}
+            body[yahoo] .reg{font-size: 23px !important;}
+        }
 
 </style>
 </head>
@@ -129,37 +151,36 @@
 					<table cellpadding="0" cellspacing="0" class="leftside" style="width: 73.5%; float: left; border-collapse: collapse;">
 						<tr>
 							<td style="text-align: center; padding-top: 73px">
-								<table cellpadding="0" cellspacing="0" class="ticket_title" style="width: 800px; float: right; border-collapse: collapse;">
+								<table cellpadding="0" cellspacing="0" class="ticket_title" style="width: 816px; float: right; border-collapse: collapse;">
 									<tr>
 										<td>
-
-											<p style="font: 40px novaboldc; text-transform: uppercase; line-height: 1; padding-bottom: 2px;">
-												<span style="width: 80px; height: 2px; background: #d9d9d9; display: inline-block; margin-bottom: 13px;"></span>
+											<p class="main_ttl" style="font-size: 40px; font-family: novaboldc; text-transform: uppercase; line-height: 1; padding-bottom: 2px;">
+												<span class="lines" style="width: 80px; height: 2px; background: #d9d9d9; display: inline-block; margin-bottom: 13px;"></span>
 												<span>Отлично!</span>
-												<span style="width: 80px; height: 2px; background: #d9d9d9; display: inline-block; margin-bottom: 13px;"></span>
+												<span class="lines" style="width: 80px; height: 2px; background: #d9d9d9; display: inline-block; margin-bottom: 13px;"></span>
 											</p>
-											<p style="font: 27px novaregc; line-height: 1; letter-spacing: -0.25px;">Вы зарегистрировались на событие</p>
+											<p class="reg" style="font: 27px novaregc; line-height: 1; letter-spacing: -0.25px;">Вы зарегистрировались на событие</p>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td style="">
+							<td>
 								<!--begin ticket-->
-								<table width="816" height="416" align="right" background="img/iconmail/ticket.png" cellpadding="0" cellspacing="0" class="ticket" style="border-collapse: collapse; margin-top: 38px">
+								<table class="ticket" width="816" height="416" align="right" background="img/iconmail/ticket.png" cellpadding="0" cellspacing="0"  style="border-collapse: collapse; margin-top: 38px; width: 816px">
 									<tbody>
 										<tr>
 											<td style="vertical-align: top">
-												<table cellpadding="0" cellspacing="0" width="816" align="right" class="ticket" style="float: right; border-collapse: collapse;">
+												<table class="ticket" cellpadding="0" cellspacing="0" width="816" align="right"  style="float: right; border-collapse: collapse;">
 													<tr>
-														<td style="padding: 34px 0 0 49px; vertical-align: top;">
+														<td class="kitchen" style="padding: 34px 0 0 49px; vertical-align: top;">
 															<p style="font: 16px novaregc; color: #5ec7a5; text-transform: uppercase; padding-left: 7px; border-left: 4px solid #5ec7a5; line-height: 1; margin-bottom: 6px;">Федерация модномоторного спорта</p>
 															<p style="font: 26px novaregc; text-transform: uppercase; text-transform: uppercase; letter-spacing: 0.25px;">Кулинария для чайников</p>
 															<p style="font: 26px novaregc; text-transform: uppercase; letter-spacing: 0.2px; padding-top: 5px;">Базовый курс</p>
 															<table cellpadding="0" cellspacing="0" style="margin-top: 30px; border-collapse: collapse;">
 																<tr>
-																	<td style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase; width: 73.15%">
+																	<td class="ticket_desc" style="font: 16px novaexcr; color: #5ec7a5; text-transform: uppercase; width: 73.15%">
 																		<table cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
 																			<tr>
 																				<td>
@@ -204,7 +225,7 @@
 																	</td>
 																</tr>
 															</table>
-															<table cellpadding="0" cellspacing="0" align="right" style="margin: 16px 21px 0 0; border-collapse: collapse;">
+															<table class="number_first" cellpadding="0" cellspacing="0" align="right" style="margin: 16px 21px 0 0; border-collapse: collapse;">
 																<tr>
 																	<td>
 																		<p style="font: 26px novabold; color: #000; background: #ffffff; border: 4px solid #00c8a5; border-radius: 5px; letter-spacing: -0.3px; padding: 0 51px;">308021</p>
@@ -212,7 +233,7 @@
 																</tr>
 															</table>
 														</td>
-														<td width="33.5%" style="vertical-align: top;">
+														<td class="qr" width="33.5%" style="vertical-align: top;">
 															<table cellpadding="0" cellspacing="0" style="margin: 33px auto 0; border-collapse: collapse;">
 																<tr>
 																	<td style="padding-left: 22px">
@@ -230,8 +251,15 @@
 														</td>
 													</tr>
 													<tr>
-														<td style="vertical-align: top; padding-left: 10px;">
-															<table cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-top: -20px">
+														<td class="person" style="vertical-align: top;">
+															<table class="number" cellpadding="0" cellspacing="0" align="right" style="margin: -20px 21px 0 0; border-collapse: collapse; display: none">
+																<tr>
+																	<td>
+																		<p style="font: 26px novabold; color: #000; background: #ffffff; border: 4px solid #00c8a5; border-radius: 5px; letter-spacing: -0.3px; padding: 0 51px;">308021</p>
+																	</td>
+																</tr>
+															</table>
+															<table class="person_t" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-top: -20px; margin-left: 10px">
 																<tr>
 																	<td style="color: #ffffff; font-family: novaregc, Arial, sans-serif;">
 																		<p style=" font-size: 16px; text-transform: uppercase; margin-top: 23px; margin-left: 11px; border-left: 4px solid #ffffff; line-height: 0.9; padding-left: 8px; letter-spacing: 0.1px;">Билет участника</p>
@@ -242,8 +270,26 @@
 																	</td>
 																</tr>
 															</table>
+															<table class="dash" background="img/iconmail/dash.png" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-top: 20px; width: 100%; display: none">
+																<tr>
+																	<td >&nbsp;</td>
+																</tr>
+															</table>
+															<table class="topay" cellpadding="0" cellspacing="0" style="width: 90%; border-collapse: collapse; display: none; margin-left: 10px">
+																<tr>
+																	<td width="60%">
+																		<p style="color: #ffffff; font: 55px pfd, Arial, sans-serif; letter-spacing: -0.9px; padding: 12px 0 14px 0;">10 500
+																		<i style="font-size: 42px; margin-left: -10px;" class="fa fa-rub"></i></p>
+																	</td>
+																	<td style="text-align: right; color: #ffffff; font: 20px novaregc, Arial, sans-serif; text-transform: uppercase; ">
+																		<p>
+																			Участие не оплачено!
+																		</p>
+																	</td>
+																</tr>
+															</table>
 														</td>
-														<td style="text-align: center; color: #ffffff; font: 20px novaregc, Arial, sans-serif; text-transform: uppercase; vertical-align: top">
+														<td class="part" style="text-align: center; color: #ffffff; font: 20px novaregc, Arial, sans-serif; text-transform: uppercase; vertical-align: top">
 															<p style="padding-bottom: 10px">
 																Участие
 															</p>
@@ -318,7 +364,7 @@
 															</tr>
 															<tr>
 																<td style="padding: 10px 0 7px 0">
-																	<button style="outline: none; width: 220px; background: #c6c6c6; color: #ffffff; font-size: 20px; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #a0a0a0; border-top: none; border-left: none; border-right: none; cursor: pointer;"  type="button">сохранить приглашение</button>
+																	<button style="outline: none; width: 220px; background: #c6c6c6; color: #ffffff; font-size: 18px; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #a0a0a0; border-top: none; border-left: none; border-right: none; cursor: pointer;"  type="button">сохранить приглашение</button>
 																</td>
 															</tr>
 															<tr>
@@ -328,7 +374,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<button style="outline: none; width: 220px; background: #5ec7a5; color: #ffffff; font: 20px novabold, Arial, sans-serif; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #459b7b; border-top: none; border-left: none; border-right: none; cursor: pointer;" type="button">оплатить сейчас</button>
+																	<button style="outline: none; width: 220px; background: #5ec7a5; color: #ffffff; font: 18px novabold, Arial, sans-serif; padding: 5px 2px; border-radius: 5px; border-bottom: 2px solid #459b7b; border-top: none; border-left: none; border-right: none; cursor: pointer;" type="button">оплатить сейчас</button>
 																</td>
 															</tr>
 															<tr>
@@ -404,13 +450,12 @@
 			</tr>
 		</table>
 	<!--end wrapper-->
-
 <!--begin footer-->
-<table  cellpadding="0" cellspacing="0" class="footer" style="width: 100%; border-collapse: collapse;">
+<table cellpadding="0" cellspacing="0"  style="width: 100%; border-collapse: collapse;">
 	<tr>
-		<td style="background: rgba(0, 0, 0, 0.6); color: #ffffff; font-family: novaregc; text-transform: uppercase; text-align: center;">
-			<p style="padding: 14px 0 0 9%; width: 80%; margin: 0 auto; letter-spacing: 0.1px;">Получая билеты на событие, вы принимаете <a style="color: #008aff; text-decoration: none;" href="#">Пользовательское соглашение</a> и подтверждаете ваше <a style="color: #008aff; text-decoration: none;" href="#">согласие на обработку персональных данных</a></p>
-			<p style="padding: 17px 0 0 7%; width: 46%; letter-spacing: 0.1px; margin: 0 auto;">Система управления клиентами и продажи билетами на мероприятия <i style="background: url(img/iconmail/logo.png) no-repeat; display: inline-block; width: 117px; height: 33px; vertical-align: middle; padding-top: 7px; margin-left: 5px;"></i></p>
+		<td class="footer" style="background: rgba(0, 0, 0, 0.6); color: #ffffff; font-family: novaregc; text-transform: uppercase; text-align: center;">
+			<p class="footer_txt" style="padding: 14px 0 0 9%; width: 80%; margin: 0 auto; letter-spacing: 0.1px;">Получая билеты на событие, вы принимаете <a style="color: #008aff; text-decoration: none;" href="#">Пользовательское соглашение</a> и подтверждаете ваше <a style="color: #008aff; text-decoration: none;" href="#">согласие на обработку персональных данных</a></p>
+			<p class="footer_txt" style="padding: 17px 0 0 7%; width: 46%; letter-spacing: 0.1px; margin: 0 auto;">Система управления клиентами и продажи билетами на мероприятия <i style="background: url(img/iconmail/logo.png) no-repeat; display: inline-block; width: 117px; height: 33px; vertical-align: middle; padding-top: 7px; margin-left: 5px;"></i></p>
 		</td>
 	</tr>
 </table>
