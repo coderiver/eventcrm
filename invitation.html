@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add event 3</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
+	<script>
+		$(document).ready(function() {
+			var austDay = new Date();
+				austDay = new Date(austDay.getFullYear(), 10, 26, 14, 26);
+				$('.counter').countdown({until: austDay, format: 'ODHM'});
+		});
+	</script>
+</head>
+<body class="invite">
+<!-- begin wrap  -->
+<div class="wrap">
+	<!-- begin ticket  -->
+	<div class="ticket">
+		<div class="ticket__wrap">
+			<div class="ticket__ttl">
+				<p class="ticket__ex"><span class="excel">Отлично!</span></p>
+				<p class="ticket__txt">Вы зарегистрировались на событие</p>
+			</div>
+			<div class="ticket__side">
+				<div class="side__up">
+					<div class="sideup__inner padding">
+						<p class="side__green">Федерация модномоторного спорта</p>
+						<p class="side__black">Кулинария для чайников</p>
+						<p class="side__black">Базовый курс</p>
+						<table class="side__when">
+							<tr>
+								<td class="when">
+									<img class="when__img" src="img/icons/date.png" alt="">
+									<p class="when__txt">31 февраля 2015</p>
+									<p class="when__txt">вторник</p>
+								</td>
+								<td class="time">
+									<img class="when__img" src="img/icons/clock2.png" alt="">
+									<p class="when__txt">Начало</p>
+									<p class="when__txt">16:30 МСК</p>
+								</td>
+							</tr>
+						</table>
+						<table class="side__when another">
+							<tr>
+								<td class="place">
+									<img class="when__img" src="img/icons/place.png" alt="">
+									<p class="when__txt">г. Санкт-Петербург, ул. Хорошая 35, корп. 2</p>
+									<p class="when__txt">Вход со двора</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="sideup__inner cut"></div>
+					<div class="sideup__inner qr">
+						<img class="side__img" src="img/icons/qr.png" alt="QR">
+						<p class="side__qr">10 500 <i class="fa fa-rub"></i></p>
+					</div>
+				</div>
+				<div class="side__down">
+					<div class="ticket__num">
+						<p class="num__p">308021</p>
+					</div>
+					<div class="sidedown__inner padding">
+						<p class="side__white">Билет участника</p>
+						<p class="side__white large">Супер Никита Ульянович Третий</p>
+						<a class="side__link" href="mailto:grechka.obratno@mail.ru">grechka.obratno@mail.ru</a>
+						<div class="qr">
+							<div class="qr__price">
+								<p class="side__qr">10 500 <i class="fa fa-rub"></i></p>
+							</div>
+							<div class="qr__txt">
+								<p class="side__white another">Участие не оплачено!</p>
+							</div>
+						</div>
+					</div>
+					<div class="sidedown__inner cut"></div>
+					<div class="sidedown__inner another">
+						<p class="side__white another">Участие</p>
+						<p class="side__white another">Не оплачено!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end ticket -->
+	<!-- begin sidebar  -->
+	<div class="aside">
+		<div class="aside__in">
+			<div class="aside__txt">
+				<p class="aside__green">Организатор</p>
+				<p class="aside__black">Федерация модномоторного спорта</p>
+				<p class="aside__green">Телефон</p>
+				<p class="aside__black">8(921) 321-98-05</p>
+				<p class="aside__green">E-mail</p>
+				<a href="mailto: info@hangout.ru" class="aside__black line">info@hangout.ru</a>
+			</div>
+			<p class="aside__black">Вы можете оплатить на месте</p>
+			<div class="aside__button">
+				<button class="but btn save" type="button"><span class="btn__txt">сохранить приглашение</span></button>
+				<p class="aside__black">или</p>
+				<button class="but btn pay" type="button"><span class="btn__txt">оплатить сейчас</span></button>
+			</div>
+			<div class="aside__price">
+				<p class="aside__num">10 500<i class="fa fa-rub"></i></p>
+			</div>
+			<div class="counter__wrap">
+				<p class="aside__black">До повышения стоимости</p>
+				<div class="counter"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- end sidebar -->
+	<!-- begin footer  -->
+	<div class="footer">
+		<p class="footer__p">получая билеты на событие, вы принимаете <a class="footer__a" href="#">Пользовательское соглашение</a> и подтверждаете ваше <a class="footer__a" href="#">согласие на обработку персональных данных</a></p>
+		<p class="footer__p last">Система управления клиентами и продажи билетами на мероприятия <span class="footer__span"></span></p>
+	</div>
+	<!-- end footer -->
+</div>
+<!-- end wrap -->
+</body>
+</html>

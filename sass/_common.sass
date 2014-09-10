@@ -39,7 +39,10 @@
 +font(novareg, proximanova-reg)
 +font(novaregc, proximanova-cond-reg)
 +font(novabold, proximanova-bold)
++font(novaboldc, proximanovacond-bold)
 +font(novablackc, proximanova-cond-black)
++font(novaexcr, proximanovaexcn-reg)
++font(novaexcl, proximanovaexcn-light)
 +font(rubl, alsrubl-tahoma-regular)
 +font(rubl-b, alsrubl-tahoma-bold)
 +font(roadradio-webfont, roadradio-webfont)
@@ -49,6 +52,8 @@
 +font(circle-regular, circle-regular)
 +font(skoda-pro, skoda-pro)
 +font(intro, intro)
++font(pfdm, PFDinTextCondPro-Medium)
++font(pfdl, PFDinTextCondPro-Light)
 
 =freg
 	font-family: "novareg", Arial, sans-serif
@@ -56,8 +61,14 @@
 	font-family: "novabold", Arial, sans-serif
 =fregc
 	font-family: "novaregc", Arial, sans-serif
+=fboldc
+	font-family: "novaboldc", Arial, sans-serif
 =fblackc
 	font-family: "novablack", Arial, sans-serif
+=fexcr
+	font-family: "novaexcr", Arial, sans-serif
+=fexcl
+	font-family: "novaexcl", Arial, sans-serif
 =rubl
 	font-family: "rubl", Verdana, Arial, sans-serif
 =rubl-b
@@ -76,6 +87,10 @@
 	font-family: "skoda-pro", Verdana, Arial, sans-serif
 =intro
 	font-family: "intro", Verdana, Arial, sans-serif
+=pfdm
+	font-family: "pfdm", Verdana, Arial, sans-serif
+=pfdl
+	font-family: "pfdl", Verdana, Arial, sans-serif
 
 //var
 $blue: #0c8ac7
@@ -104,6 +119,9 @@ body
 	line-height: 1.4
 	color: #262626
 	min-width: 1180px
+	&.invite
+		min-width: 320px
+		background: #FFF
 a
 	text-decoration: none
 button

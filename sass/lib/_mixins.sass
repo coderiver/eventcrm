@@ -13,6 +13,10 @@ $breaklarge: 1180px
 		@media only screen and (min-width: $breaklarge)
 			@content
 
+=rt($media)
+	@media only screen and (max-width: $media+px)
+		@content
+
 =fs($sizeValue: 16)
 	font-size: $sizeValue + px
 	font-size: $sizeValue / 10 + rem

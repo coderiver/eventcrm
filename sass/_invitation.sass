@@ -1,0 +1,441 @@
+//wrap
+.wrap
+	width: 100%
+	height: 100%
+	position: relative
+	background: #ffffff
+
+//ticket
+.ticket
+	float: left
+	width: 77%
+	+clr
+	.ticket__wrap
+		width: 85.5%
+		float: right
+	.ticket__ttl
+		margin-top: 73px
+		text-align: center
+	.ticket__ex
+		padding-bottom: 4px
+		text-transform: uppercase
+		font-size: 40px
+		line-height: 1
+		+fboldc
+		.excel
+			position: relative
+			display: inline-block
+			&:before
+				content: ""
+				position: absolute
+				width: 80px
+				top: 19px
+				left: -93px
+				border-top: 2px solid #d9d9d9
+			&:after
+				content: ""
+				position: absolute
+				width: 80px
+				top: 19px
+				right: -93px
+				border-bottom: 2px solid #d9d9d9
+	.ticket__txt
+		font-size: 26px
+		line-height: 1
+		letter-spacing: 0.3px
+		+fregc
+	.ticket__side
+		width: 800px
+		margin: 40px auto 0
+		border: 1px solid #e5e5e5
+		+box-shadow(0 3px 10px rgba(0,0,0,.13))
+
+.side__up
+	position: relative
+	min-height: 290px
+	background: #f6f6f6
+	+clr
+	.sideup__inner
+		float: left
+		&.padding
+			width: 55%
+			padding: 29px 0 0 42px
+			border-right: 0
+			border-bottom: 0
+		&.cut
+			position: absolute
+			top: -9px
+			right: 221px
+			border: 0
+			box-shadow: none
+			+s(cut_up)
+			background-color: #fff
+		&.qr
+			float: right
+			width: 247px
+			padding-top: 29px
+			text-align: center
+			border-left: 0
+			border-bottom: 0
+	.side__green
+		padding-left: 5px
+		margin-bottom: 5px
+		text-transform: uppercase
+		font-size: 16px
+		color: #5ec7a5
+		border-left: 4px solid #5ec7a5
+		line-height: 1
+		+fregc
+	.side__black
+		margin-bottom: 4px
+		text-transform: uppercase
+		font-size: 27px
+		color: #000
+		line-height: 1.2
+		letter-spacing: -0.3px
+		+fregc
+	.side__when
+		margin-top: 32px
+		&.another
+			margin: 29px 0 0 3px
+		.when__img
+			float: left
+		.place
+			.when__img
+				margin-left: -2px
+			.when__txt
+				padding-left: 43px
+		.when__txt
+			padding-left: 45px
+			font-size: 16px
+			text-transform: uppercase
+			color: #5dc7a5
+			line-height: 1.15
+			+fexcr
+	.side__qr
+		width: 220px
+		position: relative
+		padding: 2px 0 14px 12px
+		color: #00c8a5
+		font-size: 55px
+		letter-spacing: -1px
+		+pfdm
+		i
+			margin-left: -5px
+			font-size: 42px
+		&:after
+			content: ""
+			position: absolute
+			left: 50%
+			bottom: -5px
+			margin-left: -5.5px
+			+s(arrow)
+
+.side__down
+	position: relative
+	height: 111px
+	background: #00c8a5
+	+clr
+	.sidedown__inner
+		float: left
+		font-size: 16px
+		color: #fff
+		+fregc
+		&.padding
+			padding: 24px 0 0 14px
+		&.cut
+			position: absolute
+			right: 221px
+			border: 0
+			box-shadow: none
+			+s(cut_down)
+			background-color: #fff
+		&.another
+			float: right
+			width: 256px
+			padding-top: 20px
+			text-align: center
+	.side__white
+		margin-bottom: 6px
+		padding-left: 8px
+		text-transform: uppercase
+		font-size: 16px
+		border-left: 4px solid white
+		line-height: 1
+		&.large
+			font-size: 24px
+			border: 0
+			padding-left: 0
+			line-height: 1
+			margin-bottom: 0px
+		&.another
+			border: 0
+			font-size: 20px
+			line-height: 1.3
+	.side__link
+		color: #FFF
+		&:hover
+			text-decoration: underline
+	.ticket__num
+		position: absolute
+		top: -19px
+		left: 39.5%
+		.num__p
+			font-size: 24px
+			padding: 0 53px 0 55px
+			color: #000
+			background: #fff
+			border: 4px solid #00c8a5
+			+border-radius(9px)
+			+fbold
+	.qr
+		display: none
+		padding-top: 20px
+		background: url(../img/icons/dashed.png) top center repeat-x
+		+clr
+		.qr__price
+			float: left
+			font-size: 50px
+			letter-spacing: -1px
+			+pfdm
+			i
+				margin-left: -5px
+				font-size: 42px
+		.qr__txt
+			float: right
+			margin-right: 7px
+			padding-top: 15px
+
+//sidebar
+.aside
+	float: right
+	width: 285px
+	height: 100%
+	background: #F4F4F4
+	+box-shadow(-3px 0 10px rgba(0,0,0,.1))
+	+clr
+
+.aside__in
+	padding: 38px 30px 0 31px
+	text-transform: uppercase
+	font-size: 16px
+	+fregc
+	.aside__green
+		margin-bottom: 9px
+		padding-left: 5px
+		color: #5EC7A5
+		line-height: 1
+	.aside__black
+		margin-bottom: 11px
+		padding-left: 5px
+		color: #000000
+		line-height: 1.1
+		&.line
+			display: block
+			margin-bottom: 15px
+			padding-bottom: 4px
+			border-bottom: 2px solid #000000
+	.aside__button
+		margin-top: 20px
+		text-align: center
+		.but
+			width: 221px
+			height: 35px
+			color: #fff
+			+border-radius(5px)
+			&.save
+				padding: 0 0 4px 0
+				background: #c6c6c6
+				border-bottom: 2px solid #a0a0a0
+				letter-spacing: 0.3px
+				+fregc
+			&.pay
+				padding: 0 10px 0
+				background: #00c8a5
+				border-bottom: 2px solid #459b7b
+				letter-spacing: 0.3px
+				+fboldc
+			.btn__txt
+				font-size: 22px
+				text-transform: none
+		.aside__black
+			margin: 17px 0 14px 0
+			padding: 0
+	.aside__price
+		margin-top: 26px
+		text-align: center
+		.aside__num
+			margin: 0 auto
+			padding-top: 10px
+			text-transform: uppercase
+			font-size: 34px
+			color: #00c8a5
+			+fexcl
+			+s(aside_price)
+		i
+			padding-left: 2.5px
+			font-size: 25px
+	.counter__wrap
+		margin-top: 5px
+		text-align: center
+		+clr
+		.aside__black
+			padding-left: 0
+		.counter
+			&.is-countdown
+				width: 221px
+				margin: 0 auto
+				border: 0
+				background: none
+				+clr
+				.countdown-row
+					width: 0
+					padding: 0
+				.countdown-section
+					position: relative
+					margin-right: 7px
+					+s(counter_bg)
+					&:first-child
+						.countdown-amount
+							&:after
+								content: "."
+								position: absolute
+								color: #b3b3b3
+								right: -8px
+								bottom: -12px
+					&:last-child
+						+s(count_bg_green)
+						.countdown-period
+							color: #5dc7a5
+					&:nth-child(3)
+						+s(count_bg_green)
+						.countdown-amount
+							&:after
+								content: ":"
+								position: absolute
+								right: -7.5px
+								bottom: 5px
+								font-size: 38px
+								color: #5dc7a5
+						.countdown-period
+							color: #5dc7a5
+					&:last-child
+						margin-right: 0
+				.countdown-amount
+					font-size: 40px
+					color: #fff
+					line-height: 1.3
+					+pfdl
+				.countdown-period
+					text-transform: none
+					font-size: 16px
+					color: #b3b3b3
+					+fexcl
+
+//footer
+.footer
+	position: absolute
+	width: 100%
+	bottom: 0
+	text-align: center
+	background: rgba(0,0,0, 0.63)
+	.footer__p
+		padding: 14px 0 10px 8.9%
+		text-transform: uppercase
+		font-size: 16px
+		color: #FFF
+		+fregc
+		&.last
+			padding: 5px 0 16px 6.5%
+			display: inline-block
+	.footer__a
+		color: #008AFF
+		&:hover
+			text-decoration: underline
+	.footer__span
+		position: relative
+		display: inline-block
+		margin-left: 5px
+		vertical-align: -9px
+		+s(logo)
+
+
+//resize
++rt(1250)
+	.wrap
+		height: auto
+	.ticket,
+	.ticket .ticket__wrap
+		float: none
+		width: 100%
+	.aside
+		float: none
+		width: 100%
+		height: auto
+		margin-top: 20px
+		.aside__in
+			width: 80%
+			padding-top: 38px
+			padding-bottom: 60px
+			margin: 0 auto
+			text-align: center
+		.aside__txt
+			display: none
+		.aside__black
+			display: inline-block
+			margin-bottom: 10px
+		.aside__button
+			margin-top: 0
+	.footer
+		display: table
+		position: static
+		.footer__p
+			width: 90%
+			margin: 0 auto
+			padding: 16px 0 0 0
+			&:last-child
+				padding: 14px 0 10px 0
+
++rt(815)
+	.ticket
+		.ticket__side
+			width: 90%
+	.side__up
+		.sideup__inner.cut, .sideup__inner.qr,
+			display: none
+		.sideup__inner.padding
+			width: 90%
+			padding: 29px 0px 35px 20px
+	.side__down
+		height: auto
+		.sidedown__inner.cut, .sidedown__inner.another
+			display: none
+		.qr
+			display: block
+		.sidedown__inner.padding
+			width: 93%
+			padding: 35px 3.5% 0px
+
+
++rt(595)
+	.aside .aside__black
+		display: block
+
++rt(560)
+	.ticket
+		.ticket__ttl
+			width: 90%
+			margin: 73px auto 0
+		.ticket__ex
+			font-size: 35px
+	.side__down
+		.ticket__num
+			left: 5%
+		.qr .qr__price
+			font-size: 35px
+			padding-right: 20px
+			i
+				font-size: 28px
+	.footer
+		.footer__p
+			font-size: 14px
